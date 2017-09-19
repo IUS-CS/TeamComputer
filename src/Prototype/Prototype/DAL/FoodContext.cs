@@ -34,6 +34,8 @@ namespace Prototype.DAL
         public DbSet<User>Users { get; set; }
         public DbSet<Food>Foods { get; set; }
         public DbSet<Recipe>Recipies { get; set; }
+        public DbSet<ingredient> Ingredients { get; set; }
+        public DbSet<Pantry> Party{ get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
