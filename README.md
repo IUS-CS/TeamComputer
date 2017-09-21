@@ -1,1 +1,2 @@
 # TeamComputer 
+http://gitready.com/
