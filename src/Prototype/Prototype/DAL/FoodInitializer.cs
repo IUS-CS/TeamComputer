@@ -22,7 +22,7 @@ namespace Prototype.DAL
             var foods = new List<Food>
             {
             new Food{Name="milk"},
-            new Food{Name="choco mix"},
+            new Food{Name="coco"},
             new Food{Name="turkey"},
             new Food{Name="cheese"},
             new Food{Name="bread"},
@@ -46,18 +46,18 @@ namespace Prototype.DAL
                 new Pantry{UserID=1,FoodID=7},
             };
 
-            var ingredients = new List<ingredient>
+            var ingredients = new List<Ingredient>
             {
-                new ingredient{reciceID=1, FoodID=1},
-                new ingredient{reciceID=1, FoodID=2},
-                new ingredient{reciceID=2, FoodID=3},
-                new ingredient{reciceID=2, FoodID=4},
-                new ingredient{reciceID=2, FoodID=5},
-                new ingredient{reciceID=3, FoodID=6},
-                new ingredient{reciceID=3, FoodID=7},
-                new ingredient{reciceID=3, FoodID=8},
-                new ingredient{reciceID=4, FoodID=9 },
-                new ingredient{reciceID=4, FoodID=10},
+                new Ingredient{RecipeID=1, FoodID=1},
+                new Ingredient{RecipeID=1, FoodID=2},
+                new Ingredient{RecipeID=2, FoodID=3},
+                new Ingredient{RecipeID=2, FoodID=4},
+                new Ingredient{RecipeID=2, FoodID=5},
+                new Ingredient{RecipeID=3, FoodID=6},
+                new Ingredient{RecipeID=3, FoodID=7},
+                new Ingredient{RecipeID=3, FoodID=8},
+                new Ingredient{RecipeID=4, FoodID=9 },
+                new Ingredient{RecipeID=4, FoodID=10},
             };
 
             var recipies = new List<Recipe>
