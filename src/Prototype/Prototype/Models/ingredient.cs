@@ -10,6 +10,9 @@ namespace Prototype.Models
     {
         public int ID { get; set; }
         public int FoodID { get; set; }
-        public int reciceID { get; set; }
+        public int RecipeID { get; set; }
+
+
+        
     }
 }

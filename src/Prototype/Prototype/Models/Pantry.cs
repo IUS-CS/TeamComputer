@@ -5,7 +5,7 @@ using System.Web;
 
 namespace Prototype.Models
 {
-    // food user has
+    // table to holds users foods
     public class Pantry
     {
         public int ID { get; set; }
