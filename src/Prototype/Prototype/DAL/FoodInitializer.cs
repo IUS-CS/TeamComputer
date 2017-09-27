@@ -9,6 +9,7 @@ namespace Prototype.DAL
 {
     public class FoodInitializer : System.Data.Entity.DropCreateDatabaseIfModelChanges<FoodContext>
     {
+        /**
         protected override void Seed(FoodContext context)
         {
             var students = new List<User>
@@ -71,5 +72,7 @@ namespace Prototype.DAL
             recipies.ForEach(s => context.Recipies.Add(s));
             context.SaveChanges();
         }
+    */
     }
+
 }

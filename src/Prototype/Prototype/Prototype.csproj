@@ -161,6 +161,9 @@
     <Compile Include="Models\Recipe.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Views\FoodController.cs" />
+    <Compile Include="Views\PantryController.cs" />
+    <Compile Include="Views\RecipeController.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
@@ -204,6 +207,21 @@
     <Content Include="Views\User\Details.cshtml" />
     <Content Include="Views\User\Edit.cshtml" />
     <Content Include="Views\User\Index.cshtml" />
+    <Content Include="Views\Food\Create.cshtml" />
+    <Content Include="Views\Food\Delete.cshtml" />
+    <Content Include="Views\Food\Details.cshtml" />
+    <Content Include="Views\Food\Edit.cshtml" />
+    <Content Include="Views\Food\Index.cshtml" />
+    <Content Include="Views\Pantry\Create.cshtml" />
+    <Content Include="Views\Pantry\Delete.cshtml" />
+    <Content Include="Views\Pantry\Details.cshtml" />
+    <Content Include="Views\Pantry\Edit.cshtml" />
+    <Content Include="Views\Pantry\Index.cshtml" />
+    <Content Include="Views\Recipe\Create.cshtml" />
+    <Content Include="Views\Recipe\Delete.cshtml" />
+    <Content Include="Views\Recipe\Details.cshtml" />
+    <Content Include="Views\Recipe\Edit.cshtml" />
+    <Content Include="Views\Recipe\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
