@@ -1,5 +1,4 @@
 # TeamComputer 
-http://gitready.com/
 
 TeamComputer is building a web app that allows users to input the 
 ingredients they have available to make meals with, then compare to 
@@ -13,3 +12,4 @@ meals in advance and get a list ingredients needed and generate a
 grocery list.
 
 ### Building the Project
+Open the project .sln file then run it in visual studio
