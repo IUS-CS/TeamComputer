@@ -10,7 +10,7 @@ namespace FoodProject.Controllers
 {
     public class UserController : Controller
     {
-        UserRepo Repository = new UserRepo();
+        UserRepository Repository = new UserRepository();
 
         // GET: User
         public ActionResult Index()

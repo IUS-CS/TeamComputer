@@ -7,7 +7,7 @@ using FoodProject.Models;
 
 namespace FoodProject.Abstract
 {
-    public interface IUserRepo
+    public interface IUserRepository
     {
         IEnumerable<User> Users { get; }
     }

@@ -7,13 +7,13 @@ using FoodProject.Models;
 
 namespace FoodProject.Concrete
 {
-    public class FoodRepo : IFoodRepo
+    public class UserRepo: IUserRepository
     {
         public FoodContext Context = new FoodContext();
 
-        public IEnumerable<Food> Foods
+        public IEnumerable<User> Users
         {
-            get { return Context.Foods; }
+            get { return Context.Users; }
         }
 
     }
