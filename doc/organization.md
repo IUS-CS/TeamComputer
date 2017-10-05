@@ -1,2 +1,4 @@
 # Roles
-Each memeber is learning .Net to make a web app. Also learning the best way to manipulate a database for our case.
+## Programming: David 33%, Ryan 33%, Garret 33%
+## Testing: David 33%, Ryan 33%, Garret 33%
+## Documentation: David 33%, Ryan 33%, Garret 33%
