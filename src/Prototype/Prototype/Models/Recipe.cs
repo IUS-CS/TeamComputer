@@ -18,6 +18,6 @@ namespace Prototype.Models
        * entities (as in many-to-many or one-to-many relationships), its type must be a list in which entries 
        * can be added, deleted, and updated, such as ICollection.
        */
-        public virtual ICollection<ingredient> ingredients { get; set; } 
+        public virtual ICollection<Ingredient> ingredients { get; set; } 
     }
 }

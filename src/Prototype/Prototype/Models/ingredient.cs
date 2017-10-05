@@ -6,10 +6,10 @@ using System.Web;
 namespace Prototype.Models
 {
     //foods for recipe
-    public class ingredient
+    public class Ingredient
     {
         public int ID { get; set; }
         public int FoodID { get; set; }
-        public int reciceID { get; set; }
+        public int RecipeID { get; set; } 
     }
 }
