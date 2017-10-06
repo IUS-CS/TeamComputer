@@ -1,64 +1,60 @@
-#H1 Food Project!!
-Alt-H1 Archietcture v.01
+#  Food Project!!
+## Archietcture v.01
 arthor(s) Team Computer (TC)
 (work in progress)
 
 
 
-1. Alt-H2 The Model View Controller (MVC) Pattern
+1. The Model View Controller (MVC) Pattern
 The MVC pattern is standard for DOT Net web applications.
 
-	1. Alt-H2 MODELS	
+	1. MODELS	
 		Models represent the underlying data/objects that will be used and views by the end-user.  
 		To acheive our goal we needed to create 5 models, food, user, pantry, recipe and ingredient.
-		The models created are the tables in the Food Project Database. A code first approach was used in creating the tables based on the model classes designed. 
-		Each model(table) will have a controller, controllers are classes tied to each model and act as the middleman between the end-user and database.  
+		The models created are the tables in the Food Project Database. A code first approach was used in creating the tables 			based on the model classes designed. 
+		Each model(table) will have a controller, controllers are classes tied to each model and act as the middleman between 			the end-user and database.  
 
-	1. Alt-H3 VIEWS - HTML output for user to view/interact with
+	1. VIEWS - HTML output for user to view/interact with
 		*Index - a list of desiered model
 		*Detail - more detailed information of the model such as list of food that the current User "owns"
 		*Delete/Create - for adding new food or deleting a user from database.
-	1. Alt-H3 CONTROLLERS
+	1. CONTROLLERS
 		*Each controller will generate a view, handle modifying database tables for each model. 
 		*Controllers will handle FUTURE methods to check to see if user has desired foods for recipes or check what food user needs to cook desired recipe.
 
-1. Alt-H3 Database Schema
+1. Database Schema
 		use md link thing here.
 
-	1.Alt-H3	
+	1.	
 		1.There are five tables in the FoodProject Database.
 			* Food
 			* Name
 			* Units - units will hold volume/weight info for each food.
-	
-	1. * User
+	* User
 		* Name
 		* (Log-in info here soon)
 		* virtual collection<pantry>
-	1. * Pantry - bridge table for user and Food
+	* Pantry - bridge table for user and Food
 		* User ID
-	* Food ID
-
-	1. * Recipe
+		* Food ID
+	* Recipe
 		* Name
 		* other info we may want
 		* virtual collection<food>
-	1. * Ingredients - Bridge Table for food and recipe	
+	* Ingredients - Bridge Table for food and recipe	
 		*Food ID
 		*Recipe ID
-	1. 	* Navagational attributes are added as Virtual ICollections.  These virtual properties inform Entity Framework 
+	* Navagational attributes are added as Virtual ICollections.  These virtual properties inform Entity Framework 
+#### Probably need more....
+* Entity Framework - interfaces/context class
+* Repository Pattern
+	* probably read more on this, then update soon
+	* Controller --> Repository --> IRepository --> Database
+* More on EF?
+	* EF --> context.cs --> database
+	* db context?? linq??
 
-Alt-H3 Probably need more....
-Entity Framework - interfaces/context class
-Entity Framework 
-Repository Pattern
-probably read more on this, then update soon
-Controller --> Repository --> IRepository --> Database
-More on EF?
-EF --> context.cs --> database
-db context?? linq??
-why dot net?
 
-![Image of basic mvc from web](https://octodex.github.com/images/basicMVC.png)
-![mvc with food project content](https://octodex.github.com/images/mvcFood.png)
-![db schema](https://octodex.github.com/images/schema.png)
+![Image of basic mvc from web](teamcomputer/doc/images/basicMVC.png)
+![mvc with food project content](teamcomputer/doc/images/mvcFood.png)
+![db schema](teamcomputer/doc/images/schema.png)
