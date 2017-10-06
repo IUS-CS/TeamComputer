@@ -55,6 +55,6 @@ The MVC pattern is standard for DOT Net web applications.
 	* db context?? linq??
 
 
-![Image of basic mvc from web](teamcomputer/doc/images/basicMVC.png)
-![mvc with food project content](teamcomputer/doc/images/mvcFood.png)
-![db schema](teamcomputer/doc/images/schema.png)
+![Image of basic mvc from web](images/basicMVC.png)
+![mvc with food project content](images/mvcFood.png)
+![db schema](images/schema.png)
