@@ -6,21 +6,23 @@ using System.Web.Mvc;
 using FoodProject.Concrete;
 using FoodProject.Abstract;
 using PagedList;
-
+using FoodProject.Models;
 namespace FoodProject.Controllers
 {
     public class FoodController : Controller
     {
         private IFoodRepository foodRepository;
-
-        public FoodController()
-        {
-            this.foodRepository = new FoodRepository(new FoodContext());
-        }
-
-        public FoodController(IFoodRepository foodRepository)
+        private User user;
+        public FoodController(IFoodRepository foodRepository,IUserRepository userRepository)
         {
             this.foodRepository = foodRepository;
+            var temp = TempData["UserID"] as int?;
+            System.Diagnostics.Debug.WriteLine("hello " + temp);
+            user = userRepository.Users.Select(x => x).Where(x => x.UserID == temp).First();
+        }
+        public ActionResult UserFoods()
+        {
+            return View(user);
         }
 
         public ActionResult Index(string sortOrder, string currentFilter, string searchString, int? page)

@@ -9,7 +9,10 @@ namespace FoodProject.Controllers
 {
     public class HomeController : Controller
     {
-        
+        public HomeController()
+        {
+            TempData.Keep();
+        }
 
         public ActionResult Index()
         {
