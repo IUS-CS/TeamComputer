@@ -19,7 +19,7 @@
                 @Html.ActionLink("Food Project", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
             </div>
             <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
+                <ul class="nav navbar-nav" >
                    <!-- 
                        @Html.ActionLink("Link Title", "Method and View Name", "View Folder")
                    -->
@@ -28,6 +28,21 @@
                     <li>@Html.ActionLink("Users", "Index", "User")</li>
                     <li>@Html.ActionLink("Foods", "Index", "Food")</li>
                     <li>@Html.ActionLink("Recipies", "Index", "Recipe")</li>
+                    
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                   
+                        @{String s = ((FoodProject.Models.User)Session["User"]).Name == null ? "Login" : ((FoodProject.Models.User)Session["User"]).Name;
+                            <li>@Html.ActionLink(s, "Index", "User") </li>
+                            if(Session["User"] == null)
+                            {
+                                <li>@Html.ActionLink("Sign Up", "CreateUser", "User")</li>
+                            }
+                            else
+                            {
+                                <li>@Html.ActionLink("Log out", "LogOut", "User")</li>
+                            }
+                        }
                 </ul>
             </div>
         </div>

@@ -10,5 +10,6 @@ namespace FoodProject.Abstract
     public interface IUserRepository
     {
         IEnumerable<User> Users { get; }
+        void Add(User user);
     }
 }

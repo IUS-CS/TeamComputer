@@ -5,9 +5,10 @@ using System.Web;
 
 namespace FoodProject.Models
 {
-    public class Temp
+    public class UserLogin
     {
         public string un {get;set;}
         public string pword { get; set; }
+        public string pword2 { get; set; }
     }
 }

@@ -12,7 +12,7 @@ namespace FoodProject.Controllers
     public class UserController : Controller
     {
         private IUserRepository userRepository;
-        private Temp temp;
+        private UserLogin temp;
         public UserController(IUserRepository userRepository)
         {
             this.userRepository = userRepository;
@@ -29,16 +29,25 @@ namespace FoodProject.Controllers
             return View(temp);
         }
         [HttpPost]
-        public RedirectToRouteResult Index(User user,Temp temp)
+        public RedirectToRouteResult Index(User user,UserLogin temp)
         {
+            String s = user == null ? "" : "";
             User tempUser;
             user.Name = temp.un;
             user.Password = temp.pword;
             if (user.Name != null && user.Password != null)
             {
-                 tempUser = userRepository.Users.Select(x => x).Where(x => x.Name == user.Name).FirstOrDefault();
-                user.UserID = tempUser.UserID;
-                user.Pantrys = tempUser.Pantrys;
+                tempUser = userRepository.Users.Select(x => x).Where(x => x.Name == user.Name).FirstOrDefault();
+                if (tempUser.Password.Equals(user.Password))
+                {
+                    user.UserID = tempUser.UserID;
+                    user.Pantrys = tempUser.Pantrys;
+                }
+                //password doesn't match
+                else
+                {
+                    return RedirectToAction("Index", "User");
+                }
             }
             if (user.UserID != null)
             {
@@ -50,6 +59,40 @@ namespace FoodProject.Controllers
                 return RedirectToAction("Index", "User");
             }
 
+        }
+        [HttpGet]
+        public ViewResult CreateUser()
+        {
+            return View(temp);
+        }
+        [HttpPost]
+        public RedirectToRouteResult Createuser(User user,UserLogin temp)
+        {
+            if(temp.un!=null && temp.pword != null && temp.pword2!=null)
+            {
+                if (temp.pword.Equals(temp.pword2))
+                {
+                    User tempUser = userRepository.Users.Select(x => x).Where(x => x.Name == temp.un).FirstOrDefault();
+                    if (tempUser == null)
+                    {
+                        user.Name = temp.un;
+                        user.Password = temp.pword;
+                        userRepository.Add(user);
+                        return RedirectToAction("Index", "Home");
+                    }
+                }
+            }
+            //password not matching or non unique user name
+            return RedirectToAction("CreateUser", "User");
+        }
+
+        public RedirectToRouteResult LogOut(User user)
+        {
+            user.Name = null;
+            user.Pantrys = null;
+            user.UserID = null;
+            user.Password = null;
+            return RedirectToAction("Index", "Home");
         }
     }
 }

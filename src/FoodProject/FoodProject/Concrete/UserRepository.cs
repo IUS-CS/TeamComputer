@@ -16,6 +16,11 @@ namespace FoodProject.Concrete
             get { return Context.Users; }
 
         }
+        public void Add(User user)
+        {
+            Context.Users.Add(user);
+            Context.SaveChanges();
+        }
 
     }
 }
