@@ -178,9 +178,11 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="infrastructure\Binders\UserModelBinder.cs" />
     <Compile Include="infrastructure\NinjectDependencyResolver.cs" />
     <Compile Include="Models\Food.cs" />
     <Compile Include="Models\Pantry.cs" />
+    <Compile Include="Models\Temp.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -224,7 +226,6 @@
     <Content Include="Views\User\Index.cshtml" />
     <Content Include="Views\Food\Index.cshtml" />
     <Content Include="Views\User\DisplayUser.cshtml" />
-    <Content Include="Views\Food\UserFoods.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

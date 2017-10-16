@@ -11,7 +11,7 @@ namespace FoodProject.Controllers
     {
         public HomeController()
         {
-            TempData.Keep();
+            
         }
 
         public ActionResult Index()

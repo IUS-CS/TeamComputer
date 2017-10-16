@@ -12,34 +12,36 @@ namespace FoodProject.Controllers
     public class UserController : Controller
     {
         private IUserRepository userRepository;
-        private User user;
+        private Temp temp;
         public UserController(IUserRepository userRepository)
         {
             this.userRepository = userRepository;
         }
 
         // GET: User
-        public ActionResult Index()
+        [HttpGet]
+        public ActionResult Index(User user)
         {
-            user = null;
-            return View(user);
+            if (user.UserID != null)
+            {
+                return RedirectToAction("Index","Home");
+            }
+            return View(temp);
         }
         [HttpPost]
-        public RedirectToRouteResult Index(User user)
+        public RedirectToRouteResult Index(User user,Temp temp)
         {
-            User temp = null;
+            User tempUser;
+            user.Name = temp.un;
+            user.Password = temp.pword;
             if (user.Name != null && user.Password != null)
             {
-                 temp = userRepository.Users.Select(x => x).Where(x => x.Name == user.Name).FirstOrDefault();
+                 tempUser = userRepository.Users.Select(x => x).Where(x => x.Name == user.Name).FirstOrDefault();
+                user.UserID = tempUser.UserID;
+                user.Pantrys = tempUser.Pantrys;
             }
-            if (temp !=null)
+            if (user.UserID != null)
             {
-
-                //returns a view showing their name it means login was succesfull need
-                //to change to somthing that actually does something
-                TempData["UserID"] = temp.UserID;
-                TempData.Keep();
-                //TempData.Keep("UserID");
                 return RedirectToAction("Index", "Home");
             }
             else
