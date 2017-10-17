@@ -5,7 +5,7 @@
     <link href="~/Content/bootstrap-theme.css" rel="stylesheet" />
     <meta name="viewport" content="width=device-width" />
     <link href="~/Content/Styles.css" rel="stylesheet" />
-    <title>Login</title>
+    <title>Create user</title>
 </head>
 <div class="panel-body">
     @using (Html.BeginForm())
@@ -16,12 +16,13 @@
             @Html.TextBoxFor(x => x.un, new { @class = "form-control" })
         </div>
         <div class="form-group">
-                        <label>Password:</label>
-                    @Html.PasswordFor(x => x.pword, new { @class = "form-control" })
-                </div>
-        <div>
-              <input class="btn btn-success" type="submit" value="Login" />
-            <input type="button" class="btn btn-success" value="Create User" onclick="location.href='@Url.Action("CreateUser", "User")'" />
+            <label>Password:</label>
+            @Html.PasswordFor(x => x.pword, new { @class = "form-control" })
+            <label>Confirm password:</label>
+            @Html.PasswordFor(x => x.pword2, new { @class = "form-control" })
         </div>
+                <div>
+                    <input class="btn btn-success" type="submit" value="Create" />
+                </div>
     }
 </div>

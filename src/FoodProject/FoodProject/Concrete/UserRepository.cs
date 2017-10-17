@@ -14,6 +14,12 @@ namespace FoodProject.Concrete
         public IEnumerable<User> Users
         {
             get { return Context.Users; }
+
+        }
+        public void Add(User user)
+        {
+            Context.Users.Add(user);
+            Context.SaveChanges();
         }
 
     }
