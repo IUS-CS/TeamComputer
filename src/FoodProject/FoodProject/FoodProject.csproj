@@ -181,7 +181,9 @@
     <Compile Include="infrastructure\Binders\UserModelBinder.cs" />
     <Compile Include="infrastructure\NinjectDependencyResolver.cs" />
     <Compile Include="Models\Food.cs" />
+    <Compile Include="Models\Ingredient.cs" />
     <Compile Include="Models\Pantry.cs" />
+    <Compile Include="Models\Recipe.cs" />
     <Compile Include="Models\UserLogin.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
