@@ -34,7 +34,7 @@
                    
                         @{String s = ((FoodProject.Models.User)Session["User"]).Name == null ? "Login" : ((FoodProject.Models.User)Session["User"]).Name;
                             <li>@Html.ActionLink(s, "Index", "User") </li>
-                            if(Session["User"] == null)
+                            if(((FoodProject.Models.User)Session["User"]).UserID == null)
                             {
                                 <li>@Html.ActionLink("Sign Up", "CreateUser", "User")</li>
                             }
