@@ -8,7 +8,7 @@ using FoodProject.Concrete;
 
 namespace FoodProject
 {
-    public class FoodInitializer : System.Data.Entity.DropCreateDatabaseIfModelChanges<FoodContext>
+    public class Initializer : System.Data.Entity.DropCreateDatabaseIfModelChanges<FoodContext>
     {
         protected override void Seed(FoodContext context)
         {

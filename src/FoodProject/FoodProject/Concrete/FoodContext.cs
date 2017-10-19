@@ -12,7 +12,7 @@ namespace FoodProject.Concrete
     {
         public FoodContext() : base("FoodContext")
         {
-            Database.SetInitializer<FoodContext>(new CreateDatabaseIfNotExists<FoodContext>());
+            Database.SetInitializer(new Initializer());
         }
 
         public DbSet<User> Users { get; set; }
