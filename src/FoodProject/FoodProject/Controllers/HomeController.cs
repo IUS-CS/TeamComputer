@@ -14,6 +14,8 @@ namespace FoodProject.Controllers
             
         }
 
+        //homescreen gets the user object through model binding
+        //this is the first time it happens and acts as the initalizer for user object
         public ActionResult Index(User user)
         {
             return View(user);

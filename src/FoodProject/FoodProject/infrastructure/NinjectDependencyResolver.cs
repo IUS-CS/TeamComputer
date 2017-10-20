@@ -32,8 +32,9 @@ namespace FoodProject.infrastructure
 
             private void AddBindings()
             {
+                //binds the repositorys to these concrete classes
                 kernel.Bind<IUserRepository>().To<UserRepository>();
-            kernel.Bind<IFoodRepository>().To<FoodRepository>();
+                kernel.Bind<IFoodRepository>().To<FoodRepository>();
             }
 
         }
