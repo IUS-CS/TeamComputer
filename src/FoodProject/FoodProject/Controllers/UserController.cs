@@ -36,10 +36,13 @@ namespace FoodProject.Controllers
             User tempUser;
             String regexString = @"^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$";
             Regex r = new Regex(regexString, RegexOptions.IgnoreCase);
-            Match m = r.Match(temp.un);
-            if (!m.Success || (temp.un==null && temp.pword==null))
+            if(temp.un != null)
             {
-                return RedirectToAction("Index", "User");
+                Match m = r.Match(temp.un);
+                if (!m.Success || (temp.un == null && temp.pword == null))
+                {
+                    return RedirectToAction("Index", "User");
+                }
             }
             user.Name = temp.un;
             user.Password = temp.pword;
