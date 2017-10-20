@@ -81,6 +81,16 @@ namespace FoodProject.Controllers
         {
             if(temp.un!=null && temp.pword != null && temp.pword2!=null)
             {
+                String regexString = @"^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$";
+                Regex r = new Regex(regexString, RegexOptions.IgnoreCase);
+                if (temp.un != null)
+                {
+                    Match m = r.Match(temp.un);
+                    if (!m.Success)
+                    {
+                        return RedirectToAction("CreateUser", "User");
+                    }
+                }
                 if (temp.pword.Equals(temp.pword2))
                 {
                     User tempUser = userRepository.Users.Select(x => x).Where(x => x.Name == temp.un).FirstOrDefault();
