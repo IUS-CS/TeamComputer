@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 using FoodProject.Models;
 using FoodProject.Abstract;
+using System.Text.RegularExpressions;
 
 
 namespace FoodProject.Controllers
@@ -43,6 +44,16 @@ namespace FoodProject.Controllers
         public RedirectToRouteResult Index(User user,UserLogin temp)
         {
             User tempUser;
+            String regexString = @"^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$";
+            Regex r = new Regex(regexString, RegexOptions.IgnoreCase);
+            if(temp.un != null)
+            {
+                Match m = r.Match(temp.un);
+                if (!m.Success || (temp.un == null && temp.pword == null))
+                {
+                    return RedirectToAction("Index", "User");
+                }
+            }
             //sets the user object password&name in the session to the UserLogin object temp's password&name
             user.Name = temp.un;
             user.Password = temp.pword;
@@ -99,6 +110,17 @@ namespace FoodProject.Controllers
             //if the username and password and password 2 are not null start process of creating user
             if(temp.un!=null && temp.pword != null && temp.pword2!=null)
             {
+                
+                String regexString = @"^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$";
+                Regex r = new Regex(regexString, RegexOptions.IgnoreCase);
+                if (temp.un != null)
+                {
+                    Match m = r.Match(temp.un);
+                    if (!m.Success)
+                    {
+                        return RedirectToAction("CreateUser", "User");
+                    }
+                }
                 //check if passwords are equal
                 if (temp.pword.Equals(temp.pword2))
                 {
