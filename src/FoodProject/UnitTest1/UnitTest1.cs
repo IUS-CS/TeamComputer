@@ -52,7 +52,9 @@ namespace UnitTest1
             controller.Createuser(user,temp);
 
             // assert user object holds new login and user is added to database
+            // if equal user is signed in
             Assert.AreEqual(user.Name, "newemail@site.com");
+            //if not null new user was added to database
             user = mock.Users.Where(x => x.Name == "newemail@site.com").FirstOrDefault();
             Assert.IsNotNull(user);
         }
@@ -70,6 +72,7 @@ namespace UnitTest1
             controller.Index(user, temp);
 
             // assert user is logged in 
+            //checks to see if user object got right data assigned to its attributes
             Assert.AreEqual(user.Name, "coolemail@site.com");
             Assert.AreEqual(user.Password, "password");
             Assert.AreEqual(user.UserID, 0);
@@ -90,6 +93,7 @@ namespace UnitTest1
             controller.LogOut(user);
 
             // assert user is logged out
+            // if null user was logged out
             Assert.IsNull(user.UserID);
             Assert.IsNull(user.Name);
             Assert.IsNull(user.Password);
@@ -109,6 +113,7 @@ namespace UnitTest1
             controller.Index(user, temp);
 
             // assert not logged in
+            // if null user was not logged in
             Assert.IsNull(user.Name);
             Assert.IsNull(user.Password);
         }
@@ -126,6 +131,7 @@ namespace UnitTest1
             controller.Index(user, temp);
 
             // assert not logged in
+            // if null user was not logged in
             Assert.IsNull(user.Name);
             Assert.IsNull(user.Password);
         }
@@ -143,6 +149,7 @@ namespace UnitTest1
             controller.Createuser(user, temp);
 
             // Assert user not created
+            // if null user wasn't created
             Assert.IsNull(user.Name);
             Assert.IsNull(user.Password);
 
@@ -161,8 +168,10 @@ namespace UnitTest1
             controller.Createuser(user,temp);
 
             // Assert user not created
-            Assert.AreNotEqual(user.Name, temp.un);
-            Assert.AreNotEqual(user.Password, temp.pword);
+            // if null user is not created
+            Assert.IsNull(user.Name);
+            Assert.IsNull(user.Password);
+            //if one user wasn't added to database 
             int s = mock.Users.Select(x => x).Where(x => x.Name == temp.un).Count();
             Assert.AreEqual(s, 1);
         }
