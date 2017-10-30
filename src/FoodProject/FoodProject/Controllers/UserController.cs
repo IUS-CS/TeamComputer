@@ -13,7 +13,7 @@ namespace FoodProject.Controllers
     public class UserController : Controller
     {
         private IUserRepository userRepository;
-        private UserLogin temp;
+        public UserLogin temp = new UserLogin();
 
         //userRepository gets initialized with the parameter userRepository through constructor depenency injection
         //infrastructure/NinjectDependecyResolver Handles that
@@ -77,6 +77,8 @@ namespace FoodProject.Controllers
                     //password doesn't match return to sign in
                     else
                     {
+                        user.Name = null;
+                        user.Password = null;
                         return RedirectToAction("Index", "User");
                     }
                 }
@@ -89,6 +91,8 @@ namespace FoodProject.Controllers
             else
             {
                 //there is a username error go back to login
+                user.Name = null;
+                user.Password = null;
                 return RedirectToAction("Index", "User");
             }
 
