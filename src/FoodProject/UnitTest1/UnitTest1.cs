@@ -96,6 +96,22 @@ namespace UnitTest1
             Assert.IsNull(user.Pantrys);
 
         }
+        [TestMethod]
+        public void WillNotLoginWithWrongUsername()
+        {
+            // setup 
+            MockUserRepository mock = new MockUserRepository();
+            UserController controller = new UserController(mock);
+            UserLogin temp = new UserLogin() { un = "wrongEmail@site.com", pword = "password" };
+            User user = new User();
+
+            // execute login
+            controller.Index(user, temp);
+
+            // assert not logged in
+            Assert.IsNull(user.Name);
+            Assert.IsNull(user.Password);
+        }
 
         [TestMethod]
         public void WillNotLoginWithWrongPassword()
@@ -110,8 +126,26 @@ namespace UnitTest1
             controller.Index(user, temp);
 
             // assert not logged in
-            Assert.AreNotEqual(user.Name, temp.un);
-            Assert.AreNotEqual(user.Password, temp.pword);
+            Assert.IsNull(user.Name);
+            Assert.IsNull(user.Password);
+        }
+
+        [TestMethod] 
+        public void WillNotCreateUserWithPasswordsNotMatching()
+        {
+            // setup 
+            MockUserRepository mock = new MockUserRepository();
+            UserController controller = new UserController(mock);
+            UserLogin temp = new UserLogin() { un = "newEmail@site.com", pword = "password", pword2 = "Password" };
+            User user = new User();
+
+            // execute createuser
+            controller.Createuser(user, temp);
+
+            // Assert user not created
+            Assert.IsNull(user.Name);
+            Assert.IsNull(user.Password);
+
         }
 
         [TestMethod]
@@ -120,7 +154,7 @@ namespace UnitTest1
             // setup 
             MockUserRepository mock = new MockUserRepository();
             UserController controller = new UserController(mock);
-            UserLogin temp = new UserLogin() { un = "coolemail@site.com", pword = "wrongPassword" };
+            UserLogin temp = new UserLogin() { un = "coolemail@site.com", pword = "password", pword2 = "password" };
             User user = new User();
 
             // execute createuser
