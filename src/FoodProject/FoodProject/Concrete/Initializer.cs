@@ -14,8 +14,8 @@ namespace FoodProject
         {
             var users = new List<User>
             {
-                new User{Name="Ryan",Password="Ryan"},
-                new User{Name="user",Password="password"}
+                new User{Name="Ryan@mail.com",Password="Ryan"},
+                new User{Name="user@mail.com",Password="password"}
             };
 
             users.ForEach(u => context.Users.Add(u));
