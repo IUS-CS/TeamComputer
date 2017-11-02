@@ -136,6 +136,24 @@ namespace UnitTest1
             Assert.IsNull(user.Password);
         }
 
+        [TestMethod]
+        public void WillNotLoginUserWithoutEmail()
+        {
+            //setup
+            MockUserRepository mock = new MockUserRepository();
+            UserController controller = new UserController(mock);
+            UserLogin temp = new UserLogin() { un = "letmelogin", pword = "password" };
+            User user = new User();
+
+            //execute login
+            controller.Index(user, temp);
+
+            //assert not logged in
+            //if null user was not logged in
+            Assert.IsNull(user.Name);
+            Assert.IsNull(user.Password);
+        }
+
         [TestMethod] 
         public void WillNotCreateUserWithPasswordsNotMatching()
         {
@@ -143,6 +161,25 @@ namespace UnitTest1
             MockUserRepository mock = new MockUserRepository();
             UserController controller = new UserController(mock);
             UserLogin temp = new UserLogin() { un = "newEmail@site.com", pword = "password", pword2 = "Password" };
+            User user = new User();
+
+            // execute createuser
+            controller.Createuser(user, temp);
+
+            // Assert user not created
+            // if null user wasn't created
+            Assert.IsNull(user.Name);
+            Assert.IsNull(user.Password);
+
+        }
+
+        [TestMethod]
+        public void WillNotCreateUserWithoutEmail()
+        {
+            //setup
+            MockUserRepository mock = new MockUserRepository();
+            UserController controller = new UserController(mock);
+            UserLogin temp = new UserLogin() { un = "IWantToSignUp", pword = "password", pword2 = "password" };
             User user = new User();
 
             // execute createuser
