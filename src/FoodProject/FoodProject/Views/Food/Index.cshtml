@@ -1,11 +1,10 @@
 ﻿<h1>Foods Available</h1>
-
-@foreach (var f in Model)
-{
-<div>
-        <h3>@f.Name</h3>
-</div>
-}
 <div>
     <input type="button" class="btn btn-success" value="Add Food" onclick="location.href='@Url.Action("addFood", "Food")'" />
+    @foreach (var f in Model)
+    {
+        <div>
+            <h3>@f.Name</h3> 
+        </div>
+    }
 </div>
