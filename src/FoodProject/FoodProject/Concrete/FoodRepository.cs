@@ -10,11 +10,11 @@ namespace FoodProject.Concrete
 {
     public class FoodRepository : IFoodRepository, IDisposable
     {
-        public FoodContext context;
+        public FoodContext context = new FoodContext();
 
-        public FoodRepository(FoodContext context)
+        public FoodRepository()
         {
-            this.context = context;
+           // context = new FoodContext();
         }
 
        public IEnumerable<Food> GetFoods()
