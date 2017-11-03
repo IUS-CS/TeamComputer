@@ -24,6 +24,7 @@ namespace FoodProject.infrastructure.Binders
             {
                 //need to create a new user object
                 user = new User();
+                user.Pantrys = new List<Pantry>();
                 //if session is not null add new user object to session
                 if (controllerContext.HttpContext.Session != null)
                 {
