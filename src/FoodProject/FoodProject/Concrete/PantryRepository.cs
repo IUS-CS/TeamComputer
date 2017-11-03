@@ -22,5 +22,10 @@ namespace FoodProject.Concrete
         {
             context.SaveChanges();
         }
+        public void deleteByFoodID(int id)
+        {
+            Pantry p = context.Pantrys.Select(x => x).Where(x => x.FoodID == id).First();
+            context.Pantrys.Remove(p);
+        }
     }
 }

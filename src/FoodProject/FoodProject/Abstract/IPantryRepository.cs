@@ -12,5 +12,6 @@ namespace FoodProject.Abstract
         IEnumerable<Pantry> Pantrys { get; }
         void add(Pantry p);
         void save();
+        void deleteByFoodID(int id);
     }
 }

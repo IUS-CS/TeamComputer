@@ -17,9 +17,9 @@ namespace FoodProject.Concrete
            // context = new FoodContext();
         }
 
-       public IEnumerable<Food> GetFoods()
+       public IEnumerable<Food> Foods
         {
-            return context.Foods.ToList();
+           get { return context.Foods; }
         }
 
         public Food GetFoodById(int foodId)
@@ -38,12 +38,13 @@ namespace FoodProject.Concrete
         {
             Food food = context.Foods.Find(foodId);
             context.Foods.Remove(food);
-            throw new NotImplementedException();
         }
 
         public void UpdateFood(Food food)
         {
-            context.Entry(food).State = EntityState.Modified;
+            Food f = context.Foods.Where(x => x.FoodID == food.FoodID).First();
+            f.Name = food.Name;
+            f.Units = food.Units;
             //throw new NotImplementedException();
         }
 

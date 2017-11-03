@@ -6,7 +6,7 @@ namespace FoodProject.Abstract
 {
     public interface IFoodRepository: IDisposable
     {
-        IEnumerable<Food> GetFoods();
+        IEnumerable<Food> Foods { get; }
         Food GetFoodById(int foodId);
         void InsertFood(Food food);
         void DeleteFood(int food);

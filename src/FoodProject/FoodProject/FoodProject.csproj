@@ -235,6 +235,7 @@
     <Content Include="Views\User\DisplayUser.cshtml" />
     <Content Include="Views\User\Createuser.cshtml" />
     <Content Include="Views\Food\addFood.cshtml" />
+    <Content Include="Views\Food\update.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

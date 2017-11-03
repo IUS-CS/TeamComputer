@@ -4,7 +4,7 @@
     @foreach (var f in Model)
     {
         <div>
-            <h3>@f.Name</h3> 
+            <h3>@f.Name - @f.Units @Html.ActionLink("Delete", "delete", new { id = f.FoodID }) | @Html.ActionLink("Update", "update", new {id = f.FoodID })</h3>
         </div>
     }
 </div>

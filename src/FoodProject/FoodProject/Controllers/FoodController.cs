@@ -13,6 +13,7 @@ namespace FoodProject.Controllers
     {
         private IFoodRepository foodRepository;
         private IPantryRepository pantryRepository;
+
         public FoodController(IFoodRepository foodRepository,IPantryRepository pantryRepository)
         {
             this.foodRepository = foodRepository;
@@ -83,6 +84,30 @@ namespace FoodProject.Controllers
                 pantryRepository.add(p);
                 pantryRepository.save();
             }
+            return RedirectToAction("Index", "Food");
+        }
+
+        public RedirectToRouteResult delete(int id)
+        {
+            pantryRepository.deleteByFoodID(id);
+            pantryRepository.save();
+            foodRepository.DeleteFood(id);
+            foodRepository.Save();
+            return RedirectToAction("Index", "Food");
+        }
+        [HttpGet]
+        public ActionResult update(int id)
+        {
+            Food food = foodRepository.Foods.Where(x => x.FoodID == id).First();
+            Session["FoodID"] = id;
+            return View(food);
+        }
+        [HttpPost]
+        public RedirectToRouteResult update(Food food)
+        {
+            food.FoodID = (int)Session["FoodID"];
+            foodRepository.UpdateFood(food);
+            foodRepository.Save();
             return RedirectToAction("Index", "Food");
         }
     }
