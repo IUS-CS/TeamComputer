@@ -23,5 +23,10 @@ namespace FoodProject.Controllers
             return View(recipeRepository.Recipes);
         }
 
+        public ActionResult Details()
+        {
+            return View();
+        }
+
     }
 }

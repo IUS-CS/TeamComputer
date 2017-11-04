@@ -164,6 +164,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Abstract\IFoodRepository.cs" />
+    <Compile Include="Abstract\IIngredientRepository.cs" />
     <Compile Include="Abstract\IPantryRepository.cs" />
     <Compile Include="Abstract\IRecipeRepository.cs" />
     <Compile Include="Abstract\IUserRepository.cs" />
