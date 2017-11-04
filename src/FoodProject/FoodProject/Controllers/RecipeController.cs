@@ -5,21 +5,23 @@ using System.Web;
 using System.Web.Mvc;
 using FoodProject.Abstract;
 using FoodProject.Models;
+using FoodProject.Concrete;
 
 namespace FoodProject.Controllers
 {
     public class RecipeController : Controller
     {
-        private IRecipeRepository RecipeRepository;
+        private IRecipeRepository recipeRepository;
 
         public RecipeController(IRecipeRepository recipeRepository)
         {
-            this.RecipeRepository = recipeRepository;
+            this.recipeRepository = recipeRepository;
         }
 
         public ActionResult Index()
         {
-            return View();
+            return View(recipeRepository.Recipes);
         }
+
     }
 }

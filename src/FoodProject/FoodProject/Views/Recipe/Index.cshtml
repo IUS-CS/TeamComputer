@@ -1,8 +1,12 @@
-﻿@model FoodProject.Models.Recipe
+﻿@model IEnumerable<FoodProject.Models.Recipe>
 
-@{
-    ViewBag.Title = "Index";
-}
 
 <h2>Recipe List</h2>
+
+@foreach (var r in Model)
+{
+    <div>
+        @r.Name
+    </div>
+}
 
