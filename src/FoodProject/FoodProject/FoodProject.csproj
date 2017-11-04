@@ -175,6 +175,7 @@
     <Compile Include="Concrete\FoodRepository.cs" />
     <Compile Include="Concrete\Initializer.cs" />
     <Compile Include="Concrete\PantryRepository.cs" />
+    <Compile Include="Concrete\RecipeRepository.cs" />
     <Compile Include="Concrete\UserRepository.cs" />
     <Compile Include="Controllers\FoodController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
