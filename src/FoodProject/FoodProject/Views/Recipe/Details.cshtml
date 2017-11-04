@@ -10,7 +10,7 @@
 <table class="table">
     <tr>
         <th>
-            @Model.Name
+            <h3>@Model.Name</h3>
         </th>
     </tr>
 @foreach (var ingredient in Model.Ingredients) {
@@ -21,6 +21,9 @@
     </tr>
 }
 </table>
-<h3>
+<h4>
+    @Html.ActionLink("Add Ingredient", "AddIngredient", new { id = Model.RecipeID })
+</h4>
+<h4>
     @Html.ActionLink("Back to List", "Index")
-</h3>
+</h4>

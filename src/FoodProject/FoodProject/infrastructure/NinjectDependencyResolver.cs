@@ -37,6 +37,7 @@ namespace FoodProject.infrastructure
                 kernel.Bind<IFoodRepository>().To<FoodRepository>();
                 kernel.Bind<IPantryRepository>().To<PantryRepository>();
                 kernel.Bind<IRecipeRepository>().To<RecipeRepository>();
+                kernel.Bind<IIngredientRepository>().To<IngredientRepository>();
             }
 
         }

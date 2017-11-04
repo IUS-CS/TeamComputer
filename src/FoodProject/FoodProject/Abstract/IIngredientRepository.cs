@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace FoodProject.Abstract
 {
-    interface IIngredientRepository
+    public interface IIngredientRepository
     {
         IEnumerable<Ingredient> Ingredients { get; }
         void Add(Ingredient i);

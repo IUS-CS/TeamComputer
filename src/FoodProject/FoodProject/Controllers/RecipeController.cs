@@ -12,11 +12,17 @@ namespace FoodProject.Controllers
     public class RecipeController : Controller
     {
         private IRecipeRepository recipeRepository;
+        private IFoodRepository foodRepository;
+        private IIngredientRepository ingredientRepository;
+        
 
-        public RecipeController(IRecipeRepository recipeRepository)
+        public RecipeController(IRecipeRepository recipeRepository, IFoodRepository foodRepository, IIngredientRepository ingredientRepository)
         {
+            this.ingredientRepository = ingredientRepository;
             this.recipeRepository = recipeRepository;
+            this.foodRepository = foodRepository;
         }
+        
 
         public ActionResult Index()
         {
@@ -43,7 +49,29 @@ namespace FoodProject.Controllers
                 recipeRepository.Add(r);
                 recipeRepository.Save();
             }
+            return RedirectToAction("Index", "Recipe");
+        }
 
+        [HttpGet]
+        public ActionResult AddIngredient(int id)
+        {
+
+            // new up an ingredient to add, pass  it recipe id from details action link
+
+            Ingredient i = new Ingredient
+            {
+                RecipeID = id
+            };
+            return View(foodRepository.Foods);
+        }
+
+        [HttpPost]
+        public RedirectToRouteResult AddIngredient(Ingredient i , int id)
+        {
+            i.FoodID = id;
+            ingredientRepository.Add(i);
+            ingredientRepository.Save();
+           
             return RedirectToAction("Index", "Recipe");
         }
 

@@ -66,6 +66,8 @@ namespace FoodProject.Controllers
                 return View(foods.ToPagedList(pageNumber, pageSize));
             }
         }
+
+
         [HttpGet]
         public ActionResult addFood()
         {
@@ -73,6 +75,8 @@ namespace FoodProject.Controllers
 
             return View(f);
         }
+
+
         [HttpPost]
         public RedirectToRouteResult addFood(User user, Food f)
         {
