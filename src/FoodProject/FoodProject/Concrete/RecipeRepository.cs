@@ -7,7 +7,7 @@ using FoodProject.Models;
 
 namespace FoodProject.Concrete
 {
-    public class RecipeRepository
+    public class RecipeRepository : IRecipeRepository
     {
         FoodContext context = new FoodContext();
 

@@ -10,6 +10,16 @@ namespace FoodProject.Controllers
 {
     public class RecipeController : Controller
     {
+        private IRecipeRepository RecipeRepository;
 
+        public RecipeController(IRecipeRepository recipeRepository)
+        {
+            this.RecipeRepository = recipeRepository;
+        }
+
+        public ActionResult Index()
+        {
+            return View();
+        }
     }
 }
