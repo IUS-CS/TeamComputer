@@ -16,6 +16,11 @@ namespace FoodProject.Concrete
             get { return context.Recipes; }
         }
 
+        public Recipe GetRecipeID(int id)
+        {
+            return context.Recipes.Find(id);
+        }
+
         public void Add(Recipe r)
         {
             context.Recipes.Add(r);

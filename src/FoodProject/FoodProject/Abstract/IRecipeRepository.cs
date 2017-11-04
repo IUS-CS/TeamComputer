@@ -10,7 +10,9 @@ namespace FoodProject.Abstract
     public interface IRecipeRepository
     {
         IEnumerable<Recipe> Recipes { get; }
+        Recipe GetRecipeID(int recipeID);
         void Add(Recipe r);
+
         void Save();
     }
 }
