@@ -29,5 +29,23 @@ namespace FoodProject.Controllers
             return View(r);
         }
 
+        [HttpGet]
+        public ActionResult Create()
+        {
+            Recipe r = new Recipe();
+            return View(r);
+        }
+        [HttpPost]
+        public RedirectToRouteResult Create(Recipe r)
+        {
+            if (r.Name != null)
+            {
+                recipeRepository.Add(r);
+                recipeRepository.Save();
+            }
+
+            return RedirectToAction("Index", "Recipe");
+        }
+
     }
 }

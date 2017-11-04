@@ -3,10 +3,19 @@
 
 <h2>Recipe List</h2>
 
+
+
+
+
+
 @foreach (var r in Model)
 {
     <div>
         @Html.ActionLink(r.Name, "Details", new { id = r.RecipeID }) 
     </div>
 }
+<h3>
+    @Html.ActionLink("Create New", "Create")
+</h3>
+
 
