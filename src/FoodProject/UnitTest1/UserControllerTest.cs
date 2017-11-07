@@ -36,7 +36,7 @@ namespace UnitTest1
     }
 
     [TestClass]
-    public class UnitTest1
+    public class UserControllerTest
     {
         [TestMethod]
         public void CanCreateUser()
