@@ -164,6 +164,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Abstract\IFoodRepository.cs" />
+    <Compile Include="Abstract\IIngredientRepository.cs" />
     <Compile Include="Abstract\IPantryRepository.cs" />
     <Compile Include="Abstract\IRecipeRepository.cs" />
     <Compile Include="Abstract\IUserRepository.cs" />
@@ -173,8 +174,10 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Concrete\FoodContext.cs" />
     <Compile Include="Concrete\FoodRepository.cs" />
+    <Compile Include="Concrete\IngredientRepository.cs" />
     <Compile Include="Concrete\Initializer.cs" />
     <Compile Include="Concrete\PantryRepository.cs" />
+    <Compile Include="Concrete\RecipeRepository.cs" />
     <Compile Include="Concrete\UserRepository.cs" />
     <Compile Include="Controllers\FoodController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -236,10 +239,13 @@
     <Content Include="Views\User\Createuser.cshtml" />
     <Content Include="Views\Food\addFood.cshtml" />
     <Content Include="Views\Food\update.cshtml" />
+    <Content Include="Views\Recipe\Index.cshtml" />
+    <Content Include="Views\Recipe\Details.cshtml" />
+    <Content Include="Views\Recipe\Create.cshtml" />
+    <Content Include="Views\Recipe\AddRecipeId.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\Recipe\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />

@@ -1,0 +1,29 @@
+﻿@model FoodProject.Models.Recipe
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Ingredients Required</h2>
+
+
+<table class="table">
+    <tr>
+        <th>
+            <h3>@Model.Name</h3>
+        </th>
+    </tr>
+@foreach (var ingredient in Model.Ingredients) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => ingredient.Food.Name)
+        </td>  
+    </tr>
+}
+</table>
+<h4>
+    @Html.ActionLink("Add Ingredient", "AddRecipeId", new { id = Model.RecipeID })
+</h4>
+<h4>
+    @Html.ActionLink("Back to List", "Index")
+</h4>

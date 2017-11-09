@@ -66,6 +66,8 @@ namespace FoodProject.Controllers
                 return View(pantrys.ToPagedList(pageNumber, pageSize));
             }
         }
+
+        [HttpGet]
         public ActionResult addFood()
         {
             var foods = foodRepository.Foods.ToList();
@@ -73,7 +75,8 @@ namespace FoodProject.Controllers
 
             return View(foods);
         }
-        public ActionResult addFoods(User user,int foodID)
+        [HttpPost]
+        public RedirectToRouteResult addFoods(User user, Food f)
         {
             Pantry p = new Pantry() { UserID = (int)user.UserID, FoodID = foodID };
             pantryRepository.add(p);
