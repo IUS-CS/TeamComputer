@@ -14,7 +14,8 @@ namespace FoodProject.Controllers
         private IRecipeRepository recipeRepository;
         private IFoodRepository foodRepository;
         private IIngredientRepository ingredientRepository;
-        
+        private Ingredient ingredient = new Ingredient();
+               
 
         public RecipeController(IRecipeRepository recipeRepository, IFoodRepository foodRepository, IIngredientRepository ingredientRepository)
         {
@@ -52,28 +53,25 @@ namespace FoodProject.Controllers
             return RedirectToAction("Index", "Recipe");
         }
 
-        [HttpGet]
-        public ActionResult AddIngredient(int id)
+        // recipe name user clicks is id...passes it to global ingredient.recipe id
+        // reviews list of all foods
+        public ActionResult AddRecipeId(int id)
         {
-
-            // new up an ingredient to add, pass  it recipe id from details action link
-
-            Ingredient i = new Ingredient
-            {
-                RecipeID = id
-            };
+            // pass recipe id from details to global ingredient obj
+            Session["RecipeID"] = id;
+           //return list of total foods 
             return View(foodRepository.Foods);
         }
 
-        [HttpPost]
-        public RedirectToRouteResult AddIngredient(Ingredient i , int id)
+        public ActionResult AddFoodId(int id)
         {
-            i.FoodID = id;
-            ingredientRepository.Add(i);
+            ingredient.FoodID = id;
+            int ri = (int)Session["RecipeID"];
+            ingredient.RecipeID = ri;
+            ingredientRepository.Add(ingredient);
             ingredientRepository.Save();
-           
-            return RedirectToAction("Index", "Recipe");
+            Recipe r = recipeRepository.GetRecipeID(ri);
+            return View("Details",r);
         }
-
     }
 }
