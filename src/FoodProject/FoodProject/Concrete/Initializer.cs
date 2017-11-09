@@ -24,11 +24,11 @@ namespace FoodProject
 
             var foods = new List<Food>
             {
-                new Food{Name="Milk", Units=1},
-                new Food{Name="Bread", Units=1},
-                new Food{Name="Cheese", Units=1},
-                new Food{Name="Ham", Units=1},
-                new Food{Name="Lettuce", Units=1}
+                new Food{Name="Milk"},
+                new Food{Name="Bread"},
+                new Food{Name="Cheese"},
+                new Food{Name="Ham" },
+                new Food{Name="Lettuce"}
             };
             foods.ForEach(f => context.Foods.Add(f));
             context.SaveChanges();
@@ -36,11 +36,11 @@ namespace FoodProject
 
             var pantry = new List<Pantry>
             {
-                new Pantry{UserID=1, FoodID=1},
-                new Pantry{UserID=1, FoodID=2},
-                new Pantry{UserID=1, FoodID=3},
-                new Pantry{UserID=2, FoodID=4},
-                new Pantry{UserID=2, FoodID=5},
+                new Pantry{UserID=1, FoodID=1, Units = 1},
+                new Pantry{UserID=1, FoodID=2, Units =1},
+                new Pantry{UserID=1, FoodID=3, Units = 1},
+                new Pantry{UserID=2, FoodID=1, Units = 2},
+                new Pantry{UserID=2, FoodID=5, Units = 1},
             };
             pantry.ForEach(p => context.Pantrys.Add(p));
             context.SaveChanges();
