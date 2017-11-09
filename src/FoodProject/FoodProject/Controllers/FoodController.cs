@@ -76,9 +76,9 @@ namespace FoodProject.Controllers
             return View(foods);
         }
         [HttpPost]
-        public RedirectToRouteResult addFoods(User user, Food f)
+        public RedirectToRouteResult addFoods(User user, int f)
         {
-            Pantry p = new Pantry() { UserID = (int)user.UserID, FoodID = foodID };
+            Pantry p = new Pantry() { UserID = (int)user.UserID, FoodID = f};
             pantryRepository.add(p);
             pantryRepository.save();
             return RedirectToAction("Index", "Food");
