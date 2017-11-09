@@ -9,7 +9,6 @@ namespace FoodProject.Models
     {
         public int FoodID { get; set; }
         public string Name { get; set; }
-        public int Units { get; set; }
     }
 }
 //this is nonsense so I can commit
