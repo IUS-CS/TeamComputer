@@ -35,7 +35,9 @@ namespace FoodProject.infrastructure
                 //binds the repositorys to these concrete classes
                 kernel.Bind<IUserRepository>().To<UserRepository>();
                 kernel.Bind<IFoodRepository>().To<FoodRepository>();
-            kernel.Bind<IPantryRepository>().To<PantryRepository>();
+                kernel.Bind<IPantryRepository>().To<PantryRepository>();
+                kernel.Bind<IRecipeRepository>().To<RecipeRepository>();
+                kernel.Bind<IIngredientRepository>().To<IngredientRepository>();
             }
 
         }
