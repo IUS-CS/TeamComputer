@@ -44,7 +44,7 @@ namespace FoodProject.Concrete
         {
             Food f = context.Foods.Where(x => x.FoodID == food.FoodID).First();
             f.Name = food.Name;
-            f.Units = food.Units;
+            //f.Units = food.Units;
             //throw new NotImplementedException();
         }
 

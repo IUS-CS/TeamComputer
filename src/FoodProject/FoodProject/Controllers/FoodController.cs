@@ -63,51 +63,43 @@ namespace FoodProject.Controllers
 
                 int pageSize = 5;
                 int pageNumber = (page ?? 1);
-                return View(foods.ToPagedList(pageNumber, pageSize));
+                return View(pantrys.ToPagedList(pageNumber, pageSize));
             }
         }
-        [HttpGet]
         public ActionResult addFood()
         {
-            Food f = new Food();
+            var foods = foodRepository.Foods.ToList();
 
-            return View(f);
+
+            return View(foods);
         }
-        [HttpPost]
-        public RedirectToRouteResult addFood(User user, Food f)
+        public ActionResult addFoods(User user,int foodID)
         {
-            if(f.Name!= null)
-            {
-                foodRepository.InsertFood(f);
-                foodRepository.Save();
-                Pantry p = new Pantry() { UserID = (int)user.UserID, FoodID = f.FoodID };
-                pantryRepository.add(p);
-                pantryRepository.save();
-            }
+            Pantry p = new Pantry() { UserID = (int)user.UserID, FoodID = foodID };
+            pantryRepository.add(p);
+            pantryRepository.save();
             return RedirectToAction("Index", "Food");
         }
 
         public RedirectToRouteResult delete(int id)
         {
-            pantryRepository.deleteByFoodID(id);
+            pantryRepository.delete(id);
             pantryRepository.save();
-            foodRepository.DeleteFood(id);
-            foodRepository.Save();
             return RedirectToAction("Index", "Food");
         }
         [HttpGet]
         public ActionResult update(int id)
         {
-            Food food = foodRepository.Foods.Where(x => x.FoodID == id).First();
-            Session["FoodID"] = id;
-            return View(food);
+            Pantry pantry = pantryRepository.Pantrys.Where(x => x.PantryID == id).First();
+            Session["PantryID"] = id;
+            return View(pantry);
         }
         [HttpPost]
-        public RedirectToRouteResult update(Food food)
+        public RedirectToRouteResult update(Pantry pantry)
         {
-            food.FoodID = (int)Session["FoodID"];
-            foodRepository.UpdateFood(food);
-            foodRepository.Save();
+            pantry.PantryID = (int)Session["PantryID"];
+            pantryRepository.updatePantry(pantry);
+            pantryRepository.save();
             return RedirectToAction("Index", "Food");
         }
     }

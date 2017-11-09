@@ -12,6 +12,7 @@ namespace UnitTest1
     [TestClass]
     public class FoodControllerTest
     {
+        // used to set the controller we are testing context's
         public static HttpContextBase FakeHttpContext()
         {
             var context = new Mock<HttpContextBase>();
@@ -37,18 +38,20 @@ namespace UnitTest1
                 set { m_SessionStorage[name] = value; }
             }
         }
+
+        // The context each repository is going to get their data from
         class MyContext
         {
             public List<Food> foods { get; set; } 
             public List<Pantry> pantrys { get; set; } 
             public MyContext()
             {
-                foods  = new List<Food>( new Food[] { new Food() { FoodID = 0, Name = "food 0", Units = 1 },
-                    new Food() {FoodID = 1, Name = "food 1",Units = 1 },
-                    new Food() {FoodID = 2, Name = "food 2", Units = 1 } });
-                pantrys = new List<Pantry>(new Pantry[] { new Pantry() { PantryID = 0,FoodID = 0,UserID = 1},
-                new Pantry() { PantryID = 1,FoodID = 1,UserID = 1},
-                new Pantry() { PantryID = 2,FoodID = 2,UserID = 1}});
+                foods  = new List<Food>( new Food[] { new Food() { FoodID = 0, Name = "food 0"},
+                    new Food() {FoodID = 1, Name = "food 1"},
+                    new Food() {FoodID = 2, Name = "food 2"} });
+                pantrys = new List<Pantry>(new Pantry[] { new Pantry() { PantryID = 0,FoodID = 0,UserID = 1,Units = 1},
+                new Pantry() { PantryID = 1,FoodID = 1,UserID = 0, Units = 1},
+                new Pantry() { PantryID = 2,FoodID = 2,UserID = 1, Units = 1}});
             }
         }
         class MockIPantryRepository : IPantryRepository
@@ -72,9 +75,9 @@ namespace UnitTest1
                 c.pantrys.Add(p);
             }
 
-            public void deleteByFoodID(int id)
+            public void delete(int id)
             {
-                Pantry p = c.pantrys.Select(x => x).Where(x => x.FoodID == id).First();
+                Pantry p = c.pantrys.Select(x => x).Where(x => x.PantryID == id).First();
                 c.pantrys.Remove(p);
                 c.pantrys.Select(x => x);
             }
@@ -82,6 +85,11 @@ namespace UnitTest1
             public void save()
             {
                 //save not needed
+            }
+            public void updatePantry(Pantry p)
+            {
+                Pantry temp = c.pantrys.Select(x => x).Where(x => x.PantryID == p.PantryID).First();
+                temp.Units = p.Units;
             }
         }
         class MockIFoodRepository : IFoodRepository
@@ -130,7 +138,7 @@ namespace UnitTest1
             {
                 Food f = c.foods.Where(x => x.FoodID == food.FoodID).First();
                 f.Name = food.Name;
-                f.Units = food.Units;
+                
             }
         }
 
@@ -143,20 +151,13 @@ namespace UnitTest1
             MockIPantryRepository pantryRepository = new MockIPantryRepository(mc);
             FoodController controller = new FoodController(foodRepository, pantryRepository);
             User user = new User() {UserID = 1};
-            Food f = new Food() { FoodID = -1, Name = "new food", Units = 1 };
 
             // execute add food
-            controller.addFood(user, f);
+            controller.addFoods(user, 1);
 
-            // assert food is added
-            //if foodid ==3 then the id got updated
-            Assert.IsTrue(f.FoodID == 3);
-            f = foodRepository.Foods.Select(x => x).Where(x => x.FoodID == f.FoodID).FirstOrDefault();
-            //if not null it found the food
-            Assert.IsNotNull(f);
-            Assert.AreEqual("new food", f.Name);
-            //if not null the food got added to the user pantry
-            Assert.IsNotNull(pantryRepository.Pantrys.Select(x => x).Where(x => x.FoodID == f.FoodID).FirstOrDefault());
+            // assert food is added to pantry
+            //if not null then it is found in pantry
+            Assert.IsNotNull(pantryRepository.Pantrys.Where(x=> x.FoodID == 1).First());
         }
 
         [TestMethod]
@@ -173,33 +174,31 @@ namespace UnitTest1
             controller.delete(id);
 
             // assert food is removed
-            //if null food is not in list of foods
-            Assert.IsNull(foodRepository.Foods.Select(x => x).Where(x => x.FoodID == id).FirstOrDefault());
             //if null food was removed from user pantry
             Assert.IsNull(pantryRepository.Pantrys.Select(x => x).Where(x => x.FoodID == id).FirstOrDefault());
         }
 
         [TestMethod]
-        public void CanUpdateFood()
+        public void CanUpdatePantry()
         {
             // setup
             MyContext mc = new MyContext();
             MockIFoodRepository foodRepository = new MockIFoodRepository(mc);
             MockIPantryRepository pantryRepository = new MockIPantryRepository(mc);
             FoodController controller = new FoodController(foodRepository, pantryRepository);
-            int id = 0;
-            Food f = new Food() { FoodID = id, Name = "updated name", Units = Int32.MaxValue };
+            Pantry p = new Pantry { PantryID = 0, Units = 35 };
+            //Food f = new Food() { FoodID = id, Name = "updated name"};
 
             // execute food update
+            // have to create a new controller context and make the httpcontext equal fakehttpcontext so the controller can
+            // use the session when testing
             controller.ControllerContext = new System.Web.Mvc.ControllerContext() { HttpContext = FakeHttpContext() };
-            //controller.Session = new MockHttpSession();
-            controller.update(id);
-            controller.update(f);
+            controller.update(0);
+            controller.update(p);
 
             // assert food has been updated
-            f = foodRepository.Foods.Select(x => x).Where(x => x.FoodID == f.FoodID).FirstOrDefault();
-            Assert.AreEqual("updated name", f.Name);
-            Assert.AreEqual(Int32.MaxValue, f.Units);
+            p = pantryRepository.Pantrys.Select(x => x).Where(x => x.PantryID == 0).First();
+            Assert.AreEqual(35, p.Units);
         }
     }
 }

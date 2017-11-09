@@ -23,8 +23,8 @@ namespace UnitTest1
         {
             listUsers = new List<User>(new User[] {
                 new User {UserID = 0, Name = "coolemail@site.com",Password = "password",Pantrys = new Pantry[] {new Pantry { } } },
-                new User {UserID = 1, Name = "coolemail2@site.com",Password = "password",Pantrys = new Pantry[] {new Pantry {PantryID = 0, UserID = 1, FoodID = 1, Food = new Food {FoodID = 1,Name = "milk",Units = 0 } } } },
-                new User {UserID = 2, Name = "coolemail3@site.com",Password = "password",Pantrys = new Pantry[] {new Pantry {PantryID = 1, UserID = 2, FoodID = 2, Food = new Food {FoodID = 2,Name = "bread",Units = 0 } } } }
+                new User {UserID = 1, Name = "coolemail2@site.com",Password = "password",Pantrys = new Pantry[] {new Pantry {PantryID = 0, UserID = 1, FoodID = 1, Food = new Food {FoodID = 1,Name = "milk"} } } },
+                new User {UserID = 2, Name = "coolemail3@site.com",Password = "password",Pantrys = new Pantry[] {new Pantry {PantryID = 1, UserID = 2, FoodID = 2, Food = new Food {FoodID = 2,Name = "bread"} } } }
             });
         }
         
