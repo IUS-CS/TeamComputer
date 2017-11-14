@@ -14,14 +14,16 @@ namespace FoodProject.Controllers
         private IRecipeRepository recipeRepository;
         private IFoodRepository foodRepository;
         private IIngredientRepository ingredientRepository;
+        private IPantryRepository pantryRepository;
         private Ingredient ingredient = new Ingredient();
                
 
-        public RecipeController(IRecipeRepository recipeRepository, IFoodRepository foodRepository, IIngredientRepository ingredientRepository)
+        public RecipeController(IRecipeRepository recipeRepository, IFoodRepository foodRepository, IIngredientRepository ingredientRepository, IPantryRepository pantryRepository)
         {
             this.ingredientRepository = ingredientRepository;
             this.recipeRepository = recipeRepository;
             this.foodRepository = foodRepository;
+            this.pantryRepository = pantryRepository;
         }
         
 
@@ -72,6 +74,38 @@ namespace FoodProject.Controllers
             ingredientRepository.Save();
             Recipe r = recipeRepository.GetRecipeID(ri);
             return View("Details",r);
+        }
+
+        public ActionResult CanIMakeIt(User user, int recipeId)
+        {
+            
+            //makes list of user foods
+            IEnumerable<Pantry> userFoods = pantryRepository.Pantrys.
+                                            Where(x => x.UserID == user.UserID).ToList();
+            //makes list if food IDs from user list.........can i do this in one LINQ statement??????
+            List<int> userFoodId = new List<int>();
+            foreach(var x in userFoods)
+            {
+                userFoodId.Add(x.FoodID);
+            }
+            //list of ingredients for desired recipe from linked view ID param
+            IEnumerable<Ingredient> recipeIngrgedients = ingredientRepository.Ingredients.
+                                                        Where(x => x.RecipeID == recipeId).ToList();
+            bool b = false;
+            ViewBag.Answer = b == true ? "Yes" : "No";
+            int isIn;
+            foreach (var x in recipeIngrgedients)
+            {
+                isIn = x.FoodID;
+                //if user foods does not contain ingredient.FoodId
+                if (userFoodId.Contains(isIn))
+                {
+                    //cant make it view
+                    b = true;
+                }               
+            }
+            return View();
+
         }
     }
 }
