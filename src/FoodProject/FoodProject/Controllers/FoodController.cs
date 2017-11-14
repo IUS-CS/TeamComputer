@@ -7,6 +7,8 @@ using FoodProject.Concrete;
 using FoodProject.Abstract;
 using PagedList;
 using FoodProject.Models;
+using System.Web.UI.WebControls;
+
 namespace FoodProject.Controllers
 {
     public class FoodController : Controller
@@ -91,7 +93,7 @@ namespace FoodProject.Controllers
             return RedirectToAction("Index", "Food");
         }
         [HttpGet]
-        public ActionResult update(int id)
+        public ActionResult update(int id,String search = "")
         {
             Pantry pantry = pantryRepository.Pantrys.Where(x => x.PantryID == id).First();
             Session["PantryID"] = id;
@@ -104,6 +106,38 @@ namespace FoodProject.Controllers
             pantryRepository.updatePantry(pantry);
             pantryRepository.save();
             return RedirectToAction("Index", "Food");
+        }
+        public ViewResult addFoodSearch()
+        {
+            //string s = ViewBag.Search; 
+            String s = String.Format("{0}", Request.Form["SearchBox"]);
+            s = s.ToLower();
+            IEnumerable<Food> foods;
+            if (!s.Equals(""))
+            {
+                foods = foodRepository.Foods.Where(x => x.Name.ToLower().Contains(s)).ToList();
+            }
+            else
+            {
+                foods = foodRepository.Foods.ToList();
+            }
+            return View("addFood", foods);
+        }
+        [HttpGet]
+        public ViewResult createNewFood()
+        {
+            Food f = new Food();
+            return View(f);
+        }
+
+        [HttpPost]
+        public ViewResult createNewFood(User user, Food f)
+        {
+            foodRepository.InsertFood(f);
+            foodRepository.Save();
+            pantryRepository.add(new Pantry { UserID = (int)user.UserID, FoodID = f.FoodID });
+            pantryRepository.save();
+            return View("Index");
         }
     }
 }
