@@ -63,7 +63,7 @@ namespace FoodProject.Controllers
                         break;
                 }
 
-                int pageSize = 5;
+                int pageSize = 20;
                 int pageNumber = (page ?? 1);
                 return View(pantrys.ToPagedList(pageNumber, pageSize));
             }
@@ -131,13 +131,13 @@ namespace FoodProject.Controllers
         }
 
         [HttpPost]
-        public ViewResult createNewFood(User user, Food f)
+        public RedirectToRouteResult createNewFood(User user, Food f)
         {
             foodRepository.InsertFood(f);
             foodRepository.Save();
             pantryRepository.add(new Pantry { UserID = (int)user.UserID, FoodID = f.FoodID });
             pantryRepository.save();
-            return View("Index");
+            return RedirectToAction("Index", "Food");
         }
     }
 }
