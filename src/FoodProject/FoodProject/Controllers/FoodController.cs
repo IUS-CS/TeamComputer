@@ -133,11 +133,18 @@ namespace FoodProject.Controllers
         [HttpPost]
         public RedirectToRouteResult createNewFood(User user, Food f)
         {
-            foodRepository.InsertFood(f);
-            foodRepository.Save();
-            pantryRepository.add(new Pantry { UserID = (int)user.UserID, FoodID = f.FoodID });
-            pantryRepository.save();
-            return RedirectToAction("Index", "Food");
+            if (foodRepository.Foods.Where(x => x.Name.ToLower().Equals(f.Name)).FirstOrDefault() == null)
+            {
+                foodRepository.InsertFood(f);
+                foodRepository.Save();
+                pantryRepository.add(new Pantry { UserID = (int)user.UserID, FoodID = f.FoodID });
+                pantryRepository.save();
+                return RedirectToAction("Index", "Food");
+            }
+            else
+            {
+                return RedirectToAction("CreateNewFood", "Food");
+            }
         }
     }
 }
