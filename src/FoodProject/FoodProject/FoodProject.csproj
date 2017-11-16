@@ -243,11 +243,8 @@
     <Content Include="Views\Recipe\Details.cshtml" />
     <Content Include="Views\Recipe\Create.cshtml" />
     <Content Include="Views\Recipe\AddRecipeId.cshtml" />
-<<<<<<< HEAD
     <Content Include="Views\Recipe\CanIMakeIt.cshtml" />
-=======
     <Content Include="Views\Food\createNewFood.cshtml" />
->>>>>>> origin/master
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
