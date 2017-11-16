@@ -13,6 +13,9 @@
     <div>
         @Html.ActionLink(r.Name, "Details", new { id = r.RecipeID }) 
     </div>
+    <div>
+        @Html.ActionLink(r.Name, "CanIMakeIt", new { id = r.RecipeID })
+    </div>
 }
 <h3>
     @Html.ActionLink("Create New", "Create")
