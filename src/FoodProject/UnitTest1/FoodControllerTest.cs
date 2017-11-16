@@ -127,6 +127,7 @@ namespace UnitTest1
             {
                 food.FoodID = c.foods.Count();
                 c.foods.Add(food);
+                food.FoodID = c.foods.Count();
             }
 
             public void Save()
@@ -187,7 +188,6 @@ namespace UnitTest1
             MockIPantryRepository pantryRepository = new MockIPantryRepository(mc);
             FoodController controller = new FoodController(foodRepository, pantryRepository);
             Pantry p = new Pantry { PantryID = 0, Units = 35 };
-            //Food f = new Food() { FoodID = id, Name = "updated name"};
 
             // execute food update
             // have to create a new controller context and make the httpcontext equal fakehttpcontext so the controller can
@@ -199,6 +199,41 @@ namespace UnitTest1
             // assert food has been updated
             p = pantryRepository.Pantrys.Select(x => x).Where(x => x.PantryID == 0).First();
             Assert.AreEqual(35, p.Units);
+        }
+       
+        [TestMethod]
+        public void CanAddNewFoodToDatabase()
+        {
+            // setup
+            MyContext mc = new MyContext();
+            MockIFoodRepository foodRepository = new MockIFoodRepository(mc);
+            MockIPantryRepository pantryRepository = new MockIPantryRepository(mc);
+            FoodController controller = new FoodController(foodRepository, pantryRepository);
+
+            // execute createNewFood
+            controller.createNewFood(new User() { UserID = 0},new Food() { Name = "Rice" });
+
+            // assert food has been added to database and pantry
+            // if not null if found the food object with name rice
+            Food f = foodRepository.Foods.Select(x => x).Where(x => x.Name.Equals("Rice")).FirstOrDefault();
+            Assert.IsNotNull(f);
+            Assert.IsNotNull(pantryRepository.Pantrys.Select(x => x).Where(x => x.UserID == 0 && x.FoodID == f.FoodID));
+        }
+
+        [TestMethod]
+        public void CannotAddFoodWithNameAlreadyInDatabase()
+        {
+            // setup
+            MyContext mc = new MyContext();
+            MockIFoodRepository foodRepository = new MockIFoodRepository(mc);
+            MockIPantryRepository pantryRepository = new MockIPantryRepository(mc);
+            FoodController controller = new FoodController(foodRepository, pantryRepository);
+
+            // execute createNewFood
+            controller.createNewFood(new User() { UserID = 0 }, new Food() { Name = "Food 1" });
+
+            // assert food wasn't added
+            Assert.IsTrue(foodRepository.Foods.Select(x => x).Where(x => x.Name.Equals("Food 1")).Count() == 1);
         }
     }
 }
