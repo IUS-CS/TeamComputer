@@ -54,17 +54,24 @@ namespace FoodProject.Controllers
             }
             return RedirectToAction("Index", "Recipe");
         }
-
-        // recipe name user clicks is id...passes it to global ingredient.recipe id
-        // reviews list of all foods
+        /// <summary>
+        /// Part 1 to add ingredient entry to table 
+        /// creates session to hold the recipeID of recipe you want to add food to
+        /// </summary>
+        /// <param name="id">from linked recipe object</param>
+        /// <returns>View - list of all foods for Part 2</returns>
         public ActionResult AddRecipeId(int id)
         {
-            // pass recipe id from details to global ingredient obj
             Session["RecipeID"] = id;
-           //return list of total foods 
             return View(foodRepository.Foods);
         }
 
+        /// <summary>
+        /// Part 2 to add ingredient entry to table 
+        /// uses session ID(part 1) and foodID from view to set ingredient properties, then adds them
+        /// </summary>
+        /// <param name="id">food ID from view linked</param>
+        /// <returns>View back to list</returns>
         public ActionResult AddFoodId(int id)
         {
             ingredient.FoodID = id;
@@ -76,34 +83,41 @@ namespace FoodProject.Controllers
             return View("Details",r);
         }
 
+        /// <summary>
+        /// Tells user whether they can make the recipe.
+        /// Checks pantry.foodID against ingredient.foodID to see if user has foods requited to make recipe 
+        /// </summary>
+        /// <param name="user">global user id</param>
+        /// <param name="recipeId">from htmlAction linker, recipe ID </param>
+        /// <returns>View displaying "yes" or "no"</returns>
         public ActionResult CanIMakeIt(User user, int recipeId)
         {
-            
-            //makes list of user foods
-            IEnumerable<Pantry> userFoods = pantryRepository.Pantrys.
-                                            Where(x => x.UserID == user.UserID).ToList();
-            //makes list if food IDs from user list.........can i do this in one LINQ statement??????
+            //make list of user foods
+            IEnumerable<Pantry> userFoods = pantryRepository.Pantrys.Where(x => x.UserID == user.UserID).ToList();
+            //makes list if food IDs from user list
             List<int> userFoodId = new List<int>();
             foreach(var x in userFoods)
             {
                 userFoodId.Add(x.FoodID);
             }
             //list of ingredients for desired recipe from linked view ID param
-            IEnumerable<Ingredient> recipeIngrgedients = ingredientRepository.Ingredients.
-                                                        Where(x => x.RecipeID == recipeId).ToList();
+            IEnumerable<Ingredient> recipeIngrgedients = ingredientRepository.Ingredients.Where(x => x.RecipeID == recipeId).ToList();
             bool b = false;
-            ViewBag.Answer = b == true ? "Yes" : "No";
             int isIn;
             foreach (var x in recipeIngrgedients)
             {
                 isIn = x.FoodID;
-                //if user foods does not contain ingredient.FoodId
                 if (userFoodId.Contains(isIn))
                 {
-                    //cant make it view
                     b = true;
-                }               
+                }
+                else
+                {
+                    b = false;
+                    break;
+                }
             }
+            ViewBag.Answer = b == true ? "Yes" : "No";
             return View();
 
         }
