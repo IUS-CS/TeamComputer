@@ -161,6 +161,7 @@ namespace FoodProject.Controllers
         //handles creating the user profile page
         public ActionResult UserProfile()
         {
+
             return View();
         }
     }
