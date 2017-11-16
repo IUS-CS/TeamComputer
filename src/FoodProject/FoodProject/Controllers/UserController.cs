@@ -33,7 +33,7 @@ namespace FoodProject.Controllers
             //if the userId is not null someone is signed in
             if (user.UserID != null)
             {
-                return RedirectToAction("Index","Home");
+                return RedirectToAction("UserProfile","User");
             }
             //they aren't signed in got to login screen
             //pass it a UserLogin object to store the username and password the user types in
@@ -157,6 +157,11 @@ namespace FoodProject.Controllers
             user.Password = null;
             //return to home screen
             return RedirectToAction("Index", "Home");
+        }
+        //handles creating the user profile page
+        public ActionResult UserProfile()
+        {
+            return View();
         }
     }
 }
