@@ -7,6 +7,9 @@ using FoodProject.Abstract;
 using FoodProject.Concrete;
 namespace FoodProject.infrastructure
 {
+        /// <summary>
+        /// the dependency injection contianer, it uses constructor injection
+        /// </summary>
         public class NinjectDependencyResolver : IDependencyResolver
         {
             //attributes
@@ -29,7 +32,11 @@ namespace FoodProject.infrastructure
             {
                 return kernel.GetAll(serviceType);
             }
-
+            /// <summary>
+            /// This method adds the bindings to the interfaces we created
+            /// if you wanted to change what the concrete implmentiaon the interface will refer to
+            /// you edit this method
+            /// </summary>
             private void AddBindings()
             {
                 //binds the repositorys to these concrete classes
