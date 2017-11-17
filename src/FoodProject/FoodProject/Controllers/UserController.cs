@@ -161,8 +161,12 @@ namespace FoodProject.Controllers
         //handles creating the user profile page
         public ActionResult UserProfile()
         {
-
             return View();
         }
+        /*[HttpPost]
+        public RedirectToRouteResult ChangeUserPassword()
+        {
+            return RedirectToAction("Index", "Home");
+        }*/
     }
 }

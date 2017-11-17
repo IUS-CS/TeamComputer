@@ -1,5 +1,4 @@
-﻿@Model FoodProject.Models.UserProfile
-
+﻿@model FoodProject.Models.UserProfile
 <head>
     <link href="~/Content/bootstrap.css" rel="stylesheet" />
     <link href="~/Content/bootstrap-theme.css" rel="stylesheet" />
@@ -13,13 +12,13 @@
             {
         @Html.ValidationSummary()
         <div class="form-group">
-            <label>User name:</label>
+            <label>Current Password:</label>
             @Html.TextBoxFor(x => x.currentPW, new { @class = "form-control" })
         </div>
         <div class="form-group">
-            <label>Password:</label>
+            <label>New Password:</label>
             @Html.PasswordFor(x => x.newPW, new { @class = "form-control" })
-            <label>Confirm password:</label>
+            <label>Confirm new Password:</label>
             @Html.PasswordFor(x => x.newPW2, new { @class = "form-control" })
         </div>
         <div>
