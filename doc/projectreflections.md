@@ -22,4 +22,12 @@ At the start we didn't really know what was needed to complete most of what we w
 Even know our final project is a fraction of what I thought it could be or wanted it to be (due to actual time needed, learning several new technologies and having every team member essentially building the parachute on the way down I feel I have a much better understanding of the dot net framework and working in a group environment than before.
 
 
-# Garret
+# Garrett
+### Planning
+The idea behind the project was to use ASP.net and C# to build the website so we get experience with .net, C# with putting a front end to a back end.  After having got to where we are now it definitely turned out to be more complicated than anticipated.  We should have had better planning and research before we started coding.  If we had spent a sprint or two on planning and research before even touching code I think it would have been smoother.  This is something to keep in mind for future projects regardless of the platform being used.
+
+### Unit Testing
+Prior to this project I had no experience in testing at all, I always just ran the program and debugged inside the command line or in the code till I got the desired output.  I have learned about automating testing of methods for unit testing through writing test cases to test different scenarios of the program to make it more effective and easier to test.  I wrote test cases for the user log-in and sign-up where I added user input regex to verify the input is an email address.  This basically made sure the input wasn't trying to add code to the database or other areas of the website.
+
+### MVC
+Going along with learning about MVC in C490, I'm learning how it works in web development with .Net/C#.  It seems to be a pretty common standard for development.  It makes keeping the separation between the data and the view easy and is very useful.  This is actually something I was asked about during a job interview and having had these classes it helped me be able to answer the technical question.  So I'm very happy it was something I ran into with this project since it will help me in the future.
