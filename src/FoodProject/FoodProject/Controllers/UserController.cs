@@ -163,10 +163,27 @@ namespace FoodProject.Controllers
         {
             return View();
         }
-        /*[HttpPost]
-        public RedirectToRouteResult ChangeUserPassword()
+
+        [HttpPost]
+        public RedirectToRouteResult UserProfile(User user, UserProfile temp)
         {
-            return RedirectToAction("Index", "Home");
-        }*/
+            //check if current pw is the same as pw in database
+            if(temp.currentPW.Length != 0)
+            {
+                User tempUser = userRepository.Users.Select(x => x).Where(x => x.Password == temp.currentPW).FirstOrDefault();
+                //if passwords match
+                if(tempUser.Password.Equals(temp.currentPW))
+                {
+                    //check if both new passwords match
+                    //check if passwords are equal
+                    if (temp.newPW.Equals(temp.newPW2))
+                    {
+                        //new passwords are equal, update the password in the database
+                        
+                    }
+                }
+            }
+            return RedirectToAction("UserProfile", "User");
+        }
     }
 }

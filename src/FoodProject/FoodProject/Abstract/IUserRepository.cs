@@ -11,5 +11,6 @@ namespace FoodProject.Abstract
     {
         IEnumerable<User> Users { get; }
         void Add(User user);
+        void UpdatePassword(User user);
     }
 }
