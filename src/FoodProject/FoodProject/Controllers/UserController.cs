@@ -179,9 +179,22 @@ namespace FoodProject.Controllers
                     if (temp.newPW.Equals(temp.newPW2))
                     {
                         //new passwords are equal, update the password in the database
-                        
+                        userRepository.UpdatePassword(user, temp.newPW2);
+                        return RedirectToAction("Index", "Home");
+                    }
+                    else
+                    {
+                        return RedirectToAction("UserProfile", "User");
                     }
                 }
+                else
+                {
+                    return RedirectToAction("UserProfile", "User");
+                }
+            }
+            else
+            {
+                return RedirectToAction("UserProfile", "User");
             }
             return RedirectToAction("UserProfile", "User");
         }
