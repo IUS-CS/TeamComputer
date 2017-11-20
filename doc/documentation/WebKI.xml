@@ -1,0 +1,503 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HelpKI>
+  <HelpKINode Title="About method" Url="html/dea3ff19-a93e-0360-cfb2-483d5c497ee4.htm" />
+  <HelpKINode Title="Add method">
+    <HelpKINode Title="IIngredientRepository.Add Method " Url="html/3294a6d1-a1ed-f7be-5fc9-4d9d394f77de.htm" />
+    <HelpKINode Title="IRecipeRepository.Add Method " Url="html/5117e333-2e7a-7578-3066-54010f97e81c.htm" />
+    <HelpKINode Title="RecipeRepository.Add Method " Url="html/ed8ac74d-ef9f-d034-06fd-4888f39ff737.htm" />
+    <HelpKINode Title="IngredientRepository.Add Method " Url="html/c3ff2478-7617-e546-fea5-f674ab71981a.htm" />
+    <HelpKINode Title="IUserRepository.Add Method " Url="html/cbb75b8a-b616-6f49-0c7e-cc601059695c.htm" />
+    <HelpKINode Title="UserRepository.Add Method " Url="html/21cad5e7-2858-ab7f-3188-7b893512e2a3.htm" />
+  </HelpKINode>
+  <HelpKINode Title="add method">
+    <HelpKINode Title="IPantryRepository.add Method " Url="html/6310b8b8-bc6a-0bf5-52bc-2ad667b5218c.htm" />
+    <HelpKINode Title="PantryRepository.add Method " Url="html/fc47e8a8-c5d5-37ae-9419-2fc04fc01c07.htm" />
+  </HelpKINode>
+  <HelpKINode Title="addFood method" Url="html/832bbd72-3c73-3d9d-8e60-8ff70e68ecc1.htm" />
+  <HelpKINode Title="AddFoodId method" Url="html/7b4e3fae-42b2-901a-06a0-f5736831bcfc.htm" />
+  <HelpKINode Title="addFoods method" Url="html/04fa4c6b-5416-94b0-dd6d-720e81c6a52d.htm" />
+  <HelpKINode Title="addFoodSearch method" Url="html/4d665bc9-63da-98ba-c96b-f4fd0f9b94ae.htm" />
+  <HelpKINode Title="AddRecipeId method" Url="html/ec9a4b7c-1e2d-de1c-2777-3c0082c1ce53.htm" />
+  <HelpKINode Title="Application_Start method" Url="html/574c013f-84d8-0a37-1bea-268734578521.htm" />
+  <HelpKINode Title="BindModel method" Url="html/4381ec8d-d7b5-9c89-a406-83c7e9211a3c.htm" />
+  <HelpKINode Title="BundleConfig class">
+    <HelpKINode Title="BundleConfig Class" Url="html/8b4333f4-e7ce-0bc0-1312-1523c0ad3ddc.htm" />
+    <HelpKINode Title="about BundleConfig class" Url="html/8b4333f4-e7ce-0bc0-1312-1523c0ad3ddc.htm" />
+    <HelpKINode Title="constructor" Url="html/ffa46289-22f9-5992-b13c-46feddaba714.htm" />
+    <HelpKINode Title="methods" Url="html/0a4a1160-ab2d-2102-5e00-f8474431623f.htm" />
+  </HelpKINode>
+  <HelpKINode Title="BundleConfig.BundleConfig constructor" Url="html/ffa46289-22f9-5992-b13c-46feddaba714.htm" />
+  <HelpKINode Title="BundleConfig.RegisterBundles method" Url="html/447be99c-60b5-6987-430d-6b63551e006b.htm" />
+  <HelpKINode Title="CanIMakeIt method" Url="html/330512fa-67c6-d246-39b3-e080f421c8c4.htm" />
+  <HelpKINode Title="context field" Url="html/48df3a9d-802f-5cd5-a684-f6c3074afca8.htm" />
+  <HelpKINode Title="Context field" Url="html/bfcdeb3e-ad07-e6d3-51b7-8b53d9e78e6c.htm" />
+  <HelpKINode Title="Create method" Url="html/3498a6a3-cf1e-2804-6d6e-5638e48bcade.htm" />
+  <HelpKINode Title="createNewFood method" Url="html/5c70e800-59af-52c5-7b46-4a392374f940.htm" />
+  <HelpKINode Title="Createuser method" Url="html/44245ddd-94b5-5cb9-791f-d680ea471545.htm" />
+  <HelpKINode Title="CreateUser method" Url="html/8fa47a5d-36d4-13c8-2057-8165798be91b.htm" />
+  <HelpKINode Title="delete method">
+    <HelpKINode Title="FoodController.delete Method " Url="html/d52c3117-2fcc-cd18-702d-1f23a7ad3650.htm" />
+    <HelpKINode Title="IPantryRepository.delete Method " Url="html/cce0b714-374f-fa90-8395-7088cf2c5353.htm" />
+    <HelpKINode Title="PantryRepository.delete Method " Url="html/b5541a36-0b82-a619-debe-43a7a34bad42.htm" />
+  </HelpKINode>
+  <HelpKINode Title="DeleteFood method">
+    <HelpKINode Title="FoodRepository.DeleteFood Method " Url="html/05abae9a-b1d5-a873-492d-24e8aeeec4a7.htm" />
+    <HelpKINode Title="IFoodRepository.DeleteFood Method " Url="html/82413c49-483f-a902-062c-ab4a8a94d719.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Details method" Url="html/94dc6d4b-682d-5460-dacc-b4712ff3e7ef.htm" />
+  <HelpKINode Title="Dispose method" Url="html/73478c3d-8a49-941a-8062-ffc1e4af702a.htm" />
+  <HelpKINode Title="FilterConfig class">
+    <HelpKINode Title="FilterConfig Class" Url="html/6fcaf4c8-8d3b-a8f2-fef8-bada7c91f92c.htm" />
+    <HelpKINode Title="about FilterConfig class" Url="html/6fcaf4c8-8d3b-a8f2-fef8-bada7c91f92c.htm" />
+    <HelpKINode Title="constructor" Url="html/632afe12-dfa0-adde-76f1-3d04edc840f8.htm" />
+    <HelpKINode Title="methods" Url="html/61280da6-017c-956b-50be-ea42f7d15df6.htm" />
+  </HelpKINode>
+  <HelpKINode Title="FilterConfig.FilterConfig constructor" Url="html/632afe12-dfa0-adde-76f1-3d04edc840f8.htm" />
+  <HelpKINode Title="FilterConfig.RegisterGlobalFilters method" Url="html/79f78d76-21e4-8262-448a-855109bf97ff.htm" />
+  <HelpKINode Title="Food class">
+    <HelpKINode Title="Food Class" Url="html/6f57df69-c606-452f-796c-837b42180b52.htm" />
+    <HelpKINode Title="about Food class" Url="html/6f57df69-c606-452f-796c-837b42180b52.htm" />
+    <HelpKINode Title="constructor" Url="html/bfcb6ec2-dbf8-bdb6-b47d-8d8cf3f4a73a.htm" />
+    <HelpKINode Title="methods" Url="html/a5bbc395-bc16-1a83-73e6-9969c921aafa.htm" />
+    <HelpKINode Title="properties" Url="html/b46a2855-a458-6af3-d31f-14678e5d74c5.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Food property">
+    <HelpKINode Title="Ingredient.Food Property " Url="html/29835546-e568-9881-c90e-9b06fe3c4a72.htm" />
+    <HelpKINode Title="Pantry.Food Property " Url="html/5399799c-5ada-8860-12ce-3e04f2d21487.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Food.Food constructor" Url="html/bfcb6ec2-dbf8-bdb6-b47d-8d8cf3f4a73a.htm" />
+  <HelpKINode Title="Food.FoodID property" Url="html/a59a56e8-5818-d113-54b5-5758d1220256.htm" />
+  <HelpKINode Title="Food.Name property" Url="html/2ef523a3-cc35-af58-a103-147008d13eec.htm" />
+  <HelpKINode Title="FoodContext class">
+    <HelpKINode Title="FoodContext Class" Url="html/90be6e36-73df-89d2-6b7e-e134b03f0722.htm" />
+    <HelpKINode Title="about FoodContext class" Url="html/90be6e36-73df-89d2-6b7e-e134b03f0722.htm" />
+    <HelpKINode Title="constructor" Url="html/4f66797d-da79-3c7b-ddac-82639df6b676.htm" />
+    <HelpKINode Title="methods" Url="html/63b7702c-4faa-2abf-3a6a-34411914d772.htm" />
+    <HelpKINode Title="properties" Url="html/bf034d3f-777d-c85d-f9f9-a0d18b61a499.htm" />
+  </HelpKINode>
+  <HelpKINode Title="FoodContext.FoodContext constructor" Url="html/4f66797d-da79-3c7b-ddac-82639df6b676.htm" />
+  <HelpKINode Title="FoodContext.Foods property" Url="html/4f998bde-209f-d2d1-4bdf-17738b302314.htm" />
+  <HelpKINode Title="FoodContext.Ingredients property" Url="html/07f0d4bd-e24f-b45f-a88f-d5a4804a4a73.htm" />
+  <HelpKINode Title="FoodContext.Pantrys property" Url="html/8fbe6e35-9406-388f-c241-64956dcfd0cb.htm" />
+  <HelpKINode Title="FoodContext.Recipes property" Url="html/f2c8c29c-a4ba-bb24-b0f9-2e9a559322a1.htm" />
+  <HelpKINode Title="FoodContext.Users property" Url="html/1cd9f56d-463e-6700-7084-4bc1f092ac1b.htm" />
+  <HelpKINode Title="FoodController class">
+    <HelpKINode Title="FoodController Class" Url="html/0d85ebf5-cba1-29eb-7164-2125cdee2507.htm" />
+    <HelpKINode Title="about FoodController class" Url="html/0d85ebf5-cba1-29eb-7164-2125cdee2507.htm" />
+    <HelpKINode Title="constructor" Url="html/0648b137-1d3f-2145-5c4b-333c053d3712.htm" />
+    <HelpKINode Title="methods" Url="html/001a1ca3-10ae-f5a5-2177-15fdcf16ba08.htm" />
+    <HelpKINode Title="properties" Url="html/5f77c049-65aa-21ef-4bc4-40952b8a7465.htm" />
+  </HelpKINode>
+  <HelpKINode Title="FoodController.addFood method" Url="html/832bbd72-3c73-3d9d-8e60-8ff70e68ecc1.htm" />
+  <HelpKINode Title="FoodController.addFoods method" Url="html/04fa4c6b-5416-94b0-dd6d-720e81c6a52d.htm" />
+  <HelpKINode Title="FoodController.addFoodSearch method" Url="html/4d665bc9-63da-98ba-c96b-f4fd0f9b94ae.htm" />
+  <HelpKINode Title="FoodController.createNewFood method" Url="html/5c70e800-59af-52c5-7b46-4a392374f940.htm" />
+  <HelpKINode Title="FoodController.delete method" Url="html/d52c3117-2fcc-cd18-702d-1f23a7ad3650.htm" />
+  <HelpKINode Title="FoodController.FoodController constructor" Url="html/0648b137-1d3f-2145-5c4b-333c053d3712.htm" />
+  <HelpKINode Title="FoodController.Index method" Url="html/d892ab2e-8497-d528-0bfa-c99eb4c94d96.htm" />
+  <HelpKINode Title="FoodController.update method" Url="html/5331e6cc-d1b5-afc1-4cb8-618ea3e73be6.htm" />
+  <HelpKINode Title="FoodID property">
+    <HelpKINode Title="Food.FoodID Property " Url="html/a59a56e8-5818-d113-54b5-5758d1220256.htm" />
+    <HelpKINode Title="Ingredient.FoodID Property " Url="html/ee47c4a3-51b6-884f-d877-f2858763a6ff.htm" />
+    <HelpKINode Title="Pantry.FoodID Property " Url="html/3b75f3ce-3134-b2b8-c32d-2a2d89d8a813.htm" />
+  </HelpKINode>
+  <HelpKINode Title="FoodProject namespace" Url="html/e648122b-d3a6-474f-31da-3e6c64124619.htm" />
+  <HelpKINode Title="FoodProject.Abstract namespace" Url="html/c89f2ed1-17c3-8592-c60b-5b2e5c3f0747.htm" />
+  <HelpKINode Title="FoodProject.Abstract.IFoodRepository interface" Url="html/4098a950-b92e-8cc3-33ed-2b605326a364.htm" />
+  <HelpKINode Title="FoodProject.Abstract.IIngredientRepository interface" Url="html/822aede6-6fee-5461-63ab-8737756ef8ea.htm" />
+  <HelpKINode Title="FoodProject.Abstract.IPantryRepository interface" Url="html/bc382808-c96e-c300-25ca-96c56a15f77b.htm" />
+  <HelpKINode Title="FoodProject.Abstract.IRecipeRepository interface" Url="html/d898309b-d5a0-a4bb-5fbb-bec4d3b98bdf.htm" />
+  <HelpKINode Title="FoodProject.Abstract.IUserRepository interface" Url="html/6e902288-5cf6-8c40-45c6-ae592435834a.htm" />
+  <HelpKINode Title="FoodProject.App_Start namespace" Url="html/9fa045dc-787f-5ecc-265f-1a4418eb3bfa.htm" />
+  <HelpKINode Title="FoodProject.App_Start.NinjectWebCommon class" Url="html/75d7ca6e-7e43-82a6-47b5-b153282539e2.htm" />
+  <HelpKINode Title="FoodProject.BundleConfig class" Url="html/8b4333f4-e7ce-0bc0-1312-1523c0ad3ddc.htm" />
+  <HelpKINode Title="FoodProject.Concrete namespace" Url="html/c4db18c3-ffab-122d-53b6-0e832bb636db.htm" />
+  <HelpKINode Title="FoodProject.Concrete.FoodContext class" Url="html/90be6e36-73df-89d2-6b7e-e134b03f0722.htm" />
+  <HelpKINode Title="FoodProject.Concrete.FoodRepository class" Url="html/a116a137-ab17-2ddb-ed64-5ab6f56ccaf7.htm" />
+  <HelpKINode Title="FoodProject.Concrete.IngredientRepository class" Url="html/a95cce60-1948-3154-fc40-26e8e201efc5.htm" />
+  <HelpKINode Title="FoodProject.Concrete.PantryRepository class" Url="html/a8336839-214f-a875-f379-29808c693e64.htm" />
+  <HelpKINode Title="FoodProject.Concrete.RecipeRepository class" Url="html/8abcd4ba-07ab-ebea-1e38-928602908b63.htm" />
+  <HelpKINode Title="FoodProject.Concrete.UserRepository class" Url="html/bbb4f100-cdf8-1eb8-b54e-3a1ddcc16326.htm" />
+  <HelpKINode Title="FoodProject.Controllers namespace" Url="html/42d18592-6c3a-3c46-2337-074031ddc3f6.htm" />
+  <HelpKINode Title="FoodProject.Controllers.FoodController class" Url="html/0d85ebf5-cba1-29eb-7164-2125cdee2507.htm" />
+  <HelpKINode Title="FoodProject.Controllers.HomeController class" Url="html/d738c75f-b933-5d3e-ad49-2220c2837c75.htm" />
+  <HelpKINode Title="FoodProject.Controllers.RecipeController class" Url="html/42f865d4-9c1d-bea1-5e44-54e3072f9f4e.htm" />
+  <HelpKINode Title="FoodProject.Controllers.UserController class" Url="html/865d6248-3189-b83b-d6d8-8668b70138db.htm" />
+  <HelpKINode Title="FoodProject.FilterConfig class" Url="html/6fcaf4c8-8d3b-a8f2-fef8-bada7c91f92c.htm" />
+  <HelpKINode Title="FoodProject.infrastructure namespace" Url="html/a7fb59dc-4046-a2ea-4582-b6d95f7e4066.htm" />
+  <HelpKINode Title="FoodProject.infrastructure.Binders namespace" Url="html/f471a414-093f-5953-ef98-bd47e72ed6e8.htm" />
+  <HelpKINode Title="FoodProject.infrastructure.Binders.UserModelBinder class" Url="html/e354f78a-d14f-345d-18f1-4201f7917d3e.htm" />
+  <HelpKINode Title="FoodProject.infrastructure.NinjectDependencyResolver class" Url="html/01259951-b29c-75d9-615a-bd0e0c8a2db1.htm" />
+  <HelpKINode Title="FoodProject.Initializer class" Url="html/a7f91056-ace7-1988-e516-505a79570b5e.htm" />
+  <HelpKINode Title="FoodProject.Models namespace" Url="html/147a6e20-9825-a2c6-3df6-27b4a17ce609.htm" />
+  <HelpKINode Title="FoodProject.Models.Food class" Url="html/6f57df69-c606-452f-796c-837b42180b52.htm" />
+  <HelpKINode Title="FoodProject.Models.Ingredient class" Url="html/530ba2e3-7681-3be5-17ed-5c9a2d14fe69.htm" />
+  <HelpKINode Title="FoodProject.Models.Pantry class" Url="html/f0cdc909-6591-7c85-46c0-6c343d8a9def.htm" />
+  <HelpKINode Title="FoodProject.Models.Recipe class" Url="html/889ab1a8-4834-b028-cc4d-2c744b277e94.htm" />
+  <HelpKINode Title="FoodProject.Models.User class" Url="html/df493df4-256d-f1cb-41d0-f568f21c24d7.htm" />
+  <HelpKINode Title="FoodProject.Models.UserLogin class" Url="html/52849153-2d9e-b89d-ea1d-f77469a1ccb6.htm" />
+  <HelpKINode Title="FoodProject.MvcApplication class" Url="html/2aada052-4b62-9797-df22-07605a34e2fa.htm" />
+  <HelpKINode Title="FoodProject.RouteConfig class" Url="html/fcd868ef-23a0-0bab-593b-43ae238451da.htm" />
+  <HelpKINode Title="FoodRepository class">
+    <HelpKINode Title="FoodRepository Class" Url="html/a116a137-ab17-2ddb-ed64-5ab6f56ccaf7.htm" />
+    <HelpKINode Title="about FoodRepository class" Url="html/a116a137-ab17-2ddb-ed64-5ab6f56ccaf7.htm" />
+    <HelpKINode Title="constructor" Url="html/6cb658c4-200c-d136-e4f6-758f3213f82a.htm" />
+    <HelpKINode Title="fields" Url="html/30ee1876-1453-2234-28b5-8d499bcaa48a.htm" />
+    <HelpKINode Title="methods" Url="html/e771b9df-af78-dd0a-dc76-50ad69494b1a.htm" />
+    <HelpKINode Title="properties" Url="html/751b3f30-0a84-bc8d-1ff0-fcc459a2ded6.htm" />
+  </HelpKINode>
+  <HelpKINode Title="FoodRepository.context field" Url="html/48df3a9d-802f-5cd5-a684-f6c3074afca8.htm" />
+  <HelpKINode Title="FoodRepository.DeleteFood method" Url="html/05abae9a-b1d5-a873-492d-24e8aeeec4a7.htm" />
+  <HelpKINode Title="FoodRepository.Dispose method" Url="html/73478c3d-8a49-941a-8062-ffc1e4af702a.htm" />
+  <HelpKINode Title="FoodRepository.FoodRepository constructor" Url="html/6cb658c4-200c-d136-e4f6-758f3213f82a.htm" />
+  <HelpKINode Title="FoodRepository.Foods property" Url="html/32a6c69b-03ed-5897-65c8-ad695b1b5644.htm" />
+  <HelpKINode Title="FoodRepository.GetFoodById method" Url="html/f1b147a7-1123-0b23-e98a-a10f9bd5f9a8.htm" />
+  <HelpKINode Title="FoodRepository.InsertFood method" Url="html/5442d211-aa2e-a4c3-0913-ba45d12efb8c.htm" />
+  <HelpKINode Title="FoodRepository.Save method" Url="html/da4069b8-b634-4405-1b36-7e6eec32ae16.htm" />
+  <HelpKINode Title="FoodRepository.UpdateFood method" Url="html/fd4d8f59-3d8c-31de-f585-b139e8af4e51.htm" />
+  <HelpKINode Title="Foods property">
+    <HelpKINode Title="FoodContext.Foods Property " Url="html/4f998bde-209f-d2d1-4bdf-17738b302314.htm" />
+    <HelpKINode Title="FoodRepository.Foods Property " Url="html/32a6c69b-03ed-5897-65c8-ad695b1b5644.htm" />
+    <HelpKINode Title="IFoodRepository.Foods Property " Url="html/3b9ac070-2761-81b6-9117-01d1df760892.htm" />
+  </HelpKINode>
+  <HelpKINode Title="GetFoodById method">
+    <HelpKINode Title="FoodRepository.GetFoodById Method " Url="html/f1b147a7-1123-0b23-e98a-a10f9bd5f9a8.htm" />
+    <HelpKINode Title="IFoodRepository.GetFoodById Method " Url="html/0c6efd87-4798-67ee-9007-094bc48004e7.htm" />
+  </HelpKINode>
+  <HelpKINode Title="GetRecipeID method">
+    <HelpKINode Title="IRecipeRepository.GetRecipeID Method " Url="html/bed9c3cd-b93a-3de6-9b55-c8146fb58abe.htm" />
+    <HelpKINode Title="RecipeRepository.GetRecipeID Method " Url="html/46c67721-6d0b-77e6-4983-adc5fd5ea16e.htm" />
+  </HelpKINode>
+  <HelpKINode Title="GetService method" Url="html/99510812-89dc-0ca2-1a6b-0a57e6c00836.htm" />
+  <HelpKINode Title="GetServices method" Url="html/01f82afc-465a-fa1c-85a7-4ed2f73fabd2.htm" />
+  <HelpKINode Title="HomeController class">
+    <HelpKINode Title="HomeController Class" Url="html/d738c75f-b933-5d3e-ad49-2220c2837c75.htm" />
+    <HelpKINode Title="about HomeController class" Url="html/d738c75f-b933-5d3e-ad49-2220c2837c75.htm" />
+    <HelpKINode Title="constructor" Url="html/7b85bbb2-7ec9-93ff-10fb-7d3072fa346d.htm" />
+    <HelpKINode Title="methods" Url="html/3c28e4fe-b9ee-642e-e80b-20d2ffb0e900.htm" />
+    <HelpKINode Title="properties" Url="html/ef44a315-1834-7052-7b06-036ec5d81d16.htm" />
+  </HelpKINode>
+  <HelpKINode Title="HomeController.About method" Url="html/dea3ff19-a93e-0360-cfb2-483d5c497ee4.htm" />
+  <HelpKINode Title="HomeController.HomeController constructor" Url="html/7b85bbb2-7ec9-93ff-10fb-7d3072fa346d.htm" />
+  <HelpKINode Title="HomeController.Index method" Url="html/452e98a1-9509-9a71-d561-0e6c9a186845.htm" />
+  <HelpKINode Title="IFoodRepository interface">
+    <HelpKINode Title="IFoodRepository Interface" Url="html/4098a950-b92e-8cc3-33ed-2b605326a364.htm" />
+    <HelpKINode Title="about IFoodRepository interface" Url="html/4098a950-b92e-8cc3-33ed-2b605326a364.htm" />
+    <HelpKINode Title="methods" Url="html/cc38df75-67a8-c0bf-c464-3f1f713ccb73.htm" />
+    <HelpKINode Title="properties" Url="html/ef591111-6e29-fe92-3481-6c28bb2386c0.htm" />
+  </HelpKINode>
+  <HelpKINode Title="IFoodRepository.DeleteFood method" Url="html/82413c49-483f-a902-062c-ab4a8a94d719.htm" />
+  <HelpKINode Title="IFoodRepository.Foods property" Url="html/3b9ac070-2761-81b6-9117-01d1df760892.htm" />
+  <HelpKINode Title="IFoodRepository.GetFoodById method" Url="html/0c6efd87-4798-67ee-9007-094bc48004e7.htm" />
+  <HelpKINode Title="IFoodRepository.InsertFood method" Url="html/0af61385-9eca-85e4-9676-58cbba7ea4de.htm" />
+  <HelpKINode Title="IFoodRepository.Save method" Url="html/15d57cc3-5526-e64e-4f5f-3b1b64332e5c.htm" />
+  <HelpKINode Title="IFoodRepository.UpdateFood method" Url="html/6a9e7a1c-f174-41e1-2c6a-f469186c1999.htm" />
+  <HelpKINode Title="IIngredientRepository interface">
+    <HelpKINode Title="IIngredientRepository Interface" Url="html/822aede6-6fee-5461-63ab-8737756ef8ea.htm" />
+    <HelpKINode Title="about IIngredientRepository interface" Url="html/822aede6-6fee-5461-63ab-8737756ef8ea.htm" />
+    <HelpKINode Title="methods" Url="html/3d785237-a9a3-f0eb-431a-b42fb8965097.htm" />
+    <HelpKINode Title="properties" Url="html/d33e3523-2bbe-4fb5-8693-bfd105bd39aa.htm" />
+  </HelpKINode>
+  <HelpKINode Title="IIngredientRepository.Add method" Url="html/3294a6d1-a1ed-f7be-5fc9-4d9d394f77de.htm" />
+  <HelpKINode Title="IIngredientRepository.Ingredients property" Url="html/e8b3cc03-a7cf-21f5-f6fa-1b33b5807f6e.htm" />
+  <HelpKINode Title="IIngredientRepository.Save method" Url="html/1f15871f-be15-c40d-edca-f9b6dca761a1.htm" />
+  <HelpKINode Title="Index method">
+    <HelpKINode Title="FoodController.Index Method " Url="html/d892ab2e-8497-d528-0bfa-c99eb4c94d96.htm" />
+    <HelpKINode Title="HomeController.Index Method " Url="html/452e98a1-9509-9a71-d561-0e6c9a186845.htm" />
+    <HelpKINode Title="RecipeController.Index Method " Url="html/a1913c58-4e56-0415-b185-2a5c590e98c7.htm" />
+    <HelpKINode Title="UserController.Index Method " Url="html/4a1eaf20-7d1c-4adb-50e9-11ae151d80e3.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Ingredient class">
+    <HelpKINode Title="Ingredient Class" Url="html/530ba2e3-7681-3be5-17ed-5c9a2d14fe69.htm" />
+    <HelpKINode Title="about Ingredient class" Url="html/530ba2e3-7681-3be5-17ed-5c9a2d14fe69.htm" />
+    <HelpKINode Title="constructor" Url="html/d92f7513-906d-6afe-da12-84ef7007a927.htm" />
+    <HelpKINode Title="methods" Url="html/96ad101e-fcfe-68bc-e248-55ce1fb0c9f6.htm" />
+    <HelpKINode Title="properties" Url="html/77cac1dc-ad69-3258-a64f-2b8675b27cc2.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Ingredient.Food property" Url="html/29835546-e568-9881-c90e-9b06fe3c4a72.htm" />
+  <HelpKINode Title="Ingredient.FoodID property" Url="html/ee47c4a3-51b6-884f-d877-f2858763a6ff.htm" />
+  <HelpKINode Title="Ingredient.Ingredient constructor" Url="html/d92f7513-906d-6afe-da12-84ef7007a927.htm" />
+  <HelpKINode Title="Ingredient.IngredientID property" Url="html/42a73a64-0b0d-ef8b-e51b-a15242067dd6.htm" />
+  <HelpKINode Title="Ingredient.Recipe property" Url="html/54326998-ea67-964e-9cca-2b48718bff03.htm" />
+  <HelpKINode Title="Ingredient.RecipeID property" Url="html/e191332b-9d28-e194-4ab6-5d15d0419c9e.htm" />
+  <HelpKINode Title="IngredientID property" Url="html/42a73a64-0b0d-ef8b-e51b-a15242067dd6.htm" />
+  <HelpKINode Title="IngredientRepository class">
+    <HelpKINode Title="IngredientRepository Class" Url="html/a95cce60-1948-3154-fc40-26e8e201efc5.htm" />
+    <HelpKINode Title="about IngredientRepository class" Url="html/a95cce60-1948-3154-fc40-26e8e201efc5.htm" />
+    <HelpKINode Title="constructor" Url="html/f2c6e48c-7b74-2012-a7a5-b7af3f6b26de.htm" />
+    <HelpKINode Title="methods" Url="html/30079059-c5bb-3d7d-a232-4d9ef46b121a.htm" />
+    <HelpKINode Title="properties" Url="html/7668109a-6f2b-9a69-e2b3-89d42d0fb573.htm" />
+  </HelpKINode>
+  <HelpKINode Title="IngredientRepository.Add method" Url="html/c3ff2478-7617-e546-fea5-f674ab71981a.htm" />
+  <HelpKINode Title="IngredientRepository.IngredientRepository constructor" Url="html/f2c6e48c-7b74-2012-a7a5-b7af3f6b26de.htm" />
+  <HelpKINode Title="IngredientRepository.Ingredients property" Url="html/28814870-406c-dd70-66df-6e1b4222cf70.htm" />
+  <HelpKINode Title="IngredientRepository.Save method" Url="html/a22d4856-fdb5-18b4-a701-4d63aa09d4ce.htm" />
+  <HelpKINode Title="Ingredients property">
+    <HelpKINode Title="FoodContext.Ingredients Property " Url="html/07f0d4bd-e24f-b45f-a88f-d5a4804a4a73.htm" />
+    <HelpKINode Title="IIngredientRepository.Ingredients Property " Url="html/e8b3cc03-a7cf-21f5-f6fa-1b33b5807f6e.htm" />
+    <HelpKINode Title="IngredientRepository.Ingredients Property " Url="html/28814870-406c-dd70-66df-6e1b4222cf70.htm" />
+    <HelpKINode Title="Recipe.Ingredients Property " Url="html/683d9bcf-9c86-4f8b-5bbb-823ee0bd8a17.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Initializer class">
+    <HelpKINode Title="Initializer Class" Url="html/a7f91056-ace7-1988-e516-505a79570b5e.htm" />
+    <HelpKINode Title="about Initializer class" Url="html/a7f91056-ace7-1988-e516-505a79570b5e.htm" />
+    <HelpKINode Title="constructor" Url="html/819018b1-6197-3693-bf52-175b75927f13.htm" />
+    <HelpKINode Title="methods" Url="html/9e6cb91c-65e6-310e-091a-743f33549bfc.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Initializer.Initializer constructor" Url="html/819018b1-6197-3693-bf52-175b75927f13.htm" />
+  <HelpKINode Title="Initializer.Seed method" Url="html/0101f892-32ad-e214-e8bf-f04270709680.htm" />
+  <HelpKINode Title="InsertFood method">
+    <HelpKINode Title="FoodRepository.InsertFood Method " Url="html/5442d211-aa2e-a4c3-0913-ba45d12efb8c.htm" />
+    <HelpKINode Title="IFoodRepository.InsertFood Method " Url="html/0af61385-9eca-85e4-9676-58cbba7ea4de.htm" />
+  </HelpKINode>
+  <HelpKINode Title="IPantryRepository interface">
+    <HelpKINode Title="IPantryRepository Interface" Url="html/bc382808-c96e-c300-25ca-96c56a15f77b.htm" />
+    <HelpKINode Title="about IPantryRepository interface" Url="html/bc382808-c96e-c300-25ca-96c56a15f77b.htm" />
+    <HelpKINode Title="methods" Url="html/5a265362-fea9-7d51-8aff-85a0b97b234a.htm" />
+    <HelpKINode Title="properties" Url="html/c2518ef7-4814-dbde-e9f6-f041c1d38718.htm" />
+  </HelpKINode>
+  <HelpKINode Title="IPantryRepository.add method" Url="html/6310b8b8-bc6a-0bf5-52bc-2ad667b5218c.htm" />
+  <HelpKINode Title="IPantryRepository.delete method" Url="html/cce0b714-374f-fa90-8395-7088cf2c5353.htm" />
+  <HelpKINode Title="IPantryRepository.Pantrys property" Url="html/70589c73-f7d8-e2f3-7738-689a47f423e0.htm" />
+  <HelpKINode Title="IPantryRepository.save method" Url="html/5fc25b6b-464b-af02-a5eb-77a0b23e8bc5.htm" />
+  <HelpKINode Title="IPantryRepository.updatePantry method" Url="html/016a4fdd-92d1-6144-ca84-da69a6ea031e.htm" />
+  <HelpKINode Title="IRecipeRepository interface">
+    <HelpKINode Title="IRecipeRepository Interface" Url="html/d898309b-d5a0-a4bb-5fbb-bec4d3b98bdf.htm" />
+    <HelpKINode Title="about IRecipeRepository interface" Url="html/d898309b-d5a0-a4bb-5fbb-bec4d3b98bdf.htm" />
+    <HelpKINode Title="methods" Url="html/47b04ee9-27cd-41e5-11c6-d2889411921b.htm" />
+    <HelpKINode Title="properties" Url="html/91b5cc24-b546-0b06-9ccd-76d40f3ee4ab.htm" />
+  </HelpKINode>
+  <HelpKINode Title="IRecipeRepository.Add method" Url="html/5117e333-2e7a-7578-3066-54010f97e81c.htm" />
+  <HelpKINode Title="IRecipeRepository.GetRecipeID method" Url="html/bed9c3cd-b93a-3de6-9b55-c8146fb58abe.htm" />
+  <HelpKINode Title="IRecipeRepository.Recipes property" Url="html/c2e2226f-14f9-8130-1154-1bb04c2be50e.htm" />
+  <HelpKINode Title="IRecipeRepository.Save method" Url="html/92979ccf-7c0b-e017-88ce-c40a9e1f3e28.htm" />
+  <HelpKINode Title="IUserRepository interface">
+    <HelpKINode Title="IUserRepository Interface" Url="html/6e902288-5cf6-8c40-45c6-ae592435834a.htm" />
+    <HelpKINode Title="about IUserRepository interface" Url="html/6e902288-5cf6-8c40-45c6-ae592435834a.htm" />
+    <HelpKINode Title="methods" Url="html/cdd5ecad-a3d9-f02d-72d0-e3974bb7adbc.htm" />
+    <HelpKINode Title="properties" Url="html/a1f16d38-749b-31e8-4d30-8681db03f997.htm" />
+  </HelpKINode>
+  <HelpKINode Title="IUserRepository.Add method" Url="html/cbb75b8a-b616-6f49-0c7e-cc601059695c.htm" />
+  <HelpKINode Title="IUserRepository.Users property" Url="html/29c4ce60-3d3a-359d-22b9-33a4edff34b1.htm" />
+  <HelpKINode Title="LogOut method" Url="html/7f3ec4ac-5885-44ea-686e-726fc4978372.htm" />
+  <HelpKINode Title="MvcApplication class">
+    <HelpKINode Title="MvcApplication Class" Url="html/2aada052-4b62-9797-df22-07605a34e2fa.htm" />
+    <HelpKINode Title="about MvcApplication class" Url="html/2aada052-4b62-9797-df22-07605a34e2fa.htm" />
+    <HelpKINode Title="constructor" Url="html/e25da847-75c5-629a-f9f0-9e1195c7692e.htm" />
+    <HelpKINode Title="events" Url="html/83c948f7-9db0-f7c7-b049-813e3559f1de.htm" />
+    <HelpKINode Title="methods" Url="html/fa134588-e2b8-cb99-5914-a13215424166.htm" />
+    <HelpKINode Title="properties" Url="html/0754f2ae-95b6-c210-6a50-c2d16b8ca986.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MvcApplication.Application_Start method" Url="html/574c013f-84d8-0a37-1bea-268734578521.htm" />
+  <HelpKINode Title="MvcApplication.MvcApplication constructor" Url="html/e25da847-75c5-629a-f9f0-9e1195c7692e.htm" />
+  <HelpKINode Title="Name property">
+    <HelpKINode Title="Food.Name Property " Url="html/2ef523a3-cc35-af58-a103-147008d13eec.htm" />
+    <HelpKINode Title="Recipe.Name Property " Url="html/26f786e2-673f-4b75-29f3-14216516e9af.htm" />
+    <HelpKINode Title="User.Name Property " Url="html/176d6422-ad82-42a7-f97c-a1687d8445a2.htm" />
+  </HelpKINode>
+  <HelpKINode Title="NinjectDependencyResolver class">
+    <HelpKINode Title="NinjectDependencyResolver Class" Url="html/01259951-b29c-75d9-615a-bd0e0c8a2db1.htm" />
+    <HelpKINode Title="about NinjectDependencyResolver class" Url="html/01259951-b29c-75d9-615a-bd0e0c8a2db1.htm" />
+    <HelpKINode Title="constructor" Url="html/0d3ab180-0309-ed26-b427-a734ef96e5c4.htm" />
+    <HelpKINode Title="methods" Url="html/3d7240b1-aec0-dc37-d12d-df8797e637bb.htm" />
+  </HelpKINode>
+  <HelpKINode Title="NinjectDependencyResolver.GetService method" Url="html/99510812-89dc-0ca2-1a6b-0a57e6c00836.htm" />
+  <HelpKINode Title="NinjectDependencyResolver.GetServices method" Url="html/01f82afc-465a-fa1c-85a7-4ed2f73fabd2.htm" />
+  <HelpKINode Title="NinjectDependencyResolver.NinjectDependencyResolver constructor" Url="html/0d3ab180-0309-ed26-b427-a734ef96e5c4.htm" />
+  <HelpKINode Title="NinjectWebCommon class">
+    <HelpKINode Title="NinjectWebCommon Class" Url="html/75d7ca6e-7e43-82a6-47b5-b153282539e2.htm" />
+    <HelpKINode Title="about NinjectWebCommon class" Url="html/75d7ca6e-7e43-82a6-47b5-b153282539e2.htm" />
+    <HelpKINode Title="methods" Url="html/59805c94-a873-e501-70c0-a62d99aa2eb1.htm" />
+  </HelpKINode>
+  <HelpKINode Title="NinjectWebCommon.Start method" Url="html/3a2a5352-ed2b-ecc0-f3f8-cac7d0cbb94c.htm" />
+  <HelpKINode Title="NinjectWebCommon.Stop method" Url="html/be8ac67b-ab46-79aa-216a-21d0cb195bec.htm" />
+  <HelpKINode Title="Pantry class">
+    <HelpKINode Title="Pantry Class" Url="html/f0cdc909-6591-7c85-46c0-6c343d8a9def.htm" />
+    <HelpKINode Title="about Pantry class" Url="html/f0cdc909-6591-7c85-46c0-6c343d8a9def.htm" />
+    <HelpKINode Title="constructor" Url="html/b2524bb4-37ac-307f-74df-507ea105a108.htm" />
+    <HelpKINode Title="methods" Url="html/85d7b81a-6c3a-c887-1570-93e2a6c6b30e.htm" />
+    <HelpKINode Title="properties" Url="html/4559f10d-bd8a-b260-a9d1-bf8a993ac206.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Pantry.Food property" Url="html/5399799c-5ada-8860-12ce-3e04f2d21487.htm" />
+  <HelpKINode Title="Pantry.FoodID property" Url="html/3b75f3ce-3134-b2b8-c32d-2a2d89d8a813.htm" />
+  <HelpKINode Title="Pantry.Pantry constructor" Url="html/b2524bb4-37ac-307f-74df-507ea105a108.htm" />
+  <HelpKINode Title="Pantry.PantryID property" Url="html/fa8ee04c-be70-f12f-bce1-bb7cc02fce79.htm" />
+  <HelpKINode Title="Pantry.Units property" Url="html/619f8738-1dd8-87b2-ab88-127462bfc364.htm" />
+  <HelpKINode Title="Pantry.User property" Url="html/4b5ba1cf-4ee3-7755-2481-487803f70477.htm" />
+  <HelpKINode Title="Pantry.UserID property" Url="html/7d8f01e7-3376-e68c-37e8-234bbc8d0284.htm" />
+  <HelpKINode Title="PantryID property" Url="html/fa8ee04c-be70-f12f-bce1-bb7cc02fce79.htm" />
+  <HelpKINode Title="PantryRepository class">
+    <HelpKINode Title="PantryRepository Class" Url="html/a8336839-214f-a875-f379-29808c693e64.htm" />
+    <HelpKINode Title="about PantryRepository class" Url="html/a8336839-214f-a875-f379-29808c693e64.htm" />
+    <HelpKINode Title="constructor" Url="html/a795b375-b3e8-bc6b-ea8b-aec3e13ddedf.htm" />
+    <HelpKINode Title="methods" Url="html/0a8dbde0-d22a-af53-4f63-990780ebae25.htm" />
+    <HelpKINode Title="properties" Url="html/99775241-4851-b347-efe7-937c6e1ff0f8.htm" />
+  </HelpKINode>
+  <HelpKINode Title="PantryRepository.add method" Url="html/fc47e8a8-c5d5-37ae-9419-2fc04fc01c07.htm" />
+  <HelpKINode Title="PantryRepository.delete method" Url="html/b5541a36-0b82-a619-debe-43a7a34bad42.htm" />
+  <HelpKINode Title="PantryRepository.PantryRepository constructor" Url="html/a795b375-b3e8-bc6b-ea8b-aec3e13ddedf.htm" />
+  <HelpKINode Title="PantryRepository.Pantrys property" Url="html/b176ec93-e5b6-15b1-573f-b8f6271d4444.htm" />
+  <HelpKINode Title="PantryRepository.save method" Url="html/ddd9bc1c-380f-ef2b-25e8-93c92055a19f.htm" />
+  <HelpKINode Title="PantryRepository.updatePantry method" Url="html/8b40537d-7839-ec42-ca8b-85f8b09f24bc.htm" />
+  <HelpKINode Title="Pantrys property">
+    <HelpKINode Title="FoodContext.Pantrys Property " Url="html/8fbe6e35-9406-388f-c241-64956dcfd0cb.htm" />
+    <HelpKINode Title="IPantryRepository.Pantrys Property " Url="html/70589c73-f7d8-e2f3-7738-689a47f423e0.htm" />
+    <HelpKINode Title="PantryRepository.Pantrys Property " Url="html/b176ec93-e5b6-15b1-573f-b8f6271d4444.htm" />
+    <HelpKINode Title="User.Pantrys Property " Url="html/f0450b92-32f4-5679-5061-c842e71edaa1.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Password property" Url="html/602153e0-1af3-6340-a67e-05b9786359cd.htm" />
+  <HelpKINode Title="pword property" Url="html/cd8899b4-68ba-62ee-2d7a-e156dc78df73.htm" />
+  <HelpKINode Title="pword2 property" Url="html/b392d3a2-4b25-6781-26c0-b1510d339b3b.htm" />
+  <HelpKINode Title="Recipe class">
+    <HelpKINode Title="Recipe Class" Url="html/889ab1a8-4834-b028-cc4d-2c744b277e94.htm" />
+    <HelpKINode Title="about Recipe class" Url="html/889ab1a8-4834-b028-cc4d-2c744b277e94.htm" />
+    <HelpKINode Title="constructor" Url="html/5c4995f5-75cb-9d03-d816-3ddaa6e3bc7b.htm" />
+    <HelpKINode Title="methods" Url="html/74bf98c3-772a-446c-bb77-685bee99c1de.htm" />
+    <HelpKINode Title="properties" Url="html/40ef144a-804e-b06b-f638-b806f9358e32.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Recipe property" Url="html/54326998-ea67-964e-9cca-2b48718bff03.htm" />
+  <HelpKINode Title="Recipe.Ingredients property" Url="html/683d9bcf-9c86-4f8b-5bbb-823ee0bd8a17.htm" />
+  <HelpKINode Title="Recipe.Name property" Url="html/26f786e2-673f-4b75-29f3-14216516e9af.htm" />
+  <HelpKINode Title="Recipe.Recipe constructor" Url="html/5c4995f5-75cb-9d03-d816-3ddaa6e3bc7b.htm" />
+  <HelpKINode Title="Recipe.RecipeID property" Url="html/a55a235f-b03e-1da4-1db0-bf72e3f2aaf7.htm" />
+  <HelpKINode Title="RecipeController class">
+    <HelpKINode Title="RecipeController Class" Url="html/42f865d4-9c1d-bea1-5e44-54e3072f9f4e.htm" />
+    <HelpKINode Title="about RecipeController class" Url="html/42f865d4-9c1d-bea1-5e44-54e3072f9f4e.htm" />
+    <HelpKINode Title="constructor" Url="html/8d97482e-5d40-694a-3707-a91eb2f756ea.htm" />
+    <HelpKINode Title="methods" Url="html/1bfe305b-61a9-df2b-65ee-57cf9f561c73.htm" />
+    <HelpKINode Title="properties" Url="html/7c8e9d62-dce0-7953-0615-343c7a0ad4cc.htm" />
+  </HelpKINode>
+  <HelpKINode Title="RecipeController.AddFoodId method" Url="html/7b4e3fae-42b2-901a-06a0-f5736831bcfc.htm" />
+  <HelpKINode Title="RecipeController.AddRecipeId method" Url="html/ec9a4b7c-1e2d-de1c-2777-3c0082c1ce53.htm" />
+  <HelpKINode Title="RecipeController.CanIMakeIt method" Url="html/330512fa-67c6-d246-39b3-e080f421c8c4.htm" />
+  <HelpKINode Title="RecipeController.Create method" Url="html/3498a6a3-cf1e-2804-6d6e-5638e48bcade.htm" />
+  <HelpKINode Title="RecipeController.Details method" Url="html/94dc6d4b-682d-5460-dacc-b4712ff3e7ef.htm" />
+  <HelpKINode Title="RecipeController.Index method" Url="html/a1913c58-4e56-0415-b185-2a5c590e98c7.htm" />
+  <HelpKINode Title="RecipeController.RecipeController constructor" Url="html/8d97482e-5d40-694a-3707-a91eb2f756ea.htm" />
+  <HelpKINode Title="RecipeID property">
+    <HelpKINode Title="Ingredient.RecipeID Property " Url="html/e191332b-9d28-e194-4ab6-5d15d0419c9e.htm" />
+    <HelpKINode Title="Recipe.RecipeID Property " Url="html/a55a235f-b03e-1da4-1db0-bf72e3f2aaf7.htm" />
+  </HelpKINode>
+  <HelpKINode Title="RecipeRepository class">
+    <HelpKINode Title="RecipeRepository Class" Url="html/8abcd4ba-07ab-ebea-1e38-928602908b63.htm" />
+    <HelpKINode Title="about RecipeRepository class" Url="html/8abcd4ba-07ab-ebea-1e38-928602908b63.htm" />
+    <HelpKINode Title="constructor" Url="html/08938b80-0e22-d27a-1d28-548fd993b7b5.htm" />
+    <HelpKINode Title="methods" Url="html/eae93c54-19b4-962a-21e7-fd12922a2d3d.htm" />
+    <HelpKINode Title="properties" Url="html/059f5183-a25b-7d3e-426f-f2f5d8d1ca74.htm" />
+  </HelpKINode>
+  <HelpKINode Title="RecipeRepository.Add method" Url="html/ed8ac74d-ef9f-d034-06fd-4888f39ff737.htm" />
+  <HelpKINode Title="RecipeRepository.GetRecipeID method" Url="html/46c67721-6d0b-77e6-4983-adc5fd5ea16e.htm" />
+  <HelpKINode Title="RecipeRepository.RecipeRepository constructor" Url="html/08938b80-0e22-d27a-1d28-548fd993b7b5.htm" />
+  <HelpKINode Title="RecipeRepository.Recipes property" Url="html/3e542753-1740-1788-91b7-f72526f4f5cb.htm" />
+  <HelpKINode Title="RecipeRepository.Save method" Url="html/b93b78e4-4d2f-f2eb-d98a-53d1549cd140.htm" />
+  <HelpKINode Title="Recipes property">
+    <HelpKINode Title="FoodContext.Recipes Property " Url="html/f2c8c29c-a4ba-bb24-b0f9-2e9a559322a1.htm" />
+    <HelpKINode Title="IRecipeRepository.Recipes Property " Url="html/c2e2226f-14f9-8130-1154-1bb04c2be50e.htm" />
+    <HelpKINode Title="RecipeRepository.Recipes Property " Url="html/3e542753-1740-1788-91b7-f72526f4f5cb.htm" />
+  </HelpKINode>
+  <HelpKINode Title="RegisterBundles method" Url="html/447be99c-60b5-6987-430d-6b63551e006b.htm" />
+  <HelpKINode Title="RegisterGlobalFilters method" Url="html/79f78d76-21e4-8262-448a-855109bf97ff.htm" />
+  <HelpKINode Title="RegisterRoutes method" Url="html/55753fc1-715d-a700-877e-853128f0635a.htm" />
+  <HelpKINode Title="RouteConfig class">
+    <HelpKINode Title="RouteConfig Class" Url="html/fcd868ef-23a0-0bab-593b-43ae238451da.htm" />
+    <HelpKINode Title="about RouteConfig class" Url="html/fcd868ef-23a0-0bab-593b-43ae238451da.htm" />
+    <HelpKINode Title="constructor" Url="html/7a7ed368-e633-ef10-ead7-aa2c6064362d.htm" />
+    <HelpKINode Title="methods" Url="html/f84c2f9d-9c91-195d-919a-025d465fb8d8.htm" />
+  </HelpKINode>
+  <HelpKINode Title="RouteConfig.RegisterRoutes method" Url="html/55753fc1-715d-a700-877e-853128f0635a.htm" />
+  <HelpKINode Title="RouteConfig.RouteConfig constructor" Url="html/7a7ed368-e633-ef10-ead7-aa2c6064362d.htm" />
+  <HelpKINode Title="Save method">
+    <HelpKINode Title="FoodRepository.Save Method " Url="html/da4069b8-b634-4405-1b36-7e6eec32ae16.htm" />
+    <HelpKINode Title="IFoodRepository.Save Method " Url="html/15d57cc3-5526-e64e-4f5f-3b1b64332e5c.htm" />
+    <HelpKINode Title="IIngredientRepository.Save Method " Url="html/1f15871f-be15-c40d-edca-f9b6dca761a1.htm" />
+    <HelpKINode Title="IngredientRepository.Save Method " Url="html/a22d4856-fdb5-18b4-a701-4d63aa09d4ce.htm" />
+    <HelpKINode Title="IRecipeRepository.Save Method " Url="html/92979ccf-7c0b-e017-88ce-c40a9e1f3e28.htm" />
+    <HelpKINode Title="RecipeRepository.Save Method " Url="html/b93b78e4-4d2f-f2eb-d98a-53d1549cd140.htm" />
+  </HelpKINode>
+  <HelpKINode Title="save method">
+    <HelpKINode Title="PantryRepository.save Method " Url="html/ddd9bc1c-380f-ef2b-25e8-93c92055a19f.htm" />
+    <HelpKINode Title="IPantryRepository.save Method " Url="html/5fc25b6b-464b-af02-a5eb-77a0b23e8bc5.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Seed method" Url="html/0101f892-32ad-e214-e8bf-f04270709680.htm" />
+  <HelpKINode Title="Start method" Url="html/3a2a5352-ed2b-ecc0-f3f8-cac7d0cbb94c.htm" />
+  <HelpKINode Title="Stop method" Url="html/be8ac67b-ab46-79aa-216a-21d0cb195bec.htm" />
+  <HelpKINode Title="temp field" Url="html/cf943994-d04c-2a47-a629-04f7814c8685.htm" />
+  <HelpKINode Title="un property" Url="html/7d941872-d30b-17f6-7924-63bf6db59f10.htm" />
+  <HelpKINode Title="Units property" Url="html/619f8738-1dd8-87b2-ab88-127462bfc364.htm" />
+  <HelpKINode Title="update method" Url="html/5331e6cc-d1b5-afc1-4cb8-618ea3e73be6.htm" />
+  <HelpKINode Title="UpdateFood method">
+    <HelpKINode Title="FoodRepository.UpdateFood Method " Url="html/fd4d8f59-3d8c-31de-f585-b139e8af4e51.htm" />
+    <HelpKINode Title="IFoodRepository.UpdateFood Method " Url="html/6a9e7a1c-f174-41e1-2c6a-f469186c1999.htm" />
+  </HelpKINode>
+  <HelpKINode Title="updatePantry method">
+    <HelpKINode Title="IPantryRepository.updatePantry Method " Url="html/016a4fdd-92d1-6144-ca84-da69a6ea031e.htm" />
+    <HelpKINode Title="PantryRepository.updatePantry Method " Url="html/8b40537d-7839-ec42-ca8b-85f8b09f24bc.htm" />
+  </HelpKINode>
+  <HelpKINode Title="User class">
+    <HelpKINode Title="User Class" Url="html/df493df4-256d-f1cb-41d0-f568f21c24d7.htm" />
+    <HelpKINode Title="about User class" Url="html/df493df4-256d-f1cb-41d0-f568f21c24d7.htm" />
+    <HelpKINode Title="constructor" Url="html/b10b8eaa-0783-9b0d-953a-6ed89a072c24.htm" />
+    <HelpKINode Title="methods" Url="html/391591d2-0225-07c4-0cbc-b8e8a6b163af.htm" />
+    <HelpKINode Title="properties" Url="html/32c5d96a-aab4-21c0-e5da-2872ad28af40.htm" />
+  </HelpKINode>
+  <HelpKINode Title="User property" Url="html/4b5ba1cf-4ee3-7755-2481-487803f70477.htm" />
+  <HelpKINode Title="User.Name property" Url="html/176d6422-ad82-42a7-f97c-a1687d8445a2.htm" />
+  <HelpKINode Title="User.Pantrys property" Url="html/f0450b92-32f4-5679-5061-c842e71edaa1.htm" />
+  <HelpKINode Title="User.Password property" Url="html/602153e0-1af3-6340-a67e-05b9786359cd.htm" />
+  <HelpKINode Title="User.User constructor" Url="html/b10b8eaa-0783-9b0d-953a-6ed89a072c24.htm" />
+  <HelpKINode Title="User.UserID property" Url="html/214fc10e-6d5a-3329-0f05-dd02bcc73122.htm" />
+  <HelpKINode Title="UserController class">
+    <HelpKINode Title="UserController Class" Url="html/865d6248-3189-b83b-d6d8-8668b70138db.htm" />
+    <HelpKINode Title="about UserController class" Url="html/865d6248-3189-b83b-d6d8-8668b70138db.htm" />
+    <HelpKINode Title="constructor" Url="html/94236b99-3ecc-cf2c-0ebc-cffdc63b2e7f.htm" />
+    <HelpKINode Title="fields" Url="html/3b29f22e-ac1a-dbd0-ab9b-1bf3827ede89.htm" />
+    <HelpKINode Title="methods" Url="html/614544cc-5490-1bc0-ac55-edecb951ef44.htm" />
+    <HelpKINode Title="properties" Url="html/1f5f7195-a66d-5dc6-2432-408064a85c4f.htm" />
+  </HelpKINode>
+  <HelpKINode Title="UserController.Createuser method" Url="html/44245ddd-94b5-5cb9-791f-d680ea471545.htm" />
+  <HelpKINode Title="UserController.CreateUser method" Url="html/8fa47a5d-36d4-13c8-2057-8165798be91b.htm" />
+  <HelpKINode Title="UserController.Index method" Url="html/4a1eaf20-7d1c-4adb-50e9-11ae151d80e3.htm" />
+  <HelpKINode Title="UserController.LogOut method" Url="html/7f3ec4ac-5885-44ea-686e-726fc4978372.htm" />
+  <HelpKINode Title="UserController.temp field" Url="html/cf943994-d04c-2a47-a629-04f7814c8685.htm" />
+  <HelpKINode Title="UserController.UserController constructor" Url="html/94236b99-3ecc-cf2c-0ebc-cffdc63b2e7f.htm" />
+  <HelpKINode Title="UserID property">
+    <HelpKINode Title="Pantry.UserID Property " Url="html/7d8f01e7-3376-e68c-37e8-234bbc8d0284.htm" />
+    <HelpKINode Title="User.UserID Property " Url="html/214fc10e-6d5a-3329-0f05-dd02bcc73122.htm" />
+  </HelpKINode>
+  <HelpKINode Title="UserLogin class">
+    <HelpKINode Title="UserLogin Class" Url="html/52849153-2d9e-b89d-ea1d-f77469a1ccb6.htm" />
+    <HelpKINode Title="about UserLogin class" Url="html/52849153-2d9e-b89d-ea1d-f77469a1ccb6.htm" />
+    <HelpKINode Title="constructor" Url="html/bf033b46-48a7-6cf4-6e0e-dcd608f5d22c.htm" />
+    <HelpKINode Title="methods" Url="html/c481c46b-4a2b-e2e9-a1d9-cdd23cc84bf3.htm" />
+    <HelpKINode Title="properties" Url="html/05313e40-fcf2-5293-55a3-f59824610908.htm" />
+  </HelpKINode>
+  <HelpKINode Title="UserLogin.pword property" Url="html/cd8899b4-68ba-62ee-2d7a-e156dc78df73.htm" />
+  <HelpKINode Title="UserLogin.pword2 property" Url="html/b392d3a2-4b25-6781-26c0-b1510d339b3b.htm" />
+  <HelpKINode Title="UserLogin.un property" Url="html/7d941872-d30b-17f6-7924-63bf6db59f10.htm" />
+  <HelpKINode Title="UserLogin.UserLogin constructor" Url="html/bf033b46-48a7-6cf4-6e0e-dcd608f5d22c.htm" />
+  <HelpKINode Title="UserModelBinder class">
+    <HelpKINode Title="UserModelBinder Class" Url="html/e354f78a-d14f-345d-18f1-4201f7917d3e.htm" />
+    <HelpKINode Title="about UserModelBinder class" Url="html/e354f78a-d14f-345d-18f1-4201f7917d3e.htm" />
+    <HelpKINode Title="constructor" Url="html/2627edd7-6613-6f7a-96ed-3e7615027d66.htm" />
+    <HelpKINode Title="methods" Url="html/f4254fb2-d2f3-3d56-12e1-65989e880c33.htm" />
+  </HelpKINode>
+  <HelpKINode Title="UserModelBinder.BindModel method" Url="html/4381ec8d-d7b5-9c89-a406-83c7e9211a3c.htm" />
+  <HelpKINode Title="UserModelBinder.UserModelBinder constructor" Url="html/2627edd7-6613-6f7a-96ed-3e7615027d66.htm" />
+  <HelpKINode Title="UserRepository class">
+    <HelpKINode Title="UserRepository Class" Url="html/bbb4f100-cdf8-1eb8-b54e-3a1ddcc16326.htm" />
+    <HelpKINode Title="about UserRepository class" Url="html/bbb4f100-cdf8-1eb8-b54e-3a1ddcc16326.htm" />
+    <HelpKINode Title="constructor" Url="html/b98ccbde-44a5-26c3-f266-7033e1736d24.htm" />
+    <HelpKINode Title="fields" Url="html/ee4123df-e8d6-2c06-e018-ba2d6fa43df7.htm" />
+    <HelpKINode Title="methods" Url="html/f91265c4-34da-0af2-1970-f0cade7606ac.htm" />
+    <HelpKINode Title="properties" Url="html/943aec68-8d58-8452-d3c2-f5883ce12398.htm" />
+  </HelpKINode>
+  <HelpKINode Title="UserRepository.Add method" Url="html/21cad5e7-2858-ab7f-3188-7b893512e2a3.htm" />
+  <HelpKINode Title="UserRepository.Context field" Url="html/bfcdeb3e-ad07-e6d3-51b7-8b53d9e78e6c.htm" />
+  <HelpKINode Title="UserRepository.UserRepository constructor" Url="html/b98ccbde-44a5-26c3-f266-7033e1736d24.htm" />
+  <HelpKINode Title="UserRepository.Users property" Url="html/2f991e5d-b8bf-16fa-ef73-dce1054917ed.htm" />
+  <HelpKINode Title="Users property">
+    <HelpKINode Title="FoodContext.Users Property " Url="html/1cd9f56d-463e-6700-7084-4bc1f092ac1b.htm" />
+    <HelpKINode Title="IUserRepository.Users Property " Url="html/29c4ce60-3d3a-359d-22b9-33a4edff34b1.htm" />
+    <HelpKINode Title="UserRepository.Users Property " Url="html/2f991e5d-b8bf-16fa-ef73-dce1054917ed.htm" />
+  </HelpKINode>
+</HelpKI>
