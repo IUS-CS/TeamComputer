@@ -30,7 +30,7 @@ namespace FoodProject.Controllers
         /// if the user is logged in it displays a view that shows all of the users foods, and gives option to add more
         /// </summary>
         /// <param name="user">The object that holds the logged in user, you don't need to pass this in
-        /// it is model binded and paassed for you</param>
+        /// it is model binded and passed for you</param>
         /// <param name="sortOrder"></param>
         /// <param name="currentFilter"></param>
         /// <param name="searchString"></param>
@@ -96,7 +96,7 @@ namespace FoodProject.Controllers
         /// this method adds the food the user selected from the addFood method to the user's pantry
         /// </summary>
         /// <param name="user">The object that holds the logged in user, you don't need to pass this in
-        /// it is model binded and paassed for you</param>
+        /// it is model binded and passed for you</param>
         /// <param name="id">the id of the food to add to the pantry</param>
         /// <returns>a view of the updated food list</returns>
         public RedirectToRouteResult addFoods(User user,int id)
@@ -178,7 +178,7 @@ namespace FoodProject.Controllers
         /// if the food item doesn't already exist
         /// </summary>
         /// <param name="user">The object that holds the logged in user, you don't need to pass this in
-        /// it is model binded and paassed for you</param>
+        /// it is model binded and passed for you</param>
         /// <param name="f">the food object passed through the createNewFood view</param>
         /// <returns>a view</returns>
         [HttpPost]
