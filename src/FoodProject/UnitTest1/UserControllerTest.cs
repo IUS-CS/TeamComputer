@@ -5,6 +5,7 @@ using FoodProject.Models;
 using FoodProject.Controllers;
 using System.Collections.Generic;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System.Diagnostics;
 
 namespace UnitTest1
 {
@@ -32,6 +33,26 @@ namespace UnitTest1
         public void Add(User user)
         {
             listUsers.Add(user);
+        }
+
+        public void UpdatePassword(User temp, String password)
+        {
+            //check if user password equals listUser pw for the given user.
+            for (int i = 0; i < listUsers.Count; i++)
+            {
+                if (listUsers[i].UserID.Equals(temp.UserID))
+                {
+                    Console.WriteLine("temp User", temp.UserID);
+                    Console.WriteLine("listUser", listUsers[i].UserID);
+                    //found user, check if current pw matches
+                    if (listUsers[i].Password.Equals(temp.Password))
+                    {
+                        //update password
+                        listUsers[i].Password = password;
+                        break;
+                    }
+                }
+            }
         }
     }
 
@@ -211,6 +232,68 @@ namespace UnitTest1
             //if one user wasn't added to database 
             int s = mock.Users.Select(x => x).Where(x => x.Name == temp.un).Count();
             Assert.AreEqual(s, 1);
+        }
+        [TestMethod]
+        public void WillNotUpdatePasswordIfCurrentPwDoesntMatch()
+        {
+            //setup
+            MockUserRepository mock = new MockUserRepository();
+            UserController controller = new UserController(mock);
+            //login a temp user to check with
+            UserLogin temp2 = new UserLogin() { un = "coolemail@site.com", pword = "password" };
+            User user = new User();
+
+            // execute Login
+            controller.Index(user, temp2);
+
+            //handle updating password
+            UserProfile temp = new UserProfile() { currentPW = "random", newPW = "password", newPW2 = "password" };
+
+            controller.UserProfile(user, temp);
+
+            Assert.AreEqual("password", user.Password);
+        }
+
+        [TestMethod]
+        public void WillNotUpdatePasswordIfNewPwsDontMatch()
+        {
+            //setup
+            MockUserRepository mock = new MockUserRepository();
+            UserController controller = new UserController(mock);
+            //login a temp user to check with
+            UserLogin temp2 = new UserLogin() { un = "coolemail@site.com", pword = "password" };
+            User user = new User();
+
+            // execute Login
+            controller.Index(user, temp2);
+
+            //handle updating password
+            UserProfile temp = new UserProfile() { currentPW = "password", newPW = "random", newPW2 = "random2" };
+
+            controller.UserProfile(user, temp);
+
+            Assert.AreEqual("password", user.Password);
+        }
+
+        [TestMethod]
+        public void WillUpdatePasswordIfNewPwsMatch()
+        {
+            //setup
+            MockUserRepository mock = new MockUserRepository();
+            UserController controller = new UserController(mock);
+            //login a temp user to check with
+            UserLogin temp2 = new UserLogin() { un = "coolemail@site.com", pword = "password" };
+            User user = new User();
+
+            // execute Login
+            controller.Index(user, temp2);
+
+            //handle updating password
+            UserProfile temp = new UserProfile() { currentPW = "password", newPW = "password2", newPW2 = "password2" };
+
+            controller.UserProfile(user, temp);
+
+            Assert.AreEqual("password2", user.Password);
         }
     }
 }

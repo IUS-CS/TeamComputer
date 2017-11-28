@@ -170,7 +170,7 @@ namespace FoodProject.Controllers
             //check if current pw is the same as pw in database
             if(temp.currentPW.Length != 0)
             {
-                User tempUser = userRepository.Users.Select(x => x).Where(x => x.Password == temp.currentPW).FirstOrDefault();
+                User tempUser = userRepository.Users.Select(x => x).Where(x => x.Name == user.Name).FirstOrDefault();
                 //if passwords match
                 if(tempUser.Password.Equals(temp.currentPW))
                 {
