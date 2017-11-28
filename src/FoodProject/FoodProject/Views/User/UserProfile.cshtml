@@ -1,0 +1,28 @@
+﻿@model FoodProject.Models.UserProfile
+<head>
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap-theme.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width" />
+    <link href="~/Content/Styles.css" rel="stylesheet" />
+    <title>User Profile</title>
+</head>
+
+<div class="panel-body">
+    @using (Html.BeginForm())
+            {
+        @Html.ValidationSummary()
+        <div class="form-group">
+            <label>Current Password:</label>
+            @Html.TextBoxFor(x => x.currentPW, new { @class = "form-control" })
+        </div>
+        <div class="form-group">
+            <label>New Password:</label>
+            @Html.PasswordFor(x => x.newPW, new { @class = "form-control" })
+            <label>Confirm new Password:</label>
+            @Html.PasswordFor(x => x.newPW2, new { @class = "form-control" })
+        </div>
+        <div>
+            <input class="btn btn-success" type="submit" value="Update Password" />
+        </div>
+    }
+</div>

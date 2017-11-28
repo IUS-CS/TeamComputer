@@ -16,7 +16,7 @@ namespace FoodProject.Controllers
     public class UserController : Controller
     {
         private IUserRepository userRepository;
-        public UserLogin temp = new UserLogin();
+        private UserLogin temp = new UserLogin();
 
        /// <summary>
        /// gets the userRepository from the dependency injection container
@@ -42,7 +42,7 @@ namespace FoodProject.Controllers
             //if the userId is not null someone is signed in
             if (user.UserID != null)
             {
-                return RedirectToAction("Index","Home");
+                return RedirectToAction("UserProfile","User");
             }
             //they aren't signed in got to login screen
             //pass it a UserLogin object to store the username and password the user types in
@@ -186,6 +186,56 @@ namespace FoodProject.Controllers
             user.Password = null;
             //return to home screen
             return RedirectToAction("Index", "Home");
+        }
+        /// <summary>
+        /// Handles bringing up the view to change user password
+        /// </summary>
+        /// <returns>a view</returns>
+        public ActionResult UserProfile()
+        {
+            return View();
+        }
+
+        /// <summary>
+        /// This method changes the users password
+        /// </summary>
+        /// <param name="user">The object that holds the logged in user, you don't need to pass this in
+        /// it is model binded and passed for you</param>
+        /// <param name="temp">the object that holds the user's new password</param>
+        /// <returns></returns>
+        [HttpPost]
+        public RedirectToRouteResult UserProfile(User user, UserProfile temp)
+        {
+            //check if current pw is the same as pw in database
+            if(temp.currentPW.Length != 0)
+            {
+                User tempUser = userRepository.Users.Select(x => x).Where(x => x.Name == user.Name).FirstOrDefault();
+                //if passwords match
+                if(tempUser.Password.Equals(temp.currentPW))
+                {
+                    //check if both new passwords match
+                    //check if passwords are equal
+                    if (temp.newPW.Equals(temp.newPW2))
+                    {
+                        //new passwords are equal, update the password in the database
+                        userRepository.UpdatePassword(user, temp.newPW2);
+                        return RedirectToAction("Index", "Home");
+                    }
+                    else
+                    {
+                        return RedirectToAction("UserProfile", "User");
+                    }
+                }
+                else
+                {
+                    return RedirectToAction("UserProfile", "User");
+                }
+            }
+            else
+            {
+                return RedirectToAction("UserProfile", "User");
+            }
+            return RedirectToAction("UserProfile", "User");
         }
     }
 }

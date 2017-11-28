@@ -22,5 +22,14 @@ namespace FoodProject.Concrete
             Context.SaveChanges();
         }
 
+        public void UpdatePassword(User temp, String password)
+        {
+            User dbEntry = Context.Users.Find(temp.UserID);
+            if (dbEntry != null)
+            {
+                dbEntry.Password = password;
+            }
+            Context.SaveChanges();
+        }
     }
 }
