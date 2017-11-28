@@ -271,7 +271,7 @@ namespace UnitTest1
             UserProfile temp = new UserProfile() { currentPW = "password", newPW = "random", newPW2 = "random2" };
 
             controller.UserProfile(user, temp);
-
+            user = mock.Users.Where(x => x.Name == user.Name).First();
             Assert.AreEqual("password", user.Password);
         }
 
@@ -292,7 +292,7 @@ namespace UnitTest1
             UserProfile temp = new UserProfile() { currentPW = "password", newPW = "password2", newPW2 = "password2" };
 
             controller.UserProfile(user, temp);
-
+            user = mock.Users.Where(x => x.Name == user.Name).First();
             Assert.AreEqual("password2", user.Password);
         }
     }
