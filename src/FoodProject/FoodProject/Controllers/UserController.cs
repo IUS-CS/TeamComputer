@@ -187,12 +187,22 @@ namespace FoodProject.Controllers
             //return to home screen
             return RedirectToAction("Index", "Home");
         }
-        //handles creating the user profile page
+        /// <summary>
+        /// Handles bringing up the view to change user password
+        /// </summary>
+        /// <returns>a view</returns>
         public ActionResult UserProfile()
         {
             return View();
         }
 
+        /// <summary>
+        /// This method changes the users password
+        /// </summary>
+        /// <param name="user">The object that holds the logged in user, you don't need to pass this in
+        /// it is model binded and passed for you</param>
+        /// <param name="temp">the object that holds the user's new password</param>
+        /// <returns></returns>
         [HttpPost]
         public RedirectToRouteResult UserProfile(User user, UserProfile temp)
         {
