@@ -1,0 +1,316 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HelpTOC>
+
+  <HelpTOCNode Id="441b8cf2-4e99-47e8-861b-2a28c26c29b8" Title="Namespaces" Url="html/d75eb659-6335-53f6-af7a-81814a21ab7f.htm">
+    <HelpTOCNode Id="4fdd4a17-33b7-4528-a2e8-04fe845a9a83" Title="FoodProject" Url="html/e648122b-d3a6-474f-31da-3e6c64124619.htm">
+      <HelpTOCNode Id="5c6f7510-97e3-4997-8410-ebb3580e381c" Title="BundleConfig Class" Url="html/8b4333f4-e7ce-0bc0-1312-1523c0ad3ddc.htm">
+        <HelpTOCNode Title="BundleConfig Constructor " Url="html/ffa46289-22f9-5992-b13c-46feddaba714.htm" />
+        <HelpTOCNode Id="807a20d8-30b8-4d1e-bd32-994a020df6aa" Title="BundleConfig Methods" Url="html/0a4a1160-ab2d-2102-5e00-f8474431623f.htm">
+          <HelpTOCNode Title="RegisterBundles Method " Url="html/447be99c-60b5-6987-430d-6b63551e006b.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+      <HelpTOCNode Id="ff00e72e-c542-48db-b0fb-11099972e45e" Title="FilterConfig Class" Url="html/6fcaf4c8-8d3b-a8f2-fef8-bada7c91f92c.htm">
+        <HelpTOCNode Title="FilterConfig Constructor " Url="html/632afe12-dfa0-adde-76f1-3d04edc840f8.htm" />
+        <HelpTOCNode Id="2823794f-87b6-44ff-b937-be5599f492f0" Title="FilterConfig Methods" Url="html/61280da6-017c-956b-50be-ea42f7d15df6.htm">
+          <HelpTOCNode Title="RegisterGlobalFilters Method " Url="html/79f78d76-21e4-8262-448a-855109bf97ff.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+      <HelpTOCNode Id="f3e3f1fe-9e7a-4542-8b07-939acd6df02f" Title="Initializer Class" Url="html/a7f91056-ace7-1988-e516-505a79570b5e.htm">
+        <HelpTOCNode Title="Initializer Constructor " Url="html/819018b1-6197-3693-bf52-175b75927f13.htm" />
+        <HelpTOCNode Id="0d6bf7d4-113e-4ebe-a0fc-dac866cee439" Title="Initializer Methods" Url="html/9e6cb91c-65e6-310e-091a-743f33549bfc.htm">
+          <HelpTOCNode Title="Seed Method " Url="html/0101f892-32ad-e214-e8bf-f04270709680.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+      <HelpTOCNode Id="ce97fd38-1e8c-49ce-b76a-f3634fc52c18" Title="MvcApplication Class" Url="html/2aada052-4b62-9797-df22-07605a34e2fa.htm">
+        <HelpTOCNode Title="MvcApplication Constructor " Url="html/e25da847-75c5-629a-f9f0-9e1195c7692e.htm" />
+        <HelpTOCNode Title="MvcApplication Properties" Url="html/0754f2ae-95b6-c210-6a50-c2d16b8ca986.htm" />
+        <HelpTOCNode Id="a50e12f9-65b6-4131-8675-36139dbca868" Title="MvcApplication Methods" Url="html/fa134588-e2b8-cb99-5914-a13215424166.htm">
+          <HelpTOCNode Title="Application_Start Method " Url="html/574c013f-84d8-0a37-1bea-268734578521.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="MvcApplication Events" Url="html/83c948f7-9db0-f7c7-b049-813e3559f1de.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="9e20222a-0001-4aea-bc1b-32f6125716dc" Title="RouteConfig Class" Url="html/fcd868ef-23a0-0bab-593b-43ae238451da.htm">
+        <HelpTOCNode Title="RouteConfig Constructor " Url="html/7a7ed368-e633-ef10-ead7-aa2c6064362d.htm" />
+        <HelpTOCNode Id="8c827bdd-a5bf-4a95-85e5-3acbc43b40da" Title="RouteConfig Methods" Url="html/f84c2f9d-9c91-195d-919a-025d465fb8d8.htm">
+          <HelpTOCNode Title="RegisterRoutes Method " Url="html/55753fc1-715d-a700-877e-853128f0635a.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="ac9c2b98-285a-4ce9-8cb7-d5e2101316c4" Title="FoodProject.Abstract" Url="html/c89f2ed1-17c3-8592-c60b-5b2e5c3f0747.htm">
+      <HelpTOCNode Id="73a89055-e7b8-493d-a89c-17d32c41cd3f" Title="IFoodRepository Interface" Url="html/4098a950-b92e-8cc3-33ed-2b605326a364.htm">
+        <HelpTOCNode Id="e4955ece-8d98-4ba0-a3da-2640cace43d5" Title="IFoodRepository Properties" Url="html/ef591111-6e29-fe92-3481-6c28bb2386c0.htm">
+          <HelpTOCNode Title="Foods Property " Url="html/3b9ac070-2761-81b6-9117-01d1df760892.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="2269b280-a47c-4662-ae04-fd048ebfe5f8" Title="IFoodRepository Methods" Url="html/cc38df75-67a8-c0bf-c464-3f1f713ccb73.htm">
+          <HelpTOCNode Title="DeleteFood Method " Url="html/82413c49-483f-a902-062c-ab4a8a94d719.htm" />
+          <HelpTOCNode Title="GetFoodById Method " Url="html/0c6efd87-4798-67ee-9007-094bc48004e7.htm" />
+          <HelpTOCNode Title="InsertFood Method " Url="html/0af61385-9eca-85e4-9676-58cbba7ea4de.htm" />
+          <HelpTOCNode Title="Save Method " Url="html/15d57cc3-5526-e64e-4f5f-3b1b64332e5c.htm" />
+          <HelpTOCNode Title="UpdateFood Method " Url="html/6a9e7a1c-f174-41e1-2c6a-f469186c1999.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+      <HelpTOCNode Id="c0b36549-0adb-4f3a-be3c-61eef6dbdf7f" Title="IIngredientRepository Interface" Url="html/822aede6-6fee-5461-63ab-8737756ef8ea.htm">
+        <HelpTOCNode Id="80b79b3a-e802-477a-ad20-ff126b0df4df" Title="IIngredientRepository Properties" Url="html/d33e3523-2bbe-4fb5-8693-bfd105bd39aa.htm">
+          <HelpTOCNode Title="Ingredients Property " Url="html/e8b3cc03-a7cf-21f5-f6fa-1b33b5807f6e.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="25f82c5e-daea-4a71-b157-0a56023ddcfc" Title="IIngredientRepository Methods" Url="html/3d785237-a9a3-f0eb-431a-b42fb8965097.htm">
+          <HelpTOCNode Title="Add Method " Url="html/3294a6d1-a1ed-f7be-5fc9-4d9d394f77de.htm" />
+          <HelpTOCNode Title="Save Method " Url="html/1f15871f-be15-c40d-edca-f9b6dca761a1.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+      <HelpTOCNode Id="8982ad5a-9ad5-4204-b09c-7079418355c6" Title="IPantryRepository Interface" Url="html/bc382808-c96e-c300-25ca-96c56a15f77b.htm">
+        <HelpTOCNode Id="d62b578e-30fe-43c0-8c06-d4885bc62780" Title="IPantryRepository Properties" Url="html/c2518ef7-4814-dbde-e9f6-f041c1d38718.htm">
+          <HelpTOCNode Title="Pantrys Property " Url="html/70589c73-f7d8-e2f3-7738-689a47f423e0.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="b10f01e5-aa08-4f05-86ba-4b291d35596a" Title="IPantryRepository Methods" Url="html/5a265362-fea9-7d51-8aff-85a0b97b234a.htm">
+          <HelpTOCNode Title="add Method " Url="html/6310b8b8-bc6a-0bf5-52bc-2ad667b5218c.htm" />
+          <HelpTOCNode Title="delete Method " Url="html/cce0b714-374f-fa90-8395-7088cf2c5353.htm" />
+          <HelpTOCNode Title="save Method " Url="html/5fc25b6b-464b-af02-a5eb-77a0b23e8bc5.htm" />
+          <HelpTOCNode Title="updatePantry Method " Url="html/016a4fdd-92d1-6144-ca84-da69a6ea031e.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+      <HelpTOCNode Id="73433336-cd42-4ea2-8b54-20e60bf9923b" Title="IRecipeRepository Interface" Url="html/d898309b-d5a0-a4bb-5fbb-bec4d3b98bdf.htm">
+        <HelpTOCNode Id="36f9965b-39f9-407c-87aa-5b8cf57e27f4" Title="IRecipeRepository Properties" Url="html/91b5cc24-b546-0b06-9ccd-76d40f3ee4ab.htm">
+          <HelpTOCNode Title="Recipes Property " Url="html/c2e2226f-14f9-8130-1154-1bb04c2be50e.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="22de7b36-1137-427f-8bcb-cdebff73dee6" Title="IRecipeRepository Methods" Url="html/47b04ee9-27cd-41e5-11c6-d2889411921b.htm">
+          <HelpTOCNode Title="Add Method " Url="html/5117e333-2e7a-7578-3066-54010f97e81c.htm" />
+          <HelpTOCNode Title="GetRecipeID Method " Url="html/bed9c3cd-b93a-3de6-9b55-c8146fb58abe.htm" />
+          <HelpTOCNode Title="Save Method " Url="html/92979ccf-7c0b-e017-88ce-c40a9e1f3e28.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+      <HelpTOCNode Id="e7361eae-d015-4750-947c-cf18b1dbc314" Title="IUserRepository Interface" Url="html/6e902288-5cf6-8c40-45c6-ae592435834a.htm">
+        <HelpTOCNode Id="6a0edb16-d2a6-46e7-816a-d9b1913ecea3" Title="IUserRepository Properties" Url="html/a1f16d38-749b-31e8-4d30-8681db03f997.htm">
+          <HelpTOCNode Title="Users Property " Url="html/29c4ce60-3d3a-359d-22b9-33a4edff34b1.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="dda23d33-8d7b-4b8b-a7ef-a9b957325fe4" Title="IUserRepository Methods" Url="html/cdd5ecad-a3d9-f02d-72d0-e3974bb7adbc.htm">
+          <HelpTOCNode Title="Add Method " Url="html/cbb75b8a-b616-6f49-0c7e-cc601059695c.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="4881e01b-9abf-47f4-9ca9-d94f73fa8c36" Title="FoodProject.App_Start" Url="html/9fa045dc-787f-5ecc-265f-1a4418eb3bfa.htm">
+      <HelpTOCNode Id="7703608a-183d-4281-a322-186f7ca94df6" Title="NinjectWebCommon Class" Url="html/75d7ca6e-7e43-82a6-47b5-b153282539e2.htm">
+        <HelpTOCNode Id="0eca25b8-a644-428c-ad29-6d0fae6d7348" Title="NinjectWebCommon Methods" Url="html/59805c94-a873-e501-70c0-a62d99aa2eb1.htm">
+          <HelpTOCNode Title="Start Method " Url="html/3a2a5352-ed2b-ecc0-f3f8-cac7d0cbb94c.htm" />
+          <HelpTOCNode Title="Stop Method " Url="html/be8ac67b-ab46-79aa-216a-21d0cb195bec.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="d6128b87-07df-476f-a15d-ea23a3f6143d" Title="FoodProject.Concrete" Url="html/c4db18c3-ffab-122d-53b6-0e832bb636db.htm">
+      <HelpTOCNode Id="764f69f3-1e2a-4c21-aac7-0c473e10cf02" Title="FoodContext Class" Url="html/90be6e36-73df-89d2-6b7e-e134b03f0722.htm">
+        <HelpTOCNode Title="FoodContext Constructor " Url="html/4f66797d-da79-3c7b-ddac-82639df6b676.htm" />
+        <HelpTOCNode Id="55dc681a-6c47-4a89-b8e3-77b6458fac5f" Title="FoodContext Properties" Url="html/bf034d3f-777d-c85d-f9f9-a0d18b61a499.htm">
+          <HelpTOCNode Title="Foods Property " Url="html/4f998bde-209f-d2d1-4bdf-17738b302314.htm" />
+          <HelpTOCNode Title="Ingredients Property " Url="html/07f0d4bd-e24f-b45f-a88f-d5a4804a4a73.htm" />
+          <HelpTOCNode Title="Pantrys Property " Url="html/8fbe6e35-9406-388f-c241-64956dcfd0cb.htm" />
+          <HelpTOCNode Title="Recipes Property " Url="html/f2c8c29c-a4ba-bb24-b0f9-2e9a559322a1.htm" />
+          <HelpTOCNode Title="Users Property " Url="html/1cd9f56d-463e-6700-7084-4bc1f092ac1b.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="FoodContext Methods" Url="html/63b7702c-4faa-2abf-3a6a-34411914d772.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="357c32ff-c835-49fd-b32f-6c680e885a19" Title="FoodRepository Class" Url="html/a116a137-ab17-2ddb-ed64-5ab6f56ccaf7.htm">
+        <HelpTOCNode Title="FoodRepository Constructor " Url="html/6cb658c4-200c-d136-e4f6-758f3213f82a.htm" />
+        <HelpTOCNode Id="2e6fa396-8c07-4a98-87bb-7f9c070be565" Title="FoodRepository Properties" Url="html/751b3f30-0a84-bc8d-1ff0-fcc459a2ded6.htm">
+          <HelpTOCNode Title="Foods Property " Url="html/32a6c69b-03ed-5897-65c8-ad695b1b5644.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="da866d4c-e172-4298-9ab2-7db7b30a6d61" Title="FoodRepository Methods" Url="html/e771b9df-af78-dd0a-dc76-50ad69494b1a.htm">
+          <HelpTOCNode Title="DeleteFood Method " Url="html/05abae9a-b1d5-a873-492d-24e8aeeec4a7.htm" />
+          <HelpTOCNode Id="6fd6891c-d470-4a94-a122-5832acd83e5b" Title="Dispose Method " Url="html/73478c3d-8a49-941a-8062-ffc1e4af702a.htm">
+            <HelpTOCNode Title="Dispose Method " Url="html/e63e678e-5818-d6b0-3500-ab815ccde5e2.htm" />
+            <HelpTOCNode Title="Dispose Method (Boolean)" Url="html/8990541e-1889-8103-0873-e4e4d482161b.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Title="GetFoodById Method " Url="html/f1b147a7-1123-0b23-e98a-a10f9bd5f9a8.htm" />
+          <HelpTOCNode Title="InsertFood Method " Url="html/5442d211-aa2e-a4c3-0913-ba45d12efb8c.htm" />
+          <HelpTOCNode Title="Save Method " Url="html/da4069b8-b634-4405-1b36-7e6eec32ae16.htm" />
+          <HelpTOCNode Title="UpdateFood Method " Url="html/fd4d8f59-3d8c-31de-f585-b139e8af4e51.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="e7ba9253-9b05-45f3-a782-9eba4ac33ed3" Title="FoodRepository Fields" Url="html/30ee1876-1453-2234-28b5-8d499bcaa48a.htm">
+          <HelpTOCNode Title="context Field" Url="html/48df3a9d-802f-5cd5-a684-f6c3074afca8.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+      <HelpTOCNode Id="616bc20b-de78-4972-837b-6e2e63b2a42e" Title="IngredientRepository Class" Url="html/a95cce60-1948-3154-fc40-26e8e201efc5.htm">
+        <HelpTOCNode Title="IngredientRepository Constructor " Url="html/f2c6e48c-7b74-2012-a7a5-b7af3f6b26de.htm" />
+        <HelpTOCNode Id="df6dbae5-ab80-442a-86de-e4df2c30bb77" Title="IngredientRepository Properties" Url="html/7668109a-6f2b-9a69-e2b3-89d42d0fb573.htm">
+          <HelpTOCNode Title="Ingredients Property " Url="html/28814870-406c-dd70-66df-6e1b4222cf70.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="677d23a2-4a97-4bf2-afb0-2eca7a7017a5" Title="IngredientRepository Methods" Url="html/30079059-c5bb-3d7d-a232-4d9ef46b121a.htm">
+          <HelpTOCNode Title="Add Method " Url="html/c3ff2478-7617-e546-fea5-f674ab71981a.htm" />
+          <HelpTOCNode Title="Save Method " Url="html/a22d4856-fdb5-18b4-a701-4d63aa09d4ce.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+      <HelpTOCNode Id="8dd32876-b3b6-40db-b474-5506a337675b" Title="PantryRepository Class" Url="html/a8336839-214f-a875-f379-29808c693e64.htm">
+        <HelpTOCNode Title="PantryRepository Constructor " Url="html/a795b375-b3e8-bc6b-ea8b-aec3e13ddedf.htm" />
+        <HelpTOCNode Id="3def7708-6fe4-4f34-9209-7c6270c72349" Title="PantryRepository Properties" Url="html/99775241-4851-b347-efe7-937c6e1ff0f8.htm">
+          <HelpTOCNode Title="Pantrys Property " Url="html/b176ec93-e5b6-15b1-573f-b8f6271d4444.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="4ed210c2-652c-4e62-9474-b34ea21a6725" Title="PantryRepository Methods" Url="html/0a8dbde0-d22a-af53-4f63-990780ebae25.htm">
+          <HelpTOCNode Title="add Method " Url="html/fc47e8a8-c5d5-37ae-9419-2fc04fc01c07.htm" />
+          <HelpTOCNode Title="delete Method " Url="html/b5541a36-0b82-a619-debe-43a7a34bad42.htm" />
+          <HelpTOCNode Title="save Method " Url="html/ddd9bc1c-380f-ef2b-25e8-93c92055a19f.htm" />
+          <HelpTOCNode Title="updatePantry Method " Url="html/8b40537d-7839-ec42-ca8b-85f8b09f24bc.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+      <HelpTOCNode Id="2cfb6121-fc28-4632-859b-6894bb8f3a58" Title="RecipeRepository Class" Url="html/8abcd4ba-07ab-ebea-1e38-928602908b63.htm">
+        <HelpTOCNode Title="RecipeRepository Constructor " Url="html/08938b80-0e22-d27a-1d28-548fd993b7b5.htm" />
+        <HelpTOCNode Id="da9db6cd-1ee7-4fb0-9de0-6e28d6434f7d" Title="RecipeRepository Properties" Url="html/059f5183-a25b-7d3e-426f-f2f5d8d1ca74.htm">
+          <HelpTOCNode Title="Recipes Property " Url="html/3e542753-1740-1788-91b7-f72526f4f5cb.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="979fb748-4ee5-48eb-b46e-f0e6618dc451" Title="RecipeRepository Methods" Url="html/eae93c54-19b4-962a-21e7-fd12922a2d3d.htm">
+          <HelpTOCNode Title="Add Method " Url="html/ed8ac74d-ef9f-d034-06fd-4888f39ff737.htm" />
+          <HelpTOCNode Title="GetRecipeID Method " Url="html/46c67721-6d0b-77e6-4983-adc5fd5ea16e.htm" />
+          <HelpTOCNode Title="Save Method " Url="html/b93b78e4-4d2f-f2eb-d98a-53d1549cd140.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+      <HelpTOCNode Id="000434ef-1182-4ad7-acf4-39ea5ee0665d" Title="UserRepository Class" Url="html/bbb4f100-cdf8-1eb8-b54e-3a1ddcc16326.htm">
+        <HelpTOCNode Title="UserRepository Constructor " Url="html/b98ccbde-44a5-26c3-f266-7033e1736d24.htm" />
+        <HelpTOCNode Id="893e3294-39e9-4598-8299-c64a62484eef" Title="UserRepository Properties" Url="html/943aec68-8d58-8452-d3c2-f5883ce12398.htm">
+          <HelpTOCNode Title="Users Property " Url="html/2f991e5d-b8bf-16fa-ef73-dce1054917ed.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="fe6b00b9-22ea-453e-83b2-60471ea7e9ff" Title="UserRepository Methods" Url="html/f91265c4-34da-0af2-1970-f0cade7606ac.htm">
+          <HelpTOCNode Title="Add Method " Url="html/21cad5e7-2858-ab7f-3188-7b893512e2a3.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="0b048dda-f7d7-4505-a517-b5457b0ce543" Title="UserRepository Fields" Url="html/ee4123df-e8d6-2c06-e018-ba2d6fa43df7.htm">
+          <HelpTOCNode Title="Context Field" Url="html/bfcdeb3e-ad07-e6d3-51b7-8b53d9e78e6c.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="d91ebe20-0fa3-491e-83f6-3be1123a3260" Title="FoodProject.Controllers" Url="html/42d18592-6c3a-3c46-2337-074031ddc3f6.htm">
+      <HelpTOCNode Id="29ed04b1-7959-49e0-9f39-3465fc38f86e" Title="FoodController Class" Url="html/0d85ebf5-cba1-29eb-7164-2125cdee2507.htm">
+        <HelpTOCNode Title="FoodController Constructor " Url="html/0648b137-1d3f-2145-5c4b-333c053d3712.htm" />
+        <HelpTOCNode Title="FoodController Properties" Url="html/5f77c049-65aa-21ef-4bc4-40952b8a7465.htm" />
+        <HelpTOCNode Id="edd2d4ce-1975-409b-867f-fdb23fafabb9" Title="FoodController Methods" Url="html/001a1ca3-10ae-f5a5-2177-15fdcf16ba08.htm">
+          <HelpTOCNode Title="addFood Method " Url="html/832bbd72-3c73-3d9d-8e60-8ff70e68ecc1.htm" />
+          <HelpTOCNode Title="addFoods Method " Url="html/04fa4c6b-5416-94b0-dd6d-720e81c6a52d.htm" />
+          <HelpTOCNode Title="addFoodSearch Method " Url="html/4d665bc9-63da-98ba-c96b-f4fd0f9b94ae.htm" />
+          <HelpTOCNode Id="3a29f0ad-5454-4669-ab9f-a02ea24f4377" Title="createNewFood Method " Url="html/5c70e800-59af-52c5-7b46-4a392374f940.htm">
+            <HelpTOCNode Title="createNewFood Method " Url="html/27ba41f1-d096-76f6-5707-b93f29e55eb3.htm" />
+            <HelpTOCNode Title="createNewFood Method (User, Food)" Url="html/f6fd550b-214b-92eb-8170-22099f9b84ff.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Title="delete Method " Url="html/d52c3117-2fcc-cd18-702d-1f23a7ad3650.htm" />
+          <HelpTOCNode Title="Index Method " Url="html/d892ab2e-8497-d528-0bfa-c99eb4c94d96.htm" />
+          <HelpTOCNode Id="9a0c0ce5-0438-4efe-a0e9-719c21221e8e" Title="update Method " Url="html/5331e6cc-d1b5-afc1-4cb8-618ea3e73be6.htm">
+            <HelpTOCNode Title="update Method (Int32)" Url="html/f639d679-b09d-c95b-9823-cafef18cc7fb.htm" />
+            <HelpTOCNode Title="update Method (Pantry)" Url="html/e0c373ba-9e34-2667-e226-ed8dc8f8cfbe.htm" />
+          </HelpTOCNode>
+        </HelpTOCNode>
+      </HelpTOCNode>
+      <HelpTOCNode Id="90e05ae7-b4a2-48fe-915e-3c5f7ce427ac" Title="HomeController Class" Url="html/d738c75f-b933-5d3e-ad49-2220c2837c75.htm">
+        <HelpTOCNode Title="HomeController Constructor " Url="html/7b85bbb2-7ec9-93ff-10fb-7d3072fa346d.htm" />
+        <HelpTOCNode Title="HomeController Properties" Url="html/ef44a315-1834-7052-7b06-036ec5d81d16.htm" />
+        <HelpTOCNode Id="807366d5-5ffe-4879-a33d-e013f35fa0e9" Title="HomeController Methods" Url="html/3c28e4fe-b9ee-642e-e80b-20d2ffb0e900.htm">
+          <HelpTOCNode Title="About Method " Url="html/dea3ff19-a93e-0360-cfb2-483d5c497ee4.htm" />
+          <HelpTOCNode Title="Index Method " Url="html/452e98a1-9509-9a71-d561-0e6c9a186845.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+      <HelpTOCNode Id="59c3ac26-85c4-4f27-9cf9-bb3b428243d2" Title="RecipeController Class" Url="html/42f865d4-9c1d-bea1-5e44-54e3072f9f4e.htm">
+        <HelpTOCNode Title="RecipeController Constructor " Url="html/8d97482e-5d40-694a-3707-a91eb2f756ea.htm" />
+        <HelpTOCNode Title="RecipeController Properties" Url="html/7c8e9d62-dce0-7953-0615-343c7a0ad4cc.htm" />
+        <HelpTOCNode Id="ad0f112d-bc8a-4e2e-86d0-c253ab7862ab" Title="RecipeController Methods" Url="html/1bfe305b-61a9-df2b-65ee-57cf9f561c73.htm">
+          <HelpTOCNode Title="AddFoodId Method " Url="html/7b4e3fae-42b2-901a-06a0-f5736831bcfc.htm" />
+          <HelpTOCNode Title="AddRecipeId Method " Url="html/ec9a4b7c-1e2d-de1c-2777-3c0082c1ce53.htm" />
+          <HelpTOCNode Title="CanIMakeIt Method " Url="html/330512fa-67c6-d246-39b3-e080f421c8c4.htm" />
+          <HelpTOCNode Id="af39a0e5-1cad-4269-b7a8-e15860b13cbc" Title="Create Method " Url="html/3498a6a3-cf1e-2804-6d6e-5638e48bcade.htm">
+            <HelpTOCNode Title="Create Method " Url="html/ba956edf-56ee-e1a8-2aac-1b80b2d85165.htm" />
+            <HelpTOCNode Title="Create Method (Recipe)" Url="html/5fd9ae36-c01d-38ed-152d-8f1a2871d124.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Title="Details Method " Url="html/94dc6d4b-682d-5460-dacc-b4712ff3e7ef.htm" />
+          <HelpTOCNode Title="Index Method " Url="html/a1913c58-4e56-0415-b185-2a5c590e98c7.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+      <HelpTOCNode Id="428afe48-dff1-46d7-bc5d-a4d8fa1e26b7" Title="UserController Class" Url="html/865d6248-3189-b83b-d6d8-8668b70138db.htm">
+        <HelpTOCNode Title="UserController Constructor " Url="html/94236b99-3ecc-cf2c-0ebc-cffdc63b2e7f.htm" />
+        <HelpTOCNode Title="UserController Properties" Url="html/1f5f7195-a66d-5dc6-2432-408064a85c4f.htm" />
+        <HelpTOCNode Id="4a27a250-d6d5-4541-a689-e7cd112508d8" Title="UserController Methods" Url="html/614544cc-5490-1bc0-ac55-edecb951ef44.htm">
+          <HelpTOCNode Title="Createuser Method " Url="html/44245ddd-94b5-5cb9-791f-d680ea471545.htm" />
+          <HelpTOCNode Title="CreateUser Method " Url="html/8fa47a5d-36d4-13c8-2057-8165798be91b.htm" />
+          <HelpTOCNode Id="c94ee380-b9ab-43ff-90d9-46edd42c446c" Title="Index Method " Url="html/4a1eaf20-7d1c-4adb-50e9-11ae151d80e3.htm">
+            <HelpTOCNode Title="Index Method (User)" Url="html/b5eb77f8-bf3b-cee5-594e-5d7791519ec4.htm" />
+            <HelpTOCNode Title="Index Method (User, UserLogin)" Url="html/b6966a86-710e-389f-c5cc-8f6f1b01f1bb.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Title="LogOut Method " Url="html/7f3ec4ac-5885-44ea-686e-726fc4978372.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="e77c0e9c-9eda-49c8-a694-bc568f37f4e6" Title="UserController Fields" Url="html/3b29f22e-ac1a-dbd0-ab9b-1bf3827ede89.htm">
+          <HelpTOCNode Title="temp Field" Url="html/cf943994-d04c-2a47-a629-04f7814c8685.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="22ff4621-30fc-46e6-ab9b-e4096b5f1554" Title="FoodProject.infrastructure" Url="html/a7fb59dc-4046-a2ea-4582-b6d95f7e4066.htm">
+      <HelpTOCNode Id="f3541dca-4298-47fb-ae49-7e08a0ffa8b1" Title="NinjectDependencyResolver Class" Url="html/01259951-b29c-75d9-615a-bd0e0c8a2db1.htm">
+        <HelpTOCNode Title="NinjectDependencyResolver Constructor " Url="html/0d3ab180-0309-ed26-b427-a734ef96e5c4.htm" />
+        <HelpTOCNode Id="d79814b1-de5c-49f4-8615-8465471e70de" Title="NinjectDependencyResolver Methods" Url="html/3d7240b1-aec0-dc37-d12d-df8797e637bb.htm">
+          <HelpTOCNode Title="GetService Method " Url="html/99510812-89dc-0ca2-1a6b-0a57e6c00836.htm" />
+          <HelpTOCNode Title="GetServices Method " Url="html/01f82afc-465a-fa1c-85a7-4ed2f73fabd2.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="01c9d898-94a9-4a30-a310-c06064756f83" Title="FoodProject.infrastructure.Binders" Url="html/f471a414-093f-5953-ef98-bd47e72ed6e8.htm">
+      <HelpTOCNode Id="f66e4844-4a06-4687-932c-227adb142a46" Title="UserModelBinder Class" Url="html/e354f78a-d14f-345d-18f1-4201f7917d3e.htm">
+        <HelpTOCNode Title="UserModelBinder Constructor " Url="html/2627edd7-6613-6f7a-96ed-3e7615027d66.htm" />
+        <HelpTOCNode Id="04825998-c7af-4efc-abae-913914475891" Title="UserModelBinder Methods" Url="html/f4254fb2-d2f3-3d56-12e1-65989e880c33.htm">
+          <HelpTOCNode Title="BindModel Method " Url="html/4381ec8d-d7b5-9c89-a406-83c7e9211a3c.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="5ed0d4f2-52bf-40a5-85d3-26ba17b0c511" Title="FoodProject.Models" Url="html/147a6e20-9825-a2c6-3df6-27b4a17ce609.htm">
+      <HelpTOCNode Id="39ff9f59-397f-4216-a339-22a785e163a3" Title="Food Class" Url="html/6f57df69-c606-452f-796c-837b42180b52.htm">
+        <HelpTOCNode Title="Food Constructor " Url="html/bfcb6ec2-dbf8-bdb6-b47d-8d8cf3f4a73a.htm" />
+        <HelpTOCNode Id="9bd7cde7-ccad-4448-b50a-80eace815968" Title="Food Properties" Url="html/b46a2855-a458-6af3-d31f-14678e5d74c5.htm">
+          <HelpTOCNode Title="FoodID Property " Url="html/a59a56e8-5818-d113-54b5-5758d1220256.htm" />
+          <HelpTOCNode Title="Name Property " Url="html/2ef523a3-cc35-af58-a103-147008d13eec.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="Food Methods" Url="html/a5bbc395-bc16-1a83-73e6-9969c921aafa.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="9107f297-2a0a-4ddc-a2c9-11fe87bc0940" Title="Ingredient Class" Url="html/530ba2e3-7681-3be5-17ed-5c9a2d14fe69.htm">
+        <HelpTOCNode Title="Ingredient Constructor " Url="html/d92f7513-906d-6afe-da12-84ef7007a927.htm" />
+        <HelpTOCNode Id="7151dfc1-2216-4805-be08-5d3d0c828ff6" Title="Ingredient Properties" Url="html/77cac1dc-ad69-3258-a64f-2b8675b27cc2.htm">
+          <HelpTOCNode Title="Food Property " Url="html/29835546-e568-9881-c90e-9b06fe3c4a72.htm" />
+          <HelpTOCNode Title="FoodID Property " Url="html/ee47c4a3-51b6-884f-d877-f2858763a6ff.htm" />
+          <HelpTOCNode Title="IngredientID Property " Url="html/42a73a64-0b0d-ef8b-e51b-a15242067dd6.htm" />
+          <HelpTOCNode Title="Recipe Property " Url="html/54326998-ea67-964e-9cca-2b48718bff03.htm" />
+          <HelpTOCNode Title="RecipeID Property " Url="html/e191332b-9d28-e194-4ab6-5d15d0419c9e.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="Ingredient Methods" Url="html/96ad101e-fcfe-68bc-e248-55ce1fb0c9f6.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="60cfafb2-7ecc-4d80-80dd-9dff4faa8306" Title="Pantry Class" Url="html/f0cdc909-6591-7c85-46c0-6c343d8a9def.htm">
+        <HelpTOCNode Title="Pantry Constructor " Url="html/b2524bb4-37ac-307f-74df-507ea105a108.htm" />
+        <HelpTOCNode Id="f1789c93-3166-47ef-ba4c-0ad6f6da6d83" Title="Pantry Properties" Url="html/4559f10d-bd8a-b260-a9d1-bf8a993ac206.htm">
+          <HelpTOCNode Title="Food Property " Url="html/5399799c-5ada-8860-12ce-3e04f2d21487.htm" />
+          <HelpTOCNode Title="FoodID Property " Url="html/3b75f3ce-3134-b2b8-c32d-2a2d89d8a813.htm" />
+          <HelpTOCNode Title="PantryID Property " Url="html/fa8ee04c-be70-f12f-bce1-bb7cc02fce79.htm" />
+          <HelpTOCNode Title="Units Property " Url="html/619f8738-1dd8-87b2-ab88-127462bfc364.htm" />
+          <HelpTOCNode Title="User Property " Url="html/4b5ba1cf-4ee3-7755-2481-487803f70477.htm" />
+          <HelpTOCNode Title="UserID Property " Url="html/7d8f01e7-3376-e68c-37e8-234bbc8d0284.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="Pantry Methods" Url="html/85d7b81a-6c3a-c887-1570-93e2a6c6b30e.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="b4418605-722d-47db-a4be-638aba5a75a6" Title="Recipe Class" Url="html/889ab1a8-4834-b028-cc4d-2c744b277e94.htm">
+        <HelpTOCNode Title="Recipe Constructor " Url="html/5c4995f5-75cb-9d03-d816-3ddaa6e3bc7b.htm" />
+        <HelpTOCNode Id="67c4fbd4-9d4b-4956-bd41-0574403349cf" Title="Recipe Properties" Url="html/40ef144a-804e-b06b-f638-b806f9358e32.htm">
+          <HelpTOCNode Title="Ingredients Property " Url="html/683d9bcf-9c86-4f8b-5bbb-823ee0bd8a17.htm" />
+          <HelpTOCNode Title="Name Property " Url="html/26f786e2-673f-4b75-29f3-14216516e9af.htm" />
+          <HelpTOCNode Title="RecipeID Property " Url="html/a55a235f-b03e-1da4-1db0-bf72e3f2aaf7.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="Recipe Methods" Url="html/74bf98c3-772a-446c-bb77-685bee99c1de.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="aa81716e-5f0c-4ca7-8a20-1048da39872f" Title="User Class" Url="html/df493df4-256d-f1cb-41d0-f568f21c24d7.htm">
+        <HelpTOCNode Title="User Constructor " Url="html/b10b8eaa-0783-9b0d-953a-6ed89a072c24.htm" />
+        <HelpTOCNode Id="caa52dcd-a823-4de1-8958-c94f4ff83607" Title="User Properties" Url="html/32c5d96a-aab4-21c0-e5da-2872ad28af40.htm">
+          <HelpTOCNode Title="Name Property " Url="html/176d6422-ad82-42a7-f97c-a1687d8445a2.htm" />
+          <HelpTOCNode Title="Pantrys Property " Url="html/f0450b92-32f4-5679-5061-c842e71edaa1.htm" />
+          <HelpTOCNode Title="Password Property " Url="html/602153e0-1af3-6340-a67e-05b9786359cd.htm" />
+          <HelpTOCNode Title="UserID Property " Url="html/214fc10e-6d5a-3329-0f05-dd02bcc73122.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="User Methods" Url="html/391591d2-0225-07c4-0cbc-b8e8a6b163af.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="cb9a08ab-88a8-4b7a-951d-d636100452f3" Title="UserLogin Class" Url="html/52849153-2d9e-b89d-ea1d-f77469a1ccb6.htm">
+        <HelpTOCNode Title="UserLogin Constructor " Url="html/bf033b46-48a7-6cf4-6e0e-dcd608f5d22c.htm" />
+        <HelpTOCNode Id="032f173d-c317-41df-a45e-bc655ad721d6" Title="UserLogin Properties" Url="html/05313e40-fcf2-5293-55a3-f59824610908.htm">
+          <HelpTOCNode Title="pword Property " Url="html/cd8899b4-68ba-62ee-2d7a-e156dc78df73.htm" />
+          <HelpTOCNode Title="pword2 Property " Url="html/b392d3a2-4b25-6781-26c0-b1510d339b3b.htm" />
+          <HelpTOCNode Title="un Property " Url="html/7d941872-d30b-17f6-7924-63bf6db59f10.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="UserLogin Methods" Url="html/c481c46b-4a2b-e2e9-a1d9-cdd23cc84bf3.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+  </HelpTOCNode>
+</HelpTOC>

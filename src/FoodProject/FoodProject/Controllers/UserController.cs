@@ -10,20 +10,29 @@ using System.Text.RegularExpressions;
 
 namespace FoodProject.Controllers
 {
+    /// <summary>
+    /// The user controller handles logging in / out and handles creating users
+    /// </summary>
     public class UserController : Controller
     {
         private IUserRepository userRepository;
         public UserLogin temp = new UserLogin();
 
-        //userRepository gets initialized with the parameter userRepository through constructor depenency injection
-        //infrastructure/NinjectDependecyResolver Handles that
+       /// <summary>
+       /// gets the userRepository from the dependency injection container
+       /// </summary>
+       /// <param name="userRepository">gets pass to the constructor through our dependency injection container</param>
         public UserController(IUserRepository userRepository)
         {
             this.userRepository = userRepository;
         }
 
-        // GET: User
-        //takes you to the login screen
+        /// <summary>
+        /// This method takes you to the login screen if not logged in
+        /// </summary>
+        /// <param name="user">The object that holds the logged in user, you don't need to pass this in
+        /// it is model binded and passed for you</param>
+        /// <returns>a view for the user to login</returns>
         [HttpGet]
         public ActionResult Index(User user)
         {
@@ -39,7 +48,13 @@ namespace FoodProject.Controllers
             //pass it a UserLogin object to store the username and password the user types in
             return View(temp);
         }
-        //the post method from the login screen handles getting user from database and finializing login
+        /// <summary>
+        /// this is the pos tmethod that gets called after the user submits data on the login screen
+        /// </summary>
+        /// <param name="user">The object that holds the logged in user, you don't need to pass this in
+        /// it is model binded and passed for you</param>
+        /// <param name="temp">the object passed for the get index method, it hold sthe user login details</param>
+        /// <returns>a view of the home screen if logged in else, you go back to log in screen</returns>
         [HttpPost]
         public RedirectToRouteResult Index(User user,UserLogin temp)
         {
@@ -97,7 +112,10 @@ namespace FoodProject.Controllers
             }
 
         }
-        //create user method
+        /// <summary>
+        /// This method brings up the view to create a user
+        /// </summary>
+        /// <returns>a view</returns>
         [HttpGet]
         public ViewResult CreateUser()
         {
@@ -105,7 +123,13 @@ namespace FoodProject.Controllers
             // give it a UserLogin object to store username and passwords
             return View(temp);
         }
-        //method handles data the user submits for signing up
+        /// <summary>
+        /// This methods handles the process of creating the user and adding to the database
+        /// </summary>
+        /// <param name="user">The object that holds the logged in user, you don't need to pass this in
+        /// it is model binded and passed for you</param>
+        /// <param name="temp">the user details from the get createUser method</param>
+        /// <returns>a view of the home screen if creation was successful, else back to create screen</returns>
         [HttpPost]
         public RedirectToRouteResult Createuser(User user,UserLogin temp)
         {
@@ -147,7 +171,12 @@ namespace FoodProject.Controllers
             //password not matching or non unique user name
             return RedirectToAction("CreateUser", "User");
         }
-        //Handles loging out
+        /// <summary>
+        /// Handles logging out the user, sets all attributes to null
+        /// </summary>
+        /// <param name="user">The object that holds the logged in user, you don't need to pass this in
+        /// it is model binded and passed for you</param>
+        /// <returns>A view of the home screen</returns>
         public RedirectToRouteResult LogOut(User user)
         {
             //set the user objects properties in the session to null
