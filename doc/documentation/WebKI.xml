@@ -2,16 +2,16 @@
 <HelpKI>
   <HelpKINode Title="About method" Url="html/dea3ff19-a93e-0360-cfb2-483d5c497ee4.htm" />
   <HelpKINode Title="Add method">
-    <HelpKINode Title="IIngredientRepository.Add Method " Url="html/3294a6d1-a1ed-f7be-5fc9-4d9d394f77de.htm" />
-    <HelpKINode Title="IRecipeRepository.Add Method " Url="html/5117e333-2e7a-7578-3066-54010f97e81c.htm" />
-    <HelpKINode Title="RecipeRepository.Add Method " Url="html/ed8ac74d-ef9f-d034-06fd-4888f39ff737.htm" />
-    <HelpKINode Title="IngredientRepository.Add Method " Url="html/c3ff2478-7617-e546-fea5-f674ab71981a.htm" />
     <HelpKINode Title="IUserRepository.Add Method " Url="html/cbb75b8a-b616-6f49-0c7e-cc601059695c.htm" />
     <HelpKINode Title="UserRepository.Add Method " Url="html/21cad5e7-2858-ab7f-3188-7b893512e2a3.htm" />
+    <HelpKINode Title="IIngredientRepository.Add Method " Url="html/3294a6d1-a1ed-f7be-5fc9-4d9d394f77de.htm" />
+    <HelpKINode Title="IngredientRepository.Add Method " Url="html/c3ff2478-7617-e546-fea5-f674ab71981a.htm" />
+    <HelpKINode Title="IRecipeRepository.Add Method " Url="html/5117e333-2e7a-7578-3066-54010f97e81c.htm" />
+    <HelpKINode Title="RecipeRepository.Add Method " Url="html/ed8ac74d-ef9f-d034-06fd-4888f39ff737.htm" />
   </HelpKINode>
   <HelpKINode Title="add method">
-    <HelpKINode Title="IPantryRepository.add Method " Url="html/6310b8b8-bc6a-0bf5-52bc-2ad667b5218c.htm" />
     <HelpKINode Title="PantryRepository.add Method " Url="html/fc47e8a8-c5d5-37ae-9419-2fc04fc01c07.htm" />
+    <HelpKINode Title="IPantryRepository.add Method " Url="html/6310b8b8-bc6a-0bf5-52bc-2ad667b5218c.htm" />
   </HelpKINode>
   <HelpKINode Title="addFood method" Url="html/832bbd72-3c73-3d9d-8e60-8ff70e68ecc1.htm" />
   <HelpKINode Title="AddFoodId method" Url="html/7b4e3fae-42b2-901a-06a0-f5736831bcfc.htm" />
@@ -33,8 +33,9 @@
   <HelpKINode Title="Context field" Url="html/bfcdeb3e-ad07-e6d3-51b7-8b53d9e78e6c.htm" />
   <HelpKINode Title="Create method" Url="html/3498a6a3-cf1e-2804-6d6e-5638e48bcade.htm" />
   <HelpKINode Title="createNewFood method" Url="html/5c70e800-59af-52c5-7b46-4a392374f940.htm" />
-  <HelpKINode Title="Createuser method" Url="html/44245ddd-94b5-5cb9-791f-d680ea471545.htm" />
   <HelpKINode Title="CreateUser method" Url="html/8fa47a5d-36d4-13c8-2057-8165798be91b.htm" />
+  <HelpKINode Title="Createuser method" Url="html/44245ddd-94b5-5cb9-791f-d680ea471545.htm" />
+  <HelpKINode Title="currentPW property" Url="html/13ac7ffb-03f3-44bc-2859-edd8dd1288f9.htm" />
   <HelpKINode Title="delete method">
     <HelpKINode Title="FoodController.delete Method " Url="html/d52c3117-2fcc-cd18-702d-1f23a7ad3650.htm" />
     <HelpKINode Title="IPantryRepository.delete Method " Url="html/cce0b714-374f-fa90-8395-7088cf2c5353.htm" />
@@ -136,6 +137,7 @@
   <HelpKINode Title="FoodProject.Models.Recipe class" Url="html/889ab1a8-4834-b028-cc4d-2c744b277e94.htm" />
   <HelpKINode Title="FoodProject.Models.User class" Url="html/df493df4-256d-f1cb-41d0-f568f21c24d7.htm" />
   <HelpKINode Title="FoodProject.Models.UserLogin class" Url="html/52849153-2d9e-b89d-ea1d-f77469a1ccb6.htm" />
+  <HelpKINode Title="FoodProject.Models.UserProfile class" Url="html/622ff238-408d-2966-69ae-9bda88587589.htm" />
   <HelpKINode Title="FoodProject.MvcApplication class" Url="html/2aada052-4b62-9797-df22-07605a34e2fa.htm" />
   <HelpKINode Title="FoodProject.RouteConfig class" Url="html/fcd868ef-23a0-0bab-593b-43ae238451da.htm" />
   <HelpKINode Title="FoodRepository class">
@@ -278,6 +280,7 @@
     <HelpKINode Title="properties" Url="html/a1f16d38-749b-31e8-4d30-8681db03f997.htm" />
   </HelpKINode>
   <HelpKINode Title="IUserRepository.Add method" Url="html/cbb75b8a-b616-6f49-0c7e-cc601059695c.htm" />
+  <HelpKINode Title="IUserRepository.UpdatePassword method" Url="html/e235c95e-3f94-8670-23cd-aa843d6fe817.htm" />
   <HelpKINode Title="IUserRepository.Users property" Url="html/29c4ce60-3d3a-359d-22b9-33a4edff34b1.htm" />
   <HelpKINode Title="LogOut method" Url="html/7f3ec4ac-5885-44ea-686e-726fc4978372.htm" />
   <HelpKINode Title="MvcApplication class">
@@ -295,6 +298,8 @@
     <HelpKINode Title="Recipe.Name Property " Url="html/26f786e2-673f-4b75-29f3-14216516e9af.htm" />
     <HelpKINode Title="User.Name Property " Url="html/176d6422-ad82-42a7-f97c-a1687d8445a2.htm" />
   </HelpKINode>
+  <HelpKINode Title="newPW property" Url="html/ff8a51c6-7500-dda8-7cd1-f74baceb5dd3.htm" />
+  <HelpKINode Title="newPW2 property" Url="html/3bb1f288-9fa4-cd30-fae8-5f422d02e31d.htm" />
   <HelpKINode Title="NinjectDependencyResolver class">
     <HelpKINode Title="NinjectDependencyResolver Class" Url="html/01259951-b29c-75d9-615a-bd0e0c8a2db1.htm" />
     <HelpKINode Title="about NinjectDependencyResolver class" Url="html/01259951-b29c-75d9-615a-bd0e0c8a2db1.htm" />
@@ -407,21 +412,20 @@
   <HelpKINode Title="RouteConfig.RegisterRoutes method" Url="html/55753fc1-715d-a700-877e-853128f0635a.htm" />
   <HelpKINode Title="RouteConfig.RouteConfig constructor" Url="html/7a7ed368-e633-ef10-ead7-aa2c6064362d.htm" />
   <HelpKINode Title="Save method">
-    <HelpKINode Title="FoodRepository.Save Method " Url="html/da4069b8-b634-4405-1b36-7e6eec32ae16.htm" />
     <HelpKINode Title="IFoodRepository.Save Method " Url="html/15d57cc3-5526-e64e-4f5f-3b1b64332e5c.htm" />
     <HelpKINode Title="IIngredientRepository.Save Method " Url="html/1f15871f-be15-c40d-edca-f9b6dca761a1.htm" />
+    <HelpKINode Title="FoodRepository.Save Method " Url="html/da4069b8-b634-4405-1b36-7e6eec32ae16.htm" />
     <HelpKINode Title="IngredientRepository.Save Method " Url="html/a22d4856-fdb5-18b4-a701-4d63aa09d4ce.htm" />
     <HelpKINode Title="IRecipeRepository.Save Method " Url="html/92979ccf-7c0b-e017-88ce-c40a9e1f3e28.htm" />
     <HelpKINode Title="RecipeRepository.Save Method " Url="html/b93b78e4-4d2f-f2eb-d98a-53d1549cd140.htm" />
   </HelpKINode>
   <HelpKINode Title="save method">
-    <HelpKINode Title="PantryRepository.save Method " Url="html/ddd9bc1c-380f-ef2b-25e8-93c92055a19f.htm" />
     <HelpKINode Title="IPantryRepository.save Method " Url="html/5fc25b6b-464b-af02-a5eb-77a0b23e8bc5.htm" />
+    <HelpKINode Title="PantryRepository.save Method " Url="html/ddd9bc1c-380f-ef2b-25e8-93c92055a19f.htm" />
   </HelpKINode>
   <HelpKINode Title="Seed method" Url="html/0101f892-32ad-e214-e8bf-f04270709680.htm" />
   <HelpKINode Title="Start method" Url="html/3a2a5352-ed2b-ecc0-f3f8-cac7d0cbb94c.htm" />
   <HelpKINode Title="Stop method" Url="html/be8ac67b-ab46-79aa-216a-21d0cb195bec.htm" />
-  <HelpKINode Title="temp field" Url="html/cf943994-d04c-2a47-a629-04f7814c8685.htm" />
   <HelpKINode Title="un property" Url="html/7d941872-d30b-17f6-7924-63bf6db59f10.htm" />
   <HelpKINode Title="Units property" Url="html/619f8738-1dd8-87b2-ab88-127462bfc364.htm" />
   <HelpKINode Title="update method" Url="html/5331e6cc-d1b5-afc1-4cb8-618ea3e73be6.htm" />
@@ -432,6 +436,10 @@
   <HelpKINode Title="updatePantry method">
     <HelpKINode Title="IPantryRepository.updatePantry Method " Url="html/016a4fdd-92d1-6144-ca84-da69a6ea031e.htm" />
     <HelpKINode Title="PantryRepository.updatePantry Method " Url="html/8b40537d-7839-ec42-ca8b-85f8b09f24bc.htm" />
+  </HelpKINode>
+  <HelpKINode Title="UpdatePassword method">
+    <HelpKINode Title="IUserRepository.UpdatePassword Method " Url="html/e235c95e-3f94-8670-23cd-aa843d6fe817.htm" />
+    <HelpKINode Title="UserRepository.UpdatePassword Method " Url="html/bc1827ff-cb92-4209-2922-30819ef9ded1.htm" />
   </HelpKINode>
   <HelpKINode Title="User class">
     <HelpKINode Title="User Class" Url="html/df493df4-256d-f1cb-41d0-f568f21c24d7.htm" />
@@ -450,16 +458,15 @@
     <HelpKINode Title="UserController Class" Url="html/865d6248-3189-b83b-d6d8-8668b70138db.htm" />
     <HelpKINode Title="about UserController class" Url="html/865d6248-3189-b83b-d6d8-8668b70138db.htm" />
     <HelpKINode Title="constructor" Url="html/94236b99-3ecc-cf2c-0ebc-cffdc63b2e7f.htm" />
-    <HelpKINode Title="fields" Url="html/3b29f22e-ac1a-dbd0-ab9b-1bf3827ede89.htm" />
     <HelpKINode Title="methods" Url="html/614544cc-5490-1bc0-ac55-edecb951ef44.htm" />
     <HelpKINode Title="properties" Url="html/1f5f7195-a66d-5dc6-2432-408064a85c4f.htm" />
   </HelpKINode>
-  <HelpKINode Title="UserController.Createuser method" Url="html/44245ddd-94b5-5cb9-791f-d680ea471545.htm" />
   <HelpKINode Title="UserController.CreateUser method" Url="html/8fa47a5d-36d4-13c8-2057-8165798be91b.htm" />
+  <HelpKINode Title="UserController.Createuser method" Url="html/44245ddd-94b5-5cb9-791f-d680ea471545.htm" />
   <HelpKINode Title="UserController.Index method" Url="html/4a1eaf20-7d1c-4adb-50e9-11ae151d80e3.htm" />
   <HelpKINode Title="UserController.LogOut method" Url="html/7f3ec4ac-5885-44ea-686e-726fc4978372.htm" />
-  <HelpKINode Title="UserController.temp field" Url="html/cf943994-d04c-2a47-a629-04f7814c8685.htm" />
   <HelpKINode Title="UserController.UserController constructor" Url="html/94236b99-3ecc-cf2c-0ebc-cffdc63b2e7f.htm" />
+  <HelpKINode Title="UserController.UserProfile method" Url="html/0edbf359-52eb-6e50-e836-07165ff56a27.htm" />
   <HelpKINode Title="UserID property">
     <HelpKINode Title="Pantry.UserID Property " Url="html/7d8f01e7-3376-e68c-37e8-234bbc8d0284.htm" />
     <HelpKINode Title="User.UserID Property " Url="html/214fc10e-6d5a-3329-0f05-dd02bcc73122.htm" />
@@ -483,6 +490,18 @@
   </HelpKINode>
   <HelpKINode Title="UserModelBinder.BindModel method" Url="html/4381ec8d-d7b5-9c89-a406-83c7e9211a3c.htm" />
   <HelpKINode Title="UserModelBinder.UserModelBinder constructor" Url="html/2627edd7-6613-6f7a-96ed-3e7615027d66.htm" />
+  <HelpKINode Title="UserProfile class">
+    <HelpKINode Title="UserProfile Class" Url="html/622ff238-408d-2966-69ae-9bda88587589.htm" />
+    <HelpKINode Title="about UserProfile class" Url="html/622ff238-408d-2966-69ae-9bda88587589.htm" />
+    <HelpKINode Title="constructor" Url="html/e642a54c-19af-ac07-e245-063c993866ba.htm" />
+    <HelpKINode Title="methods" Url="html/b110daa6-0c81-1ab4-b714-a9551696fdf5.htm" />
+    <HelpKINode Title="properties" Url="html/b18dba1f-eac9-0c70-143d-4b1b4f12213f.htm" />
+  </HelpKINode>
+  <HelpKINode Title="UserProfile method" Url="html/0edbf359-52eb-6e50-e836-07165ff56a27.htm" />
+  <HelpKINode Title="UserProfile.currentPW property" Url="html/13ac7ffb-03f3-44bc-2859-edd8dd1288f9.htm" />
+  <HelpKINode Title="UserProfile.newPW property" Url="html/ff8a51c6-7500-dda8-7cd1-f74baceb5dd3.htm" />
+  <HelpKINode Title="UserProfile.newPW2 property" Url="html/3bb1f288-9fa4-cd30-fae8-5f422d02e31d.htm" />
+  <HelpKINode Title="UserProfile.UserProfile constructor" Url="html/e642a54c-19af-ac07-e245-063c993866ba.htm" />
   <HelpKINode Title="UserRepository class">
     <HelpKINode Title="UserRepository Class" Url="html/bbb4f100-cdf8-1eb8-b54e-3a1ddcc16326.htm" />
     <HelpKINode Title="about UserRepository class" Url="html/bbb4f100-cdf8-1eb8-b54e-3a1ddcc16326.htm" />
@@ -493,6 +512,7 @@
   </HelpKINode>
   <HelpKINode Title="UserRepository.Add method" Url="html/21cad5e7-2858-ab7f-3188-7b893512e2a3.htm" />
   <HelpKINode Title="UserRepository.Context field" Url="html/bfcdeb3e-ad07-e6d3-51b7-8b53d9e78e6c.htm" />
+  <HelpKINode Title="UserRepository.UpdatePassword method" Url="html/bc1827ff-cb92-4209-2922-30819ef9ded1.htm" />
   <HelpKINode Title="UserRepository.UserRepository constructor" Url="html/b98ccbde-44a5-26c3-f266-7033e1736d24.htm" />
   <HelpKINode Title="UserRepository.Users property" Url="html/2f991e5d-b8bf-16fa-ef73-dce1054917ed.htm" />
   <HelpKINode Title="Users property">
