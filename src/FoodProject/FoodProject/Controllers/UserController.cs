@@ -16,7 +16,7 @@ namespace FoodProject.Controllers
     public class UserController : Controller
     {
         private IUserRepository userRepository;
-        public UserLogin temp = new UserLogin();
+        private UserLogin temp = new UserLogin();
 
        /// <summary>
        /// gets the userRepository from the dependency injection container
