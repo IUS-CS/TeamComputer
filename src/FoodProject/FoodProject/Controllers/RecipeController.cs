@@ -9,6 +9,9 @@ using FoodProject.Concrete;
 
 namespace FoodProject.Controllers
 {
+    /// <summary>
+    /// Handles Recipe and Ingredient Functions
+    /// </summary>
     public class RecipeController : Controller
     {
         private IRecipeRepository recipeRepository;
@@ -16,8 +19,15 @@ namespace FoodProject.Controllers
         private IIngredientRepository ingredientRepository;
         private IPantryRepository pantryRepository;
         private Ingredient ingredient = new Ingredient();
-               
 
+        /// <summary>
+        /// Constructor
+        /// Initialized the repositories needed for all functions needed for controller
+        /// </summary>
+        /// <param name="recipeRepository">creates recipe repository through dependency injection</param>
+        /// <param name="foodRepository">>creates food repository through dependency injection</param>
+        /// <param name="ingredientRepository">>creates ingredient repository through dependency injection</param>
+        /// <param name="pantryRepository">>creates pantry repository through dependency injection</param>
         public RecipeController(IRecipeRepository recipeRepository, IFoodRepository foodRepository, IIngredientRepository ingredientRepository, IPantryRepository pantryRepository)
         {
             this.ingredientRepository = ingredientRepository;
@@ -26,24 +36,44 @@ namespace FoodProject.Controllers
             this.pantryRepository = pantryRepository;
         }
         
-
+        /// <summary>
+        /// List View
+        /// shows a list of all recipies
+        /// </summary>
+        /// <returns> html view of  recipe repository</returns>
         public ActionResult Index()
         {
             return View(recipeRepository.Recipes);
         }
-
+        /// <summary>
+        /// Details View
+        /// lists ingredients in current recipe
+        /// </summary>
+        /// <param name="id">recipe id passed thought List View</param>
+        /// <returns></returns>
         public ActionResult Details(int id)
         {
             Recipe r = recipeRepository.GetRecipeID(id);
             return View(r);
         }
-
+        /// <summary>
+        /// GET:Create 
+        /// NEW recipe object created, shows create recipe view
+        /// </summary>
+        /// <returns>View allowing text entry</returns>
         [HttpGet]
         public ActionResult Create()
         {
             Recipe r = new Recipe();
             return View(r);
         }
+        /// <summary>
+        /// POST:Create
+        /// passes text to recipe object
+        /// adds to table/db
+        /// </summary>
+        /// <param name="r"></param>
+        /// <returns></returns>
         [HttpPost]
         public RedirectToRouteResult Create(Recipe r)
         {
@@ -54,6 +84,7 @@ namespace FoodProject.Controllers
             }
             return RedirectToAction("Index", "Recipe");
         }
+
         /// <summary>
         /// Part 1 to add ingredient entry to table 
         /// creates session to hold the recipeID of recipe you want to add food to
